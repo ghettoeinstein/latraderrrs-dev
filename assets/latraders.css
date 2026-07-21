@@ -1,0 +1,345 @@
+/* ==========================================================================
+   LA TRADERS — DESIGN SYSTEM
+   Single source of truth for all latraderrrs.com pages.
+   Loaded by every page BEFORE its page-specific styles.
+   Hierarchy: tokens → base → components → utilities
+   ========================================================================== */
+
+/* ---------- 1. DESIGN TOKENS ---------- */
+:root{
+  /* Color — surfaces */
+  --void:#08080a;
+  --void-2:#0d0d10;
+  --panel:#121216;
+  --panel-2:#18181d;
+
+  /* Color — brand */
+  --gold:#D4AF37;
+  --gold-bright:#f0ce6a;
+  --gold-dim:rgba(212,175,55,0.4);
+  --gold-glow:rgba(212,175,55,0.08);
+  --purple:#7c4fc4;
+  --purple-bright:#a67de0;
+  --purple-deep:#3a1f5c;
+  --blue:#3661c9;
+  --red:#c33d2e;
+
+  /* Color — text */
+  --bone:#f5e9c8;
+  --bone-dim:#c9c0ac;
+  --ash:#9d8fae;
+  --ash-dim:#6b6280;
+
+  /* Color — structure */
+  --line:rgba(255,255,255,0.07);
+  --line-strong:rgba(255,255,255,0.14);
+
+  /* Typography */
+  --font-display:'Fraunces', Georgia, serif;
+  --font-body:'Inter', -apple-system, sans-serif;
+  --font-mono:'Space Mono', monospace;
+
+  /* Type scale (fluid) */
+  --text-xs:11px;
+  --text-sm:13px;
+  --text-base:15.5px;
+  --text-md:17px;
+  --text-lg:18px;
+  --text-h3:clamp(20px, 2.6vw, 24px);
+  --text-h2:clamp(28px, 4vw, 42px);
+  --text-h1:clamp(38px, 6vw, 68px);
+  --text-h1-lg:clamp(44px, 7.5vw, 92px);
+
+  /* Spacing */
+  --space-1:8px;
+  --space-2:14px;
+  --space-3:20px;
+  --space-4:32px;
+  --space-5:48px;
+  --space-6:72px;
+  --space-7:120px;
+
+  /* Layout */
+  --wrap:1120px;
+  --wrap-narrow:880px;
+  --gutter:32px;
+
+  /* Radius */
+  --radius-sm:8px;
+  --radius-md:12px;
+  --radius-lg:16px;
+  --radius-xl:24px;
+  --radius-pill:999px;
+
+  /* Motion */
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --dur-fast:.25s;
+  --dur-med:.4s;
+
+  /* Elevation */
+  --shadow-card:0 30px 60px rgba(0,0,0,0.4);
+  --shadow-gold:0 10px 40px rgba(212,175,55,0.28);
+}
+
+/* ---------- 2. BASE ---------- */
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--void);
+  color:var(--bone);
+  font-family:var(--font-body);
+  font-size:var(--text-base);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+::selection{background:var(--purple); color:#fff;}
+
+h1, h2, h3, h4{
+  font-family:var(--font-display);
+  font-weight:300;
+  line-height:1.1;
+  letter-spacing:-0.015em;
+  color:var(--bone);
+}
+h1 em, h2 em, h3 em{font-style:italic;color:var(--gold-bright);}
+p{color:var(--bone-dim);}
+
+/* ---------- 3. LAYOUT PRIMITIVES ---------- */
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter);}
+.wrap-narrow{max-width:var(--wrap-narrow);margin:0 auto;padding:0 var(--gutter);}
+
+/* ---------- 4. SHARED COMPONENTS ---------- */
+
+/* Eyebrow (section label) */
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:var(--text-xs);
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:var(--gold);
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.eyebrow::before{content:"";width:32px;height:1px;background:var(--gold-dim);}
+
+/* Buttons */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding:17px 34px;
+  border-radius:10px;
+  position:relative;
+  overflow:hidden;
+  transition:transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), background var(--dur-fast);
+}
+.btn-primary{
+  background:var(--gold);
+  color:#0a0a0a;
+  box-shadow:var(--shadow-gold);
+}
+.btn-primary:hover{background:var(--gold-bright);transform:translateY(-3px);box-shadow:0 16px 50px rgba(212,175,55,0.4);}
+.btn-ghost{
+  border:1px solid var(--line-strong);
+  color:var(--bone);
+  background:rgba(255,255,255,0.02);
+}
+.btn-ghost:hover{border-color:var(--purple);background:rgba(124,79,196,0.1);transform:translateY(-3px);}
+
+/* Cards */
+.card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  transition:transform var(--dur-med) var(--ease-out), border-color var(--dur-med), background var(--dur-med);
+}
+.card:hover{transform:translateY(-4px);background:var(--panel-2);border-color:var(--line-strong);}
+
+/* Chips (related links / tags) */
+.chips{display:flex;flex-wrap:wrap;gap:10px;}
+.chip{
+  font-size:var(--text-sm);
+  padding:9px 18px;
+  border:1px solid var(--line-strong);
+  border-radius:var(--radius-pill);
+  color:var(--bone-dim);
+  transition:all var(--dur-fast);
+}
+.chip:hover{border-color:var(--gold);color:var(--gold-bright);background:var(--gold-glow);}
+
+/* Category tag (small pill label) */
+.cat-tag{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--gold);
+  border:1px solid var(--gold-dim);
+  border-radius:var(--radius-pill);
+  padding:5px 13px;
+}
+
+/* Breadcrumb */
+.crumb{
+  font-family:var(--font-mono);
+  font-size:var(--text-xs);
+  letter-spacing:1.5px;
+  color:var(--ash-dim);
+  text-transform:uppercase;
+}
+.crumb a{color:var(--ash);}
+.crumb a:hover{color:var(--gold);}
+
+/* CTA band */
+.cta-band{
+  background:linear-gradient(160deg,var(--panel-2),var(--panel));
+  border:1px solid var(--line-strong);
+  border-radius:var(--radius-lg);
+  padding:40px;
+  text-align:center;
+}
+.cta-band h3{font-family:var(--font-display);font-weight:400;font-size:var(--text-h3);margin-bottom:10px;}
+.cta-band p{color:var(--ash);font-size:14px;max-width:440px;margin:0 auto 22px;}
+
+/* Sticky nav shell (pages add their own brand/links) */
+.nav-shell{
+  position:sticky;
+  top:0;
+  z-index:50;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 32px;
+  background:rgba(8,8,10,0.85);
+  backdrop-filter:blur(14px) saturate(1.3);
+  -webkit-backdrop-filter:blur(14px) saturate(1.3);
+  border-bottom:1px solid var(--line);
+}
+.nav-brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.nav-links{display:flex;gap:24px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ash);}
+.nav-links a{transition:color var(--dur-fast);}
+.nav-links a:hover{color:var(--gold);}
+
+/* ---------- FORTUNE-20 FOOTER SYSTEM ---------- */
+.site-footer{
+  margin-top:0;
+  border-top:1px solid var(--line);
+  background:linear-gradient(to bottom, var(--void-2), var(--void));
+  position:relative;
+}
+.site-footer::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg, transparent, var(--gold-dim) 30%, var(--gold-dim) 70%, transparent);
+}
+.footer-mega{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;
+  gap:48px;
+  padding:72px 0 56px;
+}
+.footer-brandblock .fbrand{
+  display:flex;align-items:center;gap:12px;margin-bottom:20px;
+}
+.footer-brandblock .fbrand img{width:34px;height:34px;border-radius:50%;box-shadow:0 0 0 1px var(--gold-dim);}
+.footer-brandblock .fbrand span{font-family:var(--font-display);font-weight:600;font-size:16px;letter-spacing:2px;}
+.footer-brandblock .fmission{
+  font-family:var(--font-display);
+  font-size:19px;font-weight:300;font-style:italic;
+  color:var(--bone-dim);line-height:1.5;margin-bottom:24px;max-width:300px;
+}
+.footer-brandblock .fmeta{
+  font-family:var(--font-mono);font-size:10px;letter-spacing:2px;
+  text-transform:uppercase;color:var(--ash-dim);line-height:2;
+}
+.fcol h4{
+  font-family:var(--font-mono);font-size:10px;letter-spacing:3px;
+  text-transform:uppercase;color:var(--gold);
+  margin-bottom:22px;font-weight:400;
+}
+.fcol ul{list-style:none;display:flex;flex-direction:column;gap:12px;}
+.fcol a{
+  font-size:13.5px;color:var(--ash);
+  transition:color var(--dur-fast), padding-left var(--dur-fast) var(--ease-out);
+  position:relative;
+}
+.fcol a:hover{color:var(--gold-bright);padding-left:12px;}
+.fcol a::before{
+  content:"";position:absolute;left:0;top:50%;
+  width:0;height:1px;background:var(--gold);
+  transition:width var(--dur-fast) var(--ease-out);
+  transform:translateY(-50%);
+}
+.fcol a:hover::before{width:8px;margin-left:-12px;}
+.footer-legal{
+  border-top:1px solid var(--line);
+  padding:26px 0 30px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+}
+.footer-legal .fcopy{
+  font-family:var(--font-mono);font-size:10px;letter-spacing:2px;
+  color:#3d3d42;text-transform:uppercase;
+}
+.footer-legal .flinks{display:flex;gap:26px;font-size:11px;letter-spacing:1px;color:var(--ash-dim);}
+.footer-legal .flinks a{transition:color var(--dur-fast);}
+.footer-legal .flinks a:hover{color:var(--gold);}
+.footer-risk{
+  padding:22px 0 26px;border-top:1px solid var(--line);
+}
+.footer-risk p{
+  font-size:10.5px;line-height:1.7;color:#4a4a52;max-width:none;
+  font-family:var(--font-mono);letter-spacing:0.3px;
+}
+.footer-risk strong{color:#5a5a64;font-weight:400;}
+@media(max-width:960px){
+  .footer-mega{grid-template-columns:1fr 1fr;gap:40px;}
+  .footer-brandblock{grid-column:1 / -1;}
+}
+@media(max-width:560px){
+  .footer-mega{grid-template-columns:1fr;gap:36px;padding:56px 0 44px;}
+  .footer-legal{flex-direction:column;align-items:flex-start;gap:14px;}
+}
+
+/* Legacy compact footer (kept for simple pages) */
+.footer-shell{
+  margin-top:80px;
+  padding:36px 0;
+  border-top:1px solid var(--line);
+  text-align:center;
+}
+.footer-shell .flinks{display:flex;gap:24px;justify-content:center;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ash-dim);margin-bottom:14px;}
+.footer-shell .flinks a:hover{color:var(--gold);}
+.footer-shell .copy{font-size:10px;color:#3d3d42;letter-spacing:2px;font-family:var(--font-mono);}
+
+/* ---------- 5. UTILITIES ---------- */
+.mono{font-family:var(--font-mono);}
+.text-gold{color:var(--gold-bright);}
+.text-ash{color:var(--ash);}
+.mt-1{margin-top:var(--space-1);} .mt-2{margin-top:var(--space-2);}
+.mt-3{margin-top:var(--space-3);} .mt-4{margin-top:var(--space-4);}
+.mt-5{margin-top:var(--space-5);} .mt-6{margin-top:var(--space-6);}
+
+/* ---------- 6. RESPONSIVE + MOTION SAFETY ---------- */
+@media(max-width:720px){
+  .nav-links{display:none;}
+  .wrap, .wrap-narrow{padding:0 24px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *, *::before, *::after{animation:none !important;transition:none !important;}
+}

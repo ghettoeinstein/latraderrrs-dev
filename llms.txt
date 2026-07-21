@@ -1,0 +1,89 @@
+# LA Traders — Trading education built on one repeatable process
+# Los Angeles, CA · Futures & Options · New York session specialists
+
+LA Traders teaches one repeatable process for the New York session (for every session):
+mark the levels, wait for the reveal, take the A+ setup. No noise. No hopium. Just structure.
+The core methodology is the RRR Framework (Reveal → Retrace → Run), executed through the
+6:00 AM Protocol: mark the overnight range, 4H structure, 1H structure, overnight midpoint,
+and the NY opening candle — then trade only A+ setups with defined risk.
+
+## Key Pages
+- https://latraderrrs.com/ — Homepage: the RRR framework, the 6:00 AM Protocol, free checklist, RRR OS Lite ($17)
+- https://latraderrrs.com/glossary/ — Full trading glossary (50 terms, 8 categories)
+
+## Products
+- RRR Daily Trading Checklist: Free. The exact morning routine before every NY session.
+- RRR OS Lite: $17 one-time. Complete playbook, chart templates, A+ criteria, community access.
+
+## Glossary (50 terms)
+## RRR Framework
+- RRR Framework: The three-question filter every LA Traders setup must pass: Reveal, Retrace, Run. (https://latraderrrs.com/glossary/rrr-framework/)
+- Reveal: The first RRR question: what did the market just show you? (https://latraderrrs.com/glossary/reveal/)
+- Retrace: The second RRR question: where should price pull back to? (https://latraderrrs.com/glossary/retrace/)
+- Run: The third RRR question: where is price likely to travel? (https://latraderrrs.com/glossary/run/)
+- A+ Setup: A trade that answers all three RRR questions with confluence at a marked level. (https://latraderrrs.com/glossary/a-plus-setup/)
+- The 6:00 AM Protocol: The five-stage pre-market routine: mark overnight range, 4H structure, 1H structure, midpoint, and the NY opening candle. (https://latraderrrs.com/glossary/six-am-protocol/)
+
+## Market Structure
+- Market Structure: The skeleton of price movement — the sequence of swing highs and swing lows that defines trend. (https://latraderrrs.com/glossary/market-structure/)
+- Break of Structure (BOS): When price closes beyond a significant swing point, confirming trend continuation or reversal. (https://latraderrrs.com/glossary/break-of-structure/)
+- Change of Character (CHoCH): The first break of structure against the prevailing trend — the earliest reversal signal. (https://latraderrrs.com/glossary/change-of-character/)
+- Swing High: A local peak in price — a high with lower highs on both sides. (https://latraderrrs.com/glossary/swing-high/)
+- Swing Low: A local trough in price — a low with higher lows on both sides. (https://latraderrrs.com/glossary/swing-low/)
+- Trend: The directional bias of price, defined by the sequence of higher highs/lows or lower highs/lows. (https://latraderrrs.com/glossary/trend/)
+
+## Liquidity
+- Liquidity: The pool of resting orders (stops and pending entries) clustered at obvious price levels. (https://latraderrrs.com/glossary/liquidity/)
+- Liquidity Sweep: A fast run through a level that triggers resting stops, then reverses — the signature Reveal. (https://latraderrrs.com/glossary/liquidity-sweep/)
+- Buy-Side Liquidity: The pool of buy orders resting above resistance — shorts' stops and breakout longs. (https://latraderrrs.com/glossary/buy-side-liquidity/)
+- Sell-Side Liquidity: The pool of sell orders resting below support — longs' stops and breakout shorts. (https://latraderrrs.com/glossary/sell-side-liquidity/)
+- Stop Hunt: Deliberate price movement through a level to trigger clustered stop-loss orders before reversing. (https://latraderrrs.com/glossary/stop-hunt/)
+- Turtle Soup: Fading the false breakout — entering against the move after a level is swept and reclaimed. (https://latraderrrs.com/glossary/turtle-soup/)
+
+## Price Action
+- Order Block: The last opposing candle before a strong directional move — a zone where institutions likely entered. (https://latraderrrs.com/glossary/order-block/)
+- Fair Value Gap (FVG): A three-candle imbalance where the middle candle's range doesn't overlap — price often returns to fill it. (https://latraderrrs.com/glossary/fair-value-gap/)
+- Imbalance: Any inefficient price move where one side overwhelmed the other — the parent concept of the FVG. (https://latraderrrs.com/glossary/imbalance/)
+- Breaker Block: A failed order block that flips polarity — old support becomes new resistance (or vice versa). (https://latraderrrs.com/glossary/breaker-block/)
+- Mitigation: Price returning to a zone so trapped traders can exit at breakeven — the engine behind retests. (https://latraderrrs.com/glossary/mitigation/)
+- Premium and Discount: The upper and lower halves of a range — you sell premium and buy discount, never the reverse. (https://latraderrrs.com/glossary/premium-discount/)
+- Equilibrium: The 50% midpoint of any range — the fairest price, and the line between premium and discount. (https://latraderrrs.com/glossary/equilibrium/)
+- Optimal Trade Entry (OTE): The 62%–79% retracement zone of a leg — the statistically sweet spot for entries. (https://latraderrrs.com/glossary/optimal-trade-entry/)
+- Fibonacci Retracement: Horizontal levels at 23.6%, 38.2%, 50%, 61.8%, and 78.6% of a measured leg, used to frame retrace entries. (https://latraderrrs.com/glossary/fibonacci-retracement/)
+
+## Sessions & Time
+- Overnight Range: The high and low formed during the overnight session — the first levels marked every morning. (https://latraderrrs.com/glossary/overnight-range/)
+- Overnight Midpoint: The 50% level of the overnight range — the session's equilibrium, marked in White at 6:25 AM. (https://latraderrrs.com/glossary/overnight-midpoint/)
+- The Opening Candle: The first candle of the New York session (6:30 AM PT) — marked in Gold as the day's reference range. (https://latraderrrs.com/glossary/opening-candle/)
+- Opening Range: The high/low band established in the first minutes of the session — the day's first battleground. (https://latraderrrs.com/glossary/opening-range/)
+- The New York Session: The 6:30–11:00 AM PT window where US equity volume concentrates — the only session LA Traders trades. (https://latraderrrs.com/glossary/new-york-session/)
+- Killzone: A specific time window where high-probability setups concentrate — e.g., the New York open 60–90 minutes. (https://latraderrrs.com/glossary/killzone/)
+- Silver Bullet: A time-based setup targeting specific one-hour windows where FVG entries have statistical edge. (https://latraderrrs.com/glossary/silver-bullet/)
+
+## Risk & Execution
+- Risk-to-Reward (R:R): The ratio between your stop distance and target distance — the math that decides if a trade is worth taking. (https://latraderrrs.com/glossary/risk-to-reward/)
+- Position Sizing: How many contracts or shares to trade, derived from your stop distance and fixed dollar risk. (https://latraderrrs.com/glossary/position-sizing/)
+- Expectancy: The average R you earn per trade over a large sample — the true scoreboard of your edge. (https://latraderrrs.com/glossary/expectancy/)
+- Drawdown: The peak-to-trough decline in account equity — the cost of doing business, and the metric that kills careers. (https://latraderrrs.com/glossary/drawdown/)
+- Revenge Trading: Re-entering immediately after a loss to 'win it back' — the fastest account killer in trading. (https://latraderrrs.com/glossary/revenge-trading/)
+- Trade Journaling: Recording every trade with screenshots, reasoning, and outcome — the feedback loop that builds edge. (https://latraderrrs.com/glossary/journaling/)
+- Discipline: Executing the process exactly — especially when you don't feel like it. The meta-skill that contains all others. (https://latraderrrs.com/glossary/discipline/)
+
+## Instruments
+- ES (E-mini S&P 500 Futures): The most liquid equity index futures contract in the world — the primary LA Traders instrument. (https://latraderrrs.com/glossary/es-futures/)
+- NQ (E-mini Nasdaq-100 Futures): The tech-heavy sibling of ES — faster, wilder, and less forgiving. (https://latraderrrs.com/glossary/nq-futures/)
+- Tick Value: The dollar amount gained or lost per minimum price increment — the unit your P&L is built from. (https://latraderrrs.com/glossary/tick-value/)
+- Margin (Futures): The good-faith deposit required to hold a futures position — leverage's entry fee. (https://latraderrrs.com/glossary/margin/)
+- Prop Firm (Evaluation): A firm that funds traders with its capital after they pass a rules-based evaluation — the modern funded-trader path. (https://latraderrrs.com/glossary/prop-firm/)
+
+## Options
+- Options Contract: The right — not the obligation — to buy (call) or sell (put) an underlying at a set price before expiration. (https://latraderrrs.com/glossary/options-contract/)
+- Delta: How much an option's price moves per $1 move in the underlying — the directional sensitivity. (https://latraderrrs.com/glossary/delta/)
+- Theta: The daily time decay of an option's value — the silent tax on every long option. (https://latraderrrs.com/glossary/theta/)
+- Implied Volatility (IV): The market's forecast of future movement embedded in option prices — high IV = expensive options. (https://latraderrrs.com/glossary/implied-volatility/)
+
+## AI Crawler Allowlist
+- GPTBot: Allow
+- ClaudeBot: Allow
+- PerplexityBot: Allow
+- Google-Extended: Allow
