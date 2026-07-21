@@ -45,6 +45,34 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
 .related{margin-top:56px;padding-top:32px;border-top:1px solid var(--line);}
 .related h3{font-family:var(--font-display);font-weight:400;font-size:18px;margin-bottom:18px;color:var(--ash);}
 .cta-band{margin-top:64px;}
+
+/* Protocol callout box */
+.protocol-callout{margin:36px 0;border-radius:14px;padding:28px 30px;position:relative;overflow:hidden;}
+.protocol-callout::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;}
+.protocol-callout.pc-blue{background:rgba(54,97,201,0.08);border:1px solid rgba(54,97,201,0.2);}
+.protocol-callout.pc-blue::before{background:var(--blue);}
+.protocol-callout.pc-purple{background:rgba(124,79,196,0.08);border:1px solid rgba(124,79,196,0.2);}
+.protocol-callout.pc-purple::before{background:var(--purple);}
+.protocol-callout.pc-red{background:rgba(195,61,46,0.08);border:1px solid rgba(195,61,46,0.2);}
+.protocol-callout.pc-red::before{background:var(--red);}
+.protocol-callout.pc-white{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);}
+.protocol-callout.pc-white::before{background:var(--bone);}
+.protocol-callout.pc-gold{background:var(--gold-glow);border:1px solid var(--gold-dim);}
+.protocol-callout.pc-gold::before{background:var(--gold);}
+.protocol-callout .pc-label{font-family:var(--font-mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.protocol-callout .pc-icon{width:8px;height:8px;border-radius:50%;display:inline-block;}
+.protocol-callout.pc-blue .pc-label{color:#6b8ad6;}
+.protocol-callout.pc-blue .pc-icon{background:var(--blue);}
+.protocol-callout.pc-purple .pc-label{color:var(--purple-bright);}
+.protocol-callout.pc-purple .pc-icon{background:var(--purple);}
+.protocol-callout.pc-red .pc-label{color:#e06b5a;}
+.protocol-callout.pc-red .pc-icon{background:var(--red);}
+.protocol-callout.pc-white .pc-label{color:var(--bone);}
+.protocol-callout.pc-white .pc-icon{background:var(--bone);}
+.protocol-callout.pc-gold .pc-label{color:var(--gold-bright);}
+.protocol-callout.pc-gold .pc-icon{background:var(--gold);}
+.protocol-callout .pc-stage{font-family:var(--font-display);font-weight:400;font-size:15px;color:var(--bone);margin-bottom:8px;}
+.protocol-callout .pc-text{font-size:14.5px;line-height:1.7;color:var(--bone-dim);margin:0;}
 """
 
 INDEX_CSS = """
@@ -190,7 +218,9 @@ def head(title, desc, canonical, extra_schema="", extra_css=""):
         <div class="mega-col">
           <h5>Education &amp; Tools</h5>
           <ul>
-            <li><a href="/#checklist">Free Checklist</a></li>
+            <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+            <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+            <li><a href="/#checklist">Free PDF Checklist</a></li>
             <li><a href="/#oslite">RRR OS Lite — $17</a></li>
             <li><a href="/glossary/prop-firm/">Prop Firm Path</a></li>
             <li><a href="/glossary/journaling/">Trade Journaling</a></li>
@@ -322,6 +352,11 @@ def build_term_page(t):
             seen.add(x["slug"])
             chips.append(f'<a class="chip" href="/glossary/{x["slug"]}/">{esc(x["term"])}</a>')
 
+    pf = t.get("protocol_fit", {})
+    pf_color = pf.get("color", "gold")
+    pf_stage = pf.get("stage", "The 6:00 AM Protocol")
+    pf_text = pf.get("text", "Every term in the LA Traders system connects back to the 6:00 AM Protocol — the repeatable pre-market routine that structures every session.")
+
     body = f"""<div class="wrap">
   <div class="crumb"><a href="/">Home</a> / <a href="/glossary/">Glossary</a> / {esc(t["term"])}</div>
   <div class="cat-tag">{esc(t["category"])}</div>
@@ -340,6 +375,12 @@ def build_term_page(t):
     <p>{esc(t["example"])}</p>
   </div>
 
+  <div class="protocol-callout pc-{pf_color}">
+    <div class="pc-label"><span class="pc-icon"></span>How This Fits the 6:00 AM Protocol</div>
+    <div class="pc-stage">{esc(pf_stage)}</div>
+    <p class="pc-text">{esc(pf_text)}</p>
+  </div>
+
   <div class="related">
     <h3>Related terms</h3>
     <div class="chips">{"".join(chips)}</div>
@@ -348,7 +389,9 @@ def build_term_page(t):
   <div class="cta-band">
     <h3>Learn the full system</h3>
     <p>The RRR Daily Trading Checklist — the exact morning routine LA Traders runs before every New York session. Free.</p>
-    <a class="btn" href="/#checklist">Get the Free Checklist</a>
+    <a class="btn" href="/tools/daily-checklist/">Open the Daily Checklist</a>
+    <span style="margin:0 12px;color:var(--ash-dim);font-size:12px;">or</span>
+    <a class="btn btn-ghost" href="/#checklist">Get the PDF Version</a>
   </div>
 </div>
 """
@@ -389,14 +432,16 @@ def build_index():
   <div class="cta-band">
     <h3>Learn the full system</h3>
     <p>The RRR Daily Trading Checklist — the exact morning routine LA Traders runs before every New York session. Free.</p>
-    <a class="btn" href="/#checklist">Get the Free Checklist</a>
+    <a class="btn" href="/tools/daily-checklist/">Open the Interactive Checklist</a>
+    <span style="margin:0 12px;color:var(--ash-dim);font-size:12px;">or</span>
+    <a class="btn btn-ghost" href="/tools/position-size-calculator/">Position Size Calculator</a>
   </div>
 </div>"""
     return head(title, desc, canonical, schema, INDEX_CSS) + body + foot()
 
 # ---------- Build ----------
 os.makedirs(os.path.join(OUT, "glossary"), exist_ok=True)
-urls = ["/", "/glossary/"]
+urls = ["/", "/glossary/", "/tools/", "/tools/daily-checklist/", "/tools/position-size-calculator/", "/tools/journal/"]
 
 with open(os.path.join(OUT, "glossary", "index.html"), "w") as f:
     f.write(build_index())
@@ -414,7 +459,7 @@ print(f"Built {len(TERMS)} term pages")
 sm = ['<?xml version="1.0" encoding="UTF-8"?>',
       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 for u in urls:
-    pri = "1.0" if u == "/" else ("0.9" if u == "/glossary/" else "0.8")
+    pri = "1.0" if u == "/" else ("0.9" if u in ("/glossary/", "/tools/daily-checklist/") else ("0.8" if u.startswith("/glossary/") else "0.7"))
     sm.append(f'  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod><changefreq>weekly</changefreq><priority>{pri}</priority></url>')
 # Legal pages (low priority, yearly change)
 for u in ["/terms/", "/privacy/"]:

@@ -36,6 +36,34 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
 .related{margin-top:56px;padding-top:32px;border-top:1px solid var(--line);}
 .related h3{font-family:var(--font-display);font-weight:400;font-size:18px;margin-bottom:18px;color:var(--ash);}
 .cta-band{margin-top:64px;}
+
+/* Protocol callout box */
+.protocol-callout{margin:36px 0;border-radius:14px;padding:28px 30px;position:relative;overflow:hidden;}
+.protocol-callout::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;}
+.protocol-callout.pc-blue{background:rgba(54,97,201,0.08);border:1px solid rgba(54,97,201,0.2);}
+.protocol-callout.pc-blue::before{background:var(--blue);}
+.protocol-callout.pc-purple{background:rgba(124,79,196,0.08);border:1px solid rgba(124,79,196,0.2);}
+.protocol-callout.pc-purple::before{background:var(--purple);}
+.protocol-callout.pc-red{background:rgba(195,61,46,0.08);border:1px solid rgba(195,61,46,0.2);}
+.protocol-callout.pc-red::before{background:var(--red);}
+.protocol-callout.pc-white{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);}
+.protocol-callout.pc-white::before{background:var(--bone);}
+.protocol-callout.pc-gold{background:var(--gold-glow);border:1px solid var(--gold-dim);}
+.protocol-callout.pc-gold::before{background:var(--gold);}
+.protocol-callout .pc-label{font-family:var(--font-mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.protocol-callout .pc-icon{width:8px;height:8px;border-radius:50%;display:inline-block;}
+.protocol-callout.pc-blue .pc-label{color:#6b8ad6;}
+.protocol-callout.pc-blue .pc-icon{background:var(--blue);}
+.protocol-callout.pc-purple .pc-label{color:var(--purple-bright);}
+.protocol-callout.pc-purple .pc-icon{background:var(--purple);}
+.protocol-callout.pc-red .pc-label{color:#e06b5a;}
+.protocol-callout.pc-red .pc-icon{background:var(--red);}
+.protocol-callout.pc-white .pc-label{color:var(--bone);}
+.protocol-callout.pc-white .pc-icon{background:var(--bone);}
+.protocol-callout.pc-gold .pc-label{color:var(--gold-bright);}
+.protocol-callout.pc-gold .pc-icon{background:var(--gold);}
+.protocol-callout .pc-stage{font-family:var(--font-display);font-weight:400;font-size:15px;color:var(--bone);margin-bottom:8px;}
+.protocol-callout .pc-text{font-size:14.5px;line-height:1.7;color:var(--bone-dim);margin:0;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Implied Volatility (IV)", "description": "The market's forecast of future movement embedded in option prices — high IV = expensive options.", "inDefinedTermSet": "https://latraderrrs.com/glossary/", "url": "https://latraderrrs.com/glossary/implied-volatility/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Implied Volatility (IV) in trading?", "acceptedAnswer": {"@type": "Answer", "text": "The market's forecast of future movement embedded in option prices — high IV = expensive options."}}, {"@type": "Question", "name": "Why does Implied Volatility (IV) matter for day traders?", "acceptedAnswer": {"@type": "Answer", "text": "Direction is only half the options trade. The other half is whether you overpaid for the move. IV is how you know."}}, {"@type": "Question", "name": "What is an example of Implied Volatility (IV)?", "acceptedAnswer": {"@type": "Answer", "text": "You buy SPY puts an hour before CPI at 38% IV. CPI hits, SPY dips $2 — but IV collapses to 24% and your puts barely gain. Right on direction, wrong on vol. The checklist item: check IV first."}}]}</script>
 </head>
@@ -138,7 +166,9 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
         <div class="mega-col">
           <h5>Education &amp; Tools</h5>
           <ul>
-            <li><a href="/#checklist">Free Checklist</a></li>
+            <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+            <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+            <li><a href="/#checklist">Free PDF Checklist</a></li>
             <li><a href="/#oslite">RRR OS Lite — $17</a></li>
             <li><a href="/glossary/prop-firm/">Prop Firm Path</a></li>
             <li><a href="/glossary/journaling/">Trade Journaling</a></li>
@@ -178,6 +208,12 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
     <p>You buy SPY puts an hour before CPI at 38% IV. CPI hits, SPY dips $2 — but IV collapses to 24% and your puts barely gain. Right on direction, wrong on vol. The checklist item: check IV first.</p>
   </div>
 
+  <div class="protocol-callout pc-white">
+    <div class="pc-label"><span class="pc-icon"></span>How This Fits the 6:00 AM Protocol</div>
+    <div class="pc-stage">Risk Management</div>
+    <p class="pc-text">IV determines option pricing. The Protocol&#x27;s risk discipline extends to not overpaying for options — high IV means expensive premiums, which changes position sizing and the risk-to-reward calculation.</p>
+  </div>
+
   <div class="related">
     <h3>Related terms</h3>
     <div class="chips"><a class="chip" href="/glossary/options-contract/">Options Contract</a><a class="chip" href="/glossary/theta/">Theta</a><a class="chip" href="/glossary/delta/">Delta</a></div>
@@ -186,7 +222,9 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
   <div class="cta-band">
     <h3>Learn the full system</h3>
     <p>The RRR Daily Trading Checklist — the exact morning routine LA Traders runs before every New York session. Free.</p>
-    <a class="btn" href="/#checklist">Get the Free Checklist</a>
+    <a class="btn" href="/tools/daily-checklist/">Open the Daily Checklist</a>
+    <span style="margin:0 12px;color:var(--ash-dim);font-size:12px;">or</span>
+    <a class="btn btn-ghost" href="/#checklist">Get the PDF Version</a>
   </div>
 </div>
 <footer class="site-footer">

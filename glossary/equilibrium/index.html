@@ -36,6 +36,34 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
 .related{margin-top:56px;padding-top:32px;border-top:1px solid var(--line);}
 .related h3{font-family:var(--font-display);font-weight:400;font-size:18px;margin-bottom:18px;color:var(--ash);}
 .cta-band{margin-top:64px;}
+
+/* Protocol callout box */
+.protocol-callout{margin:36px 0;border-radius:14px;padding:28px 30px;position:relative;overflow:hidden;}
+.protocol-callout::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;}
+.protocol-callout.pc-blue{background:rgba(54,97,201,0.08);border:1px solid rgba(54,97,201,0.2);}
+.protocol-callout.pc-blue::before{background:var(--blue);}
+.protocol-callout.pc-purple{background:rgba(124,79,196,0.08);border:1px solid rgba(124,79,196,0.2);}
+.protocol-callout.pc-purple::before{background:var(--purple);}
+.protocol-callout.pc-red{background:rgba(195,61,46,0.08);border:1px solid rgba(195,61,46,0.2);}
+.protocol-callout.pc-red::before{background:var(--red);}
+.protocol-callout.pc-white{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);}
+.protocol-callout.pc-white::before{background:var(--bone);}
+.protocol-callout.pc-gold{background:var(--gold-glow);border:1px solid var(--gold-dim);}
+.protocol-callout.pc-gold::before{background:var(--gold);}
+.protocol-callout .pc-label{font-family:var(--font-mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.protocol-callout .pc-icon{width:8px;height:8px;border-radius:50%;display:inline-block;}
+.protocol-callout.pc-blue .pc-label{color:#6b8ad6;}
+.protocol-callout.pc-blue .pc-icon{background:var(--blue);}
+.protocol-callout.pc-purple .pc-label{color:var(--purple-bright);}
+.protocol-callout.pc-purple .pc-icon{background:var(--purple);}
+.protocol-callout.pc-red .pc-label{color:#e06b5a;}
+.protocol-callout.pc-red .pc-icon{background:var(--red);}
+.protocol-callout.pc-white .pc-label{color:var(--bone);}
+.protocol-callout.pc-white .pc-icon{background:var(--bone);}
+.protocol-callout.pc-gold .pc-label{color:var(--gold-bright);}
+.protocol-callout.pc-gold .pc-icon{background:var(--gold);}
+.protocol-callout .pc-stage{font-family:var(--font-display);font-weight:400;font-size:15px;color:var(--bone);margin-bottom:8px;}
+.protocol-callout .pc-text{font-size:14.5px;line-height:1.7;color:var(--bone-dim);margin:0;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Equilibrium", "description": "The 50% midpoint of any range — the fairest price, and the line between premium and discount.", "inDefinedTermSet": "https://latraderrrs.com/glossary/", "url": "https://latraderrrs.com/glossary/equilibrium/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Equilibrium in trading?", "acceptedAnswer": {"@type": "Answer", "text": "The 50% midpoint of any range — the fairest price, and the line between premium and discount."}}, {"@type": "Question", "name": "Why does Equilibrium matter for day traders?", "acceptedAnswer": {"@type": "Answer", "text": "Equilibrium is the anchor. When you're unsure where price is going, ask where it is relative to equilibrium — that alone answers half the question."}}, {"@type": "Question", "name": "What is an example of Equilibrium?", "acceptedAnswer": {"@type": "Answer", "text": "ON midpoint 5,838. Price opens, runs to 5,846, then spends the next hour bleeding back to 5,838.25. Equilibrium, doing its job."}}]}</script>
 </head>
@@ -138,7 +166,9 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
         <div class="mega-col">
           <h5>Education &amp; Tools</h5>
           <ul>
-            <li><a href="/#checklist">Free Checklist</a></li>
+            <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+            <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+            <li><a href="/#checklist">Free PDF Checklist</a></li>
             <li><a href="/#oslite">RRR OS Lite — $17</a></li>
             <li><a href="/glossary/prop-firm/">Prop Firm Path</a></li>
             <li><a href="/glossary/journaling/">Trade Journaling</a></li>
@@ -178,15 +208,23 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
     <p>ON midpoint 5,838. Price opens, runs to 5,846, then spends the next hour bleeding back to 5,838.25. Equilibrium, doing its job.</p>
   </div>
 
+  <div class="protocol-callout pc-blue">
+    <div class="pc-label"><span class="pc-icon"></span>How This Fits the 6:00 AM Protocol</div>
+    <div class="pc-stage">Stage 1 — Mark the Range (6:00–6:25 AM)</div>
+    <p class="pc-text">Equilibrium is the overnight midpoint — the 50% level you mark at 6:25 AM. It&#x27;s the session&#x27;s fair-value line and the first target of the Run after a Reveal.</p>
+  </div>
+
   <div class="related">
     <h3>Related terms</h3>
-    <div class="chips"><a class="chip" href="/glossary/premium-discount/">Premium and Discount</a><a class="chip" href="/glossary/overnight-midpoint/">Overnight Midpoint</a><a class="chip" href="/glossary/order-block/">Order Block</a><a class="chip" href="/glossary/fair-value-gap/">Fair Value Gap (FVG)</a><a class="chip" href="/glossary/imbalance/">Imbalance</a><a class="chip" href="/glossary/breaker-block/">Breaker Block</a><a class="chip" href="/glossary/mitigation/">Mitigation</a><a class="chip" href="/glossary/optimal-trade-entry/">Optimal Trade Entry (OTE)</a></div>
+    <div class="chips"><a class="chip" href="/glossary/fibonacci-retracement/">Fibonacci Retracement</a><a class="chip" href="/glossary/premium-discount/">Premium and Discount</a><a class="chip" href="/glossary/overnight-midpoint/">Overnight Midpoint</a><a class="chip" href="/glossary/order-block/">Order Block</a><a class="chip" href="/glossary/fair-value-gap/">Fair Value Gap (FVG)</a><a class="chip" href="/glossary/imbalance/">Imbalance</a><a class="chip" href="/glossary/breaker-block/">Breaker Block</a><a class="chip" href="/glossary/mitigation/">Mitigation</a></div>
   </div>
 
   <div class="cta-band">
     <h3>Learn the full system</h3>
     <p>The RRR Daily Trading Checklist — the exact morning routine LA Traders runs before every New York session. Free.</p>
-    <a class="btn" href="/#checklist">Get the Free Checklist</a>
+    <a class="btn" href="/tools/daily-checklist/">Open the Daily Checklist</a>
+    <span style="margin:0 12px;color:var(--ash-dim);font-size:12px;">or</span>
+    <a class="btn btn-ghost" href="/#checklist">Get the PDF Version</a>
   </div>
 </div>
 <footer class="site-footer">

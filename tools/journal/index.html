@@ -3,69 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What is Delta? — LA Traders Glossary</title>
-<meta name="description" content="How much an option&#x27;s price moves per $1 move in the underlying — the directional sensitivity.">
-<link rel="canonical" href="https://latraderrrs.com/glossary/delta/">
-<meta property="og:type" content="article">
-<meta property="og:title" content="What is Delta? — LA Traders Glossary">
-<meta property="og:description" content="How much an option&#x27;s price moves per $1 move in the underlying — the directional sensitivity.">
-<meta property="og:url" content="https://latraderrrs.com/glossary/delta/">
+<title>RRR Trade Journal Template — Download | LA Traders</title>
+<meta name="description" content="Download the RRR Trade Journal template — aligned to the Reveal-Retrace-Run framework with built-in win rate, expectancy, and equity curve formulas. Free CSV download.">
+<link rel="canonical" href="https://latraderrrs.com/tools/journal/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RRR Trade Journal Template — Download | LA Traders">
+<meta property="og:description" content="Download the RRR Trade Journal template — aligned to the Reveal-Retrace-Run framework with built-in win rate, expectancy, and equity curve formulas.">
+<meta property="og:url" content="https://latraderrrs.com/tools/journal/">
 <meta property="og:site_name" content="LA Traders">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="What is Delta? — LA Traders Glossary">
-<meta name="twitter:description" content="How much an option&#x27;s price moves per $1 move in the underlying — the directional sensitivity.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/latraders.css">
 <style>
-/* Glossary-specific styles only.
-   Design tokens, base, buttons, cards, chips, nav, footer
-   come from /assets/latraders.css (design system). */
-.wrap{max-width:var(--wrap-narrow);}
+.j-wrap{max-width:680px;margin:0 auto;padding:0 var(--gutter);}
 .crumb{margin:48px 0 10px;}
-.cat-tag{margin-bottom:20px;}
-h1{font-size:clamp(34px,5.4vw,54px);margin-bottom:20px;}
-.short{font-size:var(--text-lg);color:var(--ash);line-height:1.6;max-width:640px;margin-bottom:48px;padding-left:20px;border-left:2px solid var(--gold-dim);}
-h2{font-weight:400;font-size:24px;margin:44px 0 14px;}
-h2 .num{font-family:var(--font-mono);font-size:var(--text-xs);color:var(--gold);letter-spacing:2px;display:block;margin-bottom:8px;text-transform:uppercase;}
-p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
-.example-box{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:24px 26px;margin:22px 0;}
-.example-box .label{font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:10px;}
-.example-box p{font-size:14.5px;margin:0;font-style:italic;}
-.related{margin-top:56px;padding-top:32px;border-top:1px solid var(--line);}
-.related h3{font-family:var(--font-display);font-weight:400;font-size:18px;margin-bottom:18px;color:var(--ash);}
-.cta-band{margin-top:64px;}
-
-/* Protocol callout box */
-.protocol-callout{margin:36px 0;border-radius:14px;padding:28px 30px;position:relative;overflow:hidden;}
-.protocol-callout::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;}
-.protocol-callout.pc-blue{background:rgba(54,97,201,0.08);border:1px solid rgba(54,97,201,0.2);}
-.protocol-callout.pc-blue::before{background:var(--blue);}
-.protocol-callout.pc-purple{background:rgba(124,79,196,0.08);border:1px solid rgba(124,79,196,0.2);}
-.protocol-callout.pc-purple::before{background:var(--purple);}
-.protocol-callout.pc-red{background:rgba(195,61,46,0.08);border:1px solid rgba(195,61,46,0.2);}
-.protocol-callout.pc-red::before{background:var(--red);}
-.protocol-callout.pc-white{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);}
-.protocol-callout.pc-white::before{background:var(--bone);}
-.protocol-callout.pc-gold{background:var(--gold-glow);border:1px solid var(--gold-dim);}
-.protocol-callout.pc-gold::before{background:var(--gold);}
-.protocol-callout .pc-label{font-family:var(--font-mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
-.protocol-callout .pc-icon{width:8px;height:8px;border-radius:50%;display:inline-block;}
-.protocol-callout.pc-blue .pc-label{color:#6b8ad6;}
-.protocol-callout.pc-blue .pc-icon{background:var(--blue);}
-.protocol-callout.pc-purple .pc-label{color:var(--purple-bright);}
-.protocol-callout.pc-purple .pc-icon{background:var(--purple);}
-.protocol-callout.pc-red .pc-label{color:#e06b5a;}
-.protocol-callout.pc-red .pc-icon{background:var(--red);}
-.protocol-callout.pc-white .pc-label{color:var(--bone);}
-.protocol-callout.pc-white .pc-icon{background:var(--bone);}
-.protocol-callout.pc-gold .pc-label{color:var(--gold-bright);}
-.protocol-callout.pc-gold .pc-icon{background:var(--gold);}
-.protocol-callout .pc-stage{font-family:var(--font-display);font-weight:400;font-size:15px;color:var(--bone);margin-bottom:8px;}
-.protocol-callout .pc-text{font-size:14.5px;line-height:1.7;color:var(--bone-dim);margin:0;}
+h1{font-size:clamp(32px,5vw,48px);margin-bottom:16px;}
+.sub{font-size:var(--text-lg);color:var(--ash);line-height:1.6;max-width:520px;margin-bottom:40px;padding-left:20px;border-left:2px solid var(--gold-dim);}
+.download-card{background:var(--panel);border:1px solid var(--gold-dim);border-radius:16px;padding:40px;text-align:center;margin-bottom:36px;}
+.download-card h2{font-family:var(--font-display);font-size:24px;font-weight:400;color:var(--bone);margin-bottom:12px;}
+.download-card p{font-size:14.5px;color:var(--ash);max-width:420px;margin:0 auto 28px;line-height:1.6;}
+.download-card .btn{font-size:14px;padding:16px 36px;}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px;}
+.feature{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px;}
+.feature h3{font-family:var(--font-display);font-size:16px;font-weight:400;color:var(--gold-bright);margin-bottom:8px;}
+.feature p{font-size:13.5px;color:var(--ash);line-height:1.55;margin:0;}
+.col-list{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:36px;}
+.col-list h3{font-family:var(--font-mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
+.col-list ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.col-list li{font-size:13.5px;color:var(--bone-dim);padding:6px 0;border-bottom:1px solid var(--line);}
+.col-list li strong{color:var(--bone);font-weight:500;}
+.col-list li em{color:var(--purple-bright);font-style:normal;font-size:11px;}
+@media(max-width:560px){.features,.col-list ul{grid-template-columns:1fr;}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Delta", "description": "How much an option's price moves per $1 move in the underlying — the directional sensitivity.", "inDefinedTermSet": "https://latraderrrs.com/glossary/", "url": "https://latraderrrs.com/glossary/delta/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Delta in trading?", "acceptedAnswer": {"@type": "Answer", "text": "How much an option's price moves per $1 move in the underlying — the directional sensitivity."}}, {"@type": "Question", "name": "Why does Delta matter for day traders?", "acceptedAnswer": {"@type": "Answer", "text": "Delta translates options into stock equivalents. Once you think in deltas, options stop being exotic and start being just another way to express a directional read."}}, {"@type": "Question", "name": "What is an example of Delta?", "acceptedAnswer": {"@type": "Answer", "text": "SPY at 584. Your 580 call has 0.65 delta. SPY rallies $2 → the call gains ~$1.30. You captured 65% of the move with the premium as your only risk."}}]}</script>
 </head>
 <body>
 <nav class="nav-shell mega-nav">
@@ -81,15 +51,6 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
             <li><a href="/#rrr">RRR Framework</a></li>
             <li><a href="/glossary/a-plus-setup/">The A+ Setup</a></li>
             <li><a href="/glossary/six-am-protocol/">6:00 AM Protocol</a></li>
-          </ul>
-        </div>
-        <div class="mega-col">
-          <h5>RRR Framework</h5>
-          <ul>
-            <li><a href="/glossary/rrr-framework/">RRR Framework</a></li>
-            <li><a href="/glossary/reveal/">Reveal</a></li>
-            <li><a href="/glossary/retrace/">Retrace</a></li>
-            <li><a href="/glossary/run/">Run</a></li>
           </ul>
         </div>
       </div>
@@ -161,17 +122,15 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
       </div>
     </div>
     <div class="mega-item">
-      <a href="/#checklist">Products</a>
+      <a href="/tools/">Tools</a>
       <div class="mega-dropdown">
         <div class="mega-col">
-          <h5>Education &amp; Tools</h5>
+          <h5>Interactive Tools</h5>
           <ul>
             <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
             <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
             <li><a href="/#checklist">Free PDF Checklist</a></li>
             <li><a href="/#oslite">RRR OS Lite — $17</a></li>
-            <li><a href="/glossary/prop-firm/">Prop Firm Path</a></li>
-            <li><a href="/glossary/journaling/">Trade Journaling</a></li>
           </ul>
         </div>
       </div>
@@ -190,43 +149,72 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
     </div>
   </div>
 </nav>
-<div class="wrap">
-  <div class="crumb"><a href="/">Home</a> / <a href="/glossary/">Glossary</a> / Delta</div>
-  <div class="cat-tag">Options</div>
-  <h1>What is <em>Delta</em>?</h1>
-  <p class="short">How much an option&#x27;s price moves per $1 move in the underlying — the directional sensitivity.</p>
 
-  <h2><span class="num">The Definition</span>Delta, defined</h2>
-  <p>Delta measures an option&#x27;s price sensitivity to a $1 move in the underlying, ranging from 0 to 1.00 (calls) or 0 to −1.00 (puts). A 0.50 delta call gains ~$0.50 for every $1 the underlying rises. Delta also roughly approximates the market&#x27;s implied probability of the option finishing in-the-money: a 0.30 delta call has about a 30% implied chance. Traders use delta to size directional exposure: buying a 0.70 delta call behaves like holding 70 shares, with a fraction of the capital at risk.</p>
+<div class="j-wrap">
+  <div class="crumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Trade Journal</div>
+  <h1>RRR Trade <em>Journal</em> Template</h1>
+  <p class="sub">A spreadsheet template aligned to the Reveal-Retrace-Run framework. Log every trade with the RRR stages, track your R:R, and let the built-in formulas calculate win rate, expectancy, and your equity curve.</p>
 
-  <h2><span class="num">Why It Matters</span>Why Delta matters</h2>
-  <p>Delta translates options into stock equivalents. Once you think in deltas, options stop being exotic and start being just another way to express a directional read.</p>
-
-  <h2><span class="num">In Practice</span>Delta — a real example</h2>
-  <div class="example-box">
-    <div class="label">Example · New York Session</div>
-    <p>SPY at 584. Your 580 call has 0.65 delta. SPY rallies $2 → the call gains ~$1.30. You captured 65% of the move with the premium as your only risk.</p>
+  <div class="download-card">
+    <h2>Download the Template</h2>
+    <p>CSV format — opens in Excel, Google Sheets, or Apple Numbers. Add the formulas below after your first 10 trades to see your stats.</p>
+    <a class="btn" href="rrr-trade-journal.csv" download>Download CSV Template</a>
   </div>
 
-  <div class="protocol-callout pc-gold">
-    <div class="pc-label"><span class="pc-icon"></span>How This Fits the 6:00 AM Protocol</div>
-    <div class="pc-stage">Execution</div>
-    <p class="pc-text">Delta measures directional exposure. When the Protocol calls for a position size, options traders translate it through delta — a 0.50 delta call behaves like 50 shares of the underlying.</p>
+  <div class="features">
+    <div class="feature">
+      <h3>RRR-Aligned Columns</h3>
+      <p>Every row captures the Reveal (what happened), Retrace (entry level), and Run (target) — so you can audit whether you actually followed the Protocol.</p>
+    </div>
+    <div class="feature">
+      <h3>R:R Tracking</h3>
+      <p>Planned vs. actual risk-to-reward on every trade. See if your targets are realistic or if you're cutting winners short.</p>
+    </div>
+    <div class="feature">
+      <h3>Win Rate Formula</h3>
+      <p>Add the formula to calculate your win rate from the Outcome column. Know your edge in 20 trades, not 200.</p>
+    </div>
+    <div class="feature">
+      <h3>Expectancy & Equity Curve</h3>
+      <p>Average R per trade and a running P&L total. The two numbers that tell you if the system is working.</p>
+    </div>
   </div>
 
-  <div class="related">
-    <h3>Related terms</h3>
-    <div class="chips"><a class="chip" href="/glossary/options-contract/">Options Contract</a><a class="chip" href="/glossary/theta/">Theta</a><a class="chip" href="/glossary/implied-volatility/">Implied Volatility (IV)</a></div>
+  <div class="col-list">
+    <h3>Columns in the Template</h3>
+    <ul>
+      <li><strong>Date</strong> <em>— when the trade was taken</em></li>
+      <li><strong>Instrument</strong> <em>— ES, NQ, or custom</em></li>
+      <li><strong>Direction</strong> <em>— long or short</em></li>
+      <li><strong>Reveal</strong> <em>— what did the market show you?</em></li>
+      <li><strong>Retrace</strong> <em>— what level did you enter at?</em></li>
+      <li><strong>Run</strong> <em>— where was your target?</em></li>
+      <li><strong>Stop Distance (pts)</strong></li>
+      <li><strong>Entry / Stop / Target Price</strong></li>
+      <li><strong>Position Size (contracts)</strong></li>
+      <li><strong>Risk $</strong> <em>— total dollar risk</em></li>
+      <li><strong>Risk R / Actual R</strong></li>
+      <li><strong>R:R Planned / R:R Actual</strong></li>
+      <li><strong>Outcome</strong> <em>— W / L / BE</em></li>
+      <li><strong>P&L $</strong></li>
+      <li><strong>Notes</strong> <em>— what did you learn?</em></li>
+      <li><strong>Emotion Rating (1-5)</strong></li>
+      <li><strong>A+ Setup (Y/N)</strong></li>
+    </ul>
   </div>
 
   <div class="cta-band">
-    <h3>Learn the full system</h3>
-    <p>The RRR Daily Trading Checklist — the exact morning routine LA Traders runs before every New York session. Free.</p>
-    <a class="btn" href="/tools/daily-checklist/">Open the Daily Checklist</a>
-    <span style="margin:0 12px;color:var(--ash-dim);font-size:12px;">or</span>
-    <a class="btn btn-ghost" href="/#checklist">Get the PDF Version</a>
+    <h3>Formulas to add after 10+ trades</h3>
+    <p style="text-align:left;font-family:var(--font-mono);font-size:13px;color:var(--ash);max-width:none;margin-bottom:16px;line-height:2;">
+      <strong style="color:var(--gold);">Win Rate:</strong> =COUNTIF(Outcome_range,"W")/COUNTA(Outcome_range)<br>
+      <strong style="color:var(--gold);">Expectancy (R):</strong> =AVERAGE(Actual_R_range)<br>
+      <strong style="color:var(--gold);">Total P&L:</strong> =SUM(PnL_range)<br>
+      <strong style="color:var(--gold);">A+ Win Rate:</strong> =COUNTIFS(A_plus_range,"Y",Outcome_range,"W")/COUNTIF(A_plus_range,"Y")
+    </p>
+    <a class="btn" href="/tools/daily-checklist/">Open the Daily Checklist →</a>
   </div>
 </div>
+
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-mega">
@@ -261,12 +249,12 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
         </ul>
       </div>
       <div class="fcol">
-        <h4>Products</h4>
+        <h4>Tools</h4>
         <ul>
-          <li><a href="/#checklist">RRR Daily Checklist — Free</a></li>
+          <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+          <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+          <li><a href="/#checklist">Free PDF Checklist</a></li>
           <li><a href="/#oslite">RRR OS Lite — $17</a></li>
-          <li><a href="/glossary/prop-firm/">Prop Firm Path</a></li>
-          <li><a href="/glossary/journaling/">Trade Journaling</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -286,7 +274,7 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
         <a href="/#protocol">Protocol</a>
         <a href="/#rrr">RRR Framework</a>
         <a href="/glossary/">Glossary</a>
-        <a href="/#checklist">Checklist</a>
+        <a href="/tools/">Tools</a>
         <a href="/#oslite">RRR OS Lite</a>
         <a href="/terms/">Terms of Service</a>
         <a href="/privacy/">Privacy Policy</a>

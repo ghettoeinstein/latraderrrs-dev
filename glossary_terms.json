@@ -1,1 +1,1014 @@
-[{"slug": "rrr-framework", "term": "RRR Framework", "category": "RRR Framework", "short": "The three-question filter every LA Traders setup must pass: Reveal, Retrace, Run.", "definition": "The RRR Framework is the core decision-making process taught by LA Traders. Before any trade is taken, three questions must be answered in sequence: (1) REVEAL \u2014 what did the market just show you? A sweep of a level, a break of structure, or a rejection of a zone tells you which side is in control. (2) RETRACE \u2014 where should price pull back to? Direction rarely runs in a straight line, so you identify the level price should return to and wait. (3) RUN \u2014 where is price likely to travel next? With the reveal confirmed and the retrace respected, you enter with the move toward the next pool of liquidity.", "why": "Most losing trades are taken without a process. The RRR Framework forces every setup through the same three gates, which means you're never trading on emotion, FOMO, or a hunch. If a setup can't answer all three questions, it isn't A+ \u2014 and if it isn't A+, you don't take it.", "example": "ES sweeps the overnight high at 6:47 AM (REVEAL \u2014 sellers are in control above). You mark the 1-hour breaker at 5,842 as the level price should retrace to (RETRACE). When price returns and rejects the level, you enter short targeting the overnight midpoint at 5,831 (RUN). Three questions answered. A+ setup.", "related": ["reveal", "retrace", "run", "a-plus-setup", "liquidity"]}, {"slug": "reveal", "term": "Reveal", "category": "RRR Framework", "short": "The first RRR question: what did the market just show you?", "definition": "The Reveal is the market's disclosure of intent. It happens when price does something meaningful at a marked level: sweeping liquidity above a high or below a low, breaking a swing structure point, or rejecting a zone with a strong reaction. The Reveal tells you which side \u2014 buyers or sellers \u2014 currently has control. Without a Reveal, you have no information, and trading without information is gambling.", "why": "Amateurs enter because price 'looks like it's going up.' Professionals wait for the market to prove direction at a level that matters. The Reveal is that proof. It's the difference between reacting to structure and predicting it.", "example": "Price runs 3 ticks above the overnight high, then immediately closes back below it on the 5-minute. That sweep-and-reclaim is a Reveal: buyers trapped above, sellers now in control.", "related": ["rrr-framework", "retrace", "liquidity-sweep", "break-of-structure"]}, {"slug": "retrace", "term": "Retrace", "category": "RRR Framework", "short": "The second RRR question: where should price pull back to?", "definition": "The Retrace is the expected pullback after a Reveal. Markets rarely move in straight lines \u2014 after showing direction, price typically returns to a prior level (a breaker, an order block, a fair value gap, or a structure point) before continuing. The Retrace is where you plan your entry, not where you chase. You identify the level in advance and wait for price to come to you.", "why": "Chasing entries after a Reveal means buying the top of a move or selling the bottom. The Retrace gives you a defined entry zone with a defined invalidation \u2014 which means smaller stops and better risk-to-reward.", "example": "After the sweep of the overnight high, you mark the 5,842 breaker as the Retrace zone. Price pulls back into it over the next 20 minutes, prints a rejection wick, and you enter. Stop above the sweep high. Defined risk.", "related": ["rrr-framework", "reveal", "run", "order-block", "fair-value-gap"]}, {"slug": "run", "term": "Run", "category": "RRR Framework", "short": "The third RRR question: where is price likely to travel?", "definition": "The Run is the profit-taking objective \u2014 the next pool of liquidity price is likely to seek after the Reveal and Retrace confirm the setup. Runs typically target the opposite side of the range: if you entered short after a sweep of the highs, your Run targets the midpoint, the overnight low, or the next structure level below. The Run is where you exit, not where you hope.", "why": "Traders who don't know their target exit too early (leaving money on the table) or too late (watching winners turn into losers). The Run is defined before entry, so the exit is mechanical, not emotional.", "example": "Short from 5,842 after the sweep. Run target: overnight midpoint at 5,831. 11 points. Stop is 4 points above entry. 2.75R. Mechanical exit at the level \u2014 no greed, no fear.", "related": ["rrr-framework", "reveal", "retrace", "liquidity", "risk-to-reward"]}, {"slug": "a-plus-setup", "term": "A+ Setup", "category": "RRR Framework", "short": "A trade that answers all three RRR questions with confluence at a marked level.", "definition": "An A+ Setup is the only trade LA Traders takes. It requires: (1) a marked level from the 6:00 AM Protocol, (2) a clear Reveal at that level, (3) a clean Retrace to a defined entry zone, (4) a logical Run target that offers at least 2R, and (5) no conflicting news events. If any element is missing, the setup is a B or a C \u2014 and B and C setups are not traded. Ever.", "why": "The gap between breakeven traders and profitable traders isn't skill \u2014 it's selectivity. Trading only A+ setups means fewer trades, higher win rate, and no death-by-a-thousand-cuts from mediocre entries.", "example": "You watch price chop between 5,838 and 5,841 for 40 minutes. No sweep, no structure break, no reveal. You take zero trades. That's the A+ filter working.", "related": ["rrr-framework", "reveal", "retrace", "run", "six-am-protocol"]}, {"slug": "six-am-protocol", "term": "The 6:00 AM Protocol", "category": "RRR Framework", "short": "The five-stage pre-market routine: mark overnight range, 4H structure, 1H structure, midpoint, and the NY opening candle.", "definition": "The 6:00 AM Protocol is the standardized pre-market preparation routine every LA Traders member runs before the New York session. Five stages in sequence: (1) 6:00 AM \u2014 mark the overnight high, overnight low, and 4-hour structure in Blue and Purple. (2) 6:00\u20136:25 \u2014 mark the 1-hour structure, swing points, and higher/lower highs and lows in Red. (3) 6:25 \u2014 mark the overnight midpoint in White and check the news calendar. (4) 6:30 \u2014 mark the New York opening candle in Gold. (5) 6:35\u201311:00 \u2014 run the RRR framework, take only A+ setups, journal every trade.", "why": "Consistent results come from consistent preparation. When every trader on the desk marks the same levels the same way at the same time, the entire community is watching the same structure \u2014 which is why the levels work.", "example": "6:00 AM: ON high 5,847, ON low 5,828, 4H demand at 5,822. 6:25: midpoint 5,837.5, CPI at 8:30 \u2014 noted. 6:30: opening candle range 5,839\u20135,843. Levels marked. Now you wait for the reveal.", "related": ["a-plus-setup", "overnight-range", "opening-candle", "discipline"]}, {"slug": "market-structure", "term": "Market Structure", "category": "Market Structure", "short": "The skeleton of price movement \u2014 the sequence of swing highs and swing lows that defines trend.", "definition": "Market Structure is the framework of swing highs and swing lows that price creates as it moves. An uptrend is defined by higher highs (HH) and higher lows (HL). A downtrend is defined by lower highs (LH) and lower lows (LL). When that sequence breaks \u2014 a lower high in an uptrend, or a higher low in a downtrend \u2014 structure has shifted, and the previous trend assumption is invalid. LA Traders marks structure on the 4-hour and 1-hour charts before every session.", "why": "Structure is the map. Without it, every candle looks the same. With it, you know exactly where price is in the larger sequence \u2014 and more importantly, you know when the sequence has changed.", "example": "ES makes a high at 5,850, pulls back to 5,838, makes a new high at 5,853. That's HH + HL \u2014 uptrend intact. When price breaks below 5,838, structure shifts. Longs are done.", "related": ["break-of-structure", "swing-high", "swing-low", "trend"]}, {"slug": "break-of-structure", "term": "Break of Structure (BOS)", "category": "Market Structure", "short": "When price closes beyond a significant swing point, confirming trend continuation or reversal.", "definition": "A Break of Structure (BOS) occurs when price closes beyond a prior swing high (in an uptrend) or swing low (in a downtrend). A BOS in the direction of the trend confirms continuation. A BOS against the trend \u2014 often called a Change of Character (CHoCH) \u2014 is the first signal that the trend may be reversing. BOS is one of the strongest Reveals in the RRR framework because it's the market showing its hand at a structural level.", "why": "A BOS isn't a wick poking through a level \u2014 it's a close beyond it. That distinction filters out most fake-outs and keeps you on the right side of the real move.", "example": "Downtrend: LH at 5,845, LL at 5,830. Price closes a 15-minute candle above 5,845. That's a BOS against the downtrend \u2014 possible reversal. Wait for the retrace to confirm.", "related": ["market-structure", "change-of-character", "swing-high", "reveal"]}, {"slug": "change-of-character", "term": "Change of Character (CHoCH)", "category": "Market Structure", "short": "The first break of structure against the prevailing trend \u2014 the earliest reversal signal.", "definition": "A Change of Character (CHoCH) is the first Break of Structure that runs counter to the current trend. In an uptrend, it's the first close below a prior higher low. In a downtrend, it's the first close above a prior lower high. A CHoCH doesn't guarantee reversal \u2014 but it's the market's first admission that the previous order flow may be done. In RRR terms, it's a powerful Reveal.", "why": "The CHoCH is the earliest objective signal that the trend you're trading might be over. Traders who ignore it hold losers into reversals. Traders who respect it flip bias early and trade the new direction.", "example": "Uptrend all morning. Price closes below the 5,838 higher low at 7:15 AM. CHoCH. You stop looking for longs and start watching for short setups on the retrace.", "related": ["break-of-structure", "market-structure", "reveal"]}, {"slug": "swing-high", "term": "Swing High", "category": "Market Structure", "short": "A local peak in price \u2014 a high with lower highs on both sides.", "definition": "A Swing High is a candle whose high is higher than the highs of a defined number of candles on either side (typically 2\u20135). Swing highs mark the points where buyers exhausted and sellers took over. They're the connection points for trendlines, the levels for structure breaks, and \u2014 critically for LA Traders \u2014 the pools where buy-side liquidity sits.", "why": "Swing highs aren't just 'highs' \u2014 they're the structural reference points the market respects. Mark them before the session, and you'll see price react to them all morning.", "example": "The 6:47 AM candle prints a high of 5,847 with lower highs on the three candles either side. That's the swing high. Price returns to it 40 minutes later and rejects. Structure held.", "related": ["swing-low", "market-structure", "liquidity"]}, {"slug": "swing-low", "term": "Swing Low", "category": "Market Structure", "short": "A local trough in price \u2014 a low with higher lows on both sides.", "definition": "A Swing Low is a candle whose low is lower than the lows of a defined number of candles on either side. Swing lows mark where sellers exhausted and buyers stepped in. They define uptrend structure (higher lows), serve as retrace targets, and mark the pools where sell-side liquidity rests.", "why": "Swing lows are where your stops hide and where smart money looks to enter. Knowing where they are \u2014 before price gets there \u2014 is the entire edge.", "example": "The overnight session bottoms at 5,828 with higher lows either side. That swing low is your sell-side liquidity pool. If price sweeps it and reclaims, that's a Reveal.", "related": ["swing-high", "market-structure", "liquidity"]}, {"slug": "trend", "term": "Trend", "category": "Market Structure", "short": "The directional bias of price, defined by the sequence of higher highs/lows or lower highs/lows.", "definition": "A Trend is the sustained directional movement of price, objectively defined by structure. Uptrend: higher highs and higher lows. Downtrend: lower highs and lower lows. No sequence = no trend = range. Trends persist until structure breaks. The LA Traders approach is to identify the trend on the 4-hour, refine it on the 1-hour, and only take setups in the direction of the prevailing structure until a CHoCH says otherwise.", "why": "'The trend is your friend' is a clich\u00e9 because it's true. Counter-trend trades have lower win rates and worse R:R. Trade with structure, not against it.", "example": "4H: HH at 5,860, HL at 5,822. Uptrend. Your A+ longs are valid. Your shorts are counter-trend \u2014 skipped unless a CHoCH prints.", "related": ["market-structure", "change-of-character", "premium-discount"]}, {"slug": "liquidity", "term": "Liquidity", "category": "Liquidity", "short": "The pool of resting orders (stops and pending entries) clustered at obvious price levels.", "definition": "Liquidity is the fuel markets run on. It exists wherever clusters of stop-loss orders and breakout entry orders rest: above swing highs (buy-side liquidity \u2014 shorts' stops and longs' breakout entries), below swing lows (sell-side liquidity \u2014 longs' stops and shorts' breakout entries), and at obvious round numbers. Price is drawn to liquidity because large players need opposing orders to fill their size. Understanding where liquidity sits tells you where price is likely to go \u2014 and where it's likely to reverse after taking it.", "why": "The market moves from pool to pool. If you know where the pools are, you stop being the liquidity and start trading alongside the ones who take it.", "example": "ON high at 5,847. Every breakout buyer has orders there; every short has stops above. Price runs to 5,849, fills them all, and reverses. The liquidity grab IS the Reveal.", "related": ["liquidity-sweep", "buy-side-liquidity", "sell-side-liquidity", "stop-hunt"]}, {"slug": "liquidity-sweep", "term": "Liquidity Sweep", "category": "Liquidity", "short": "A fast run through a level that triggers resting stops, then reverses \u2014 the signature Reveal.", "definition": "A Liquidity Sweep (also called a stop hunt or liquidity grab) is when price quickly trades through an obvious level \u2014 an overnight high, a swing low, an equal-highs trendline \u2014 triggers the stops resting there, and then immediately reverses and closes back inside the range. The sweep is the market filling large orders using the stopped-out traders as counterparty. For LA Traders, a clean sweep of a marked level is the single most powerful Reveal in the RRR framework.", "why": "Sweeps look like breakouts to the untrained eye \u2014 that's the trap. The difference: a sweep fails to hold beyond the level. Waiting for the reclaim after the sweep is how you avoid being the trapped liquidity.", "example": "Price spikes to 5,849 (3 ticks above ON high), triggers buy stops, then closes the 5-minute back at 5,844. Sweep complete. Sellers in control. Short the retrace.", "related": ["liquidity", "stop-hunt", "reveal", "turtle-soup"]}, {"slug": "buy-side-liquidity", "term": "Buy-Side Liquidity", "category": "Liquidity", "short": "The pool of buy orders resting above resistance \u2014 shorts' stops and breakout longs.", "definition": "Buy-Side Liquidity is the cluster of buy orders sitting above obvious highs: swing highs, overnight highs, equal highs, and round numbers. It consists of stop-loss orders from short positions (which are buy orders) and pending breakout entries from momentum buyers. Smart money sells into buy-side liquidity because it's the deepest pool of willing buyers. Once taken, the price often reverses \u2014 which is why the sweep of buy-side liquidity is a classic short Reveal.", "why": "Every obvious high is a target. Mark your buy-side pools before the session and you'll stop being surprised when price runs them.", "example": "Equal highs at 5,847 and 5,847.25 \u2014 a magnet. Price runs to 5,848.50, fills the breakout buyers, reverses hard. Buy-side liquidity: taken.", "related": ["liquidity", "sell-side-liquidity", "liquidity-sweep"]}, {"slug": "sell-side-liquidity", "term": "Sell-Side Liquidity", "category": "Liquidity", "short": "The pool of sell orders resting below support \u2014 longs' stops and breakout shorts.", "definition": "Sell-Side Liquidity is the cluster of sell orders sitting below obvious lows: swing lows, overnight lows, equal lows, and key support. It's made of longs' stop-losses (which are sell orders) and pending breakout shorts. Smart money buys into sell-side liquidity because it's the deepest pool of willing sellers. A sweep of sell-side liquidity followed by a reclaim is a classic long Reveal in the RRR framework.", "why": "The overnight low is the most-watched sell-side pool on the board. Watch what price does when it gets there \u2014 the reaction tells you everything.", "example": "ON low 5,828. Price dips to 5,826.75, stops out the longs, then rips back above 5,830. Sell-side taken, longs trapped. You enter long on the retrace.", "related": ["liquidity", "buy-side-liquidity", "liquidity-sweep"]}, {"slug": "stop-hunt", "term": "Stop Hunt", "category": "Liquidity", "short": "Deliberate price movement through a level to trigger clustered stop-loss orders before reversing.", "definition": "A Stop Hunt is a liquidity sweep viewed from the other side: the intentional driving of price through an obvious level to trigger the stops resting there. Whether or not you believe it's 'deliberate,' the mechanic is the same \u2014 large orders need liquidity, and stops are liquidity. Stop hunts are why obvious levels get wicked through before real moves begin. The LA Traders defense: never place stops at obvious levels, and never enter on the first touch of a level. Wait for the hunt, then trade the reclaim.", "why": "If your stop is at the same place as everyone else's, you're the target. Understanding stop hunts flips you from hunted to hunter.", "example": "You went long at 5,840 with a stop at 5,837.90 \u2014 just below the ON low of 5,838. Price dips to 5,837.75, takes your stop, then rallies 20 points. Classic stop hunt. The fix: enter AFTER the sweep, not before it.", "related": ["liquidity-sweep", "liquidity", "turtle-soup"]}, {"slug": "turtle-soup", "term": "Turtle Soup", "category": "Liquidity", "short": "Fading the false breakout \u2014 entering against the move after a level is swept and reclaimed.", "definition": "Turtle Soup is a counter-trend entry pattern named after the famous Turtle Traders (who traded breakouts). The Turtle Soup trade fades them: when price breaks an obvious level (like a prior high) and immediately fails \u2014 closing back inside the range \u2014 you enter in the opposite direction, targeting the other side of the range. It's the original liquidity-sweep trade and the mechanical core of the Reveal step in the RRR framework.", "why": "False breakouts are more common than real ones at well-marked levels. Turtle Soup is the systematic way to profit from that fact.", "example": "Price breaks the 20-day high by 2 ticks, holds for one candle, then closes back below. Turtle Soup short. Stop above the sweep high. Target: the range midpoint.", "related": ["liquidity-sweep", "stop-hunt", "reveal"]}, {"slug": "order-block", "term": "Order Block", "category": "Price Action", "short": "The last opposing candle before a strong directional move \u2014 a zone where institutions likely entered.", "definition": "An Order Block (OB) is the final down candle before a strong up move (bullish OB) or the final up candle before a strong down move (bearish OB). The theory: that candle represents the last moment large players accumulated or distributed before driving price, so when price returns to the zone, those same players defend it. Order blocks are primary Retrace zones in the RRR framework \u2014 after a Reveal, you look for the OB that created the move and plan your entry at its return.", "why": "Order blocks give you a specific, defensible zone for entries instead of 'somewhere around there.' Entry at the OB, stop beyond it \u2014 tight, defined risk.", "example": "Price drops hard from 5,845. The last green 5-minute candle before the drop spans 5,844\u20135,846. That's your bearish OB. When price retraces into it, you enter short. Stop above 5,846.50.", "related": ["fair-value-gap", "breaker-block", "retrace", "mitigation"]}, {"slug": "fair-value-gap", "term": "Fair Value Gap (FVG)", "category": "Price Action", "short": "A three-candle imbalance where the middle candle's range doesn't overlap \u2014 price often returns to fill it.", "definition": "A Fair Value Gap (FVG) is a three-candle pattern where the middle candle moves so aggressively that its range doesn't overlap with the candles on either side \u2014 leaving a 'gap' between candle 1's high and candle 3's low (in an up move) or vice versa. The gap represents one-sided order flow, and price frequently returns to trade through ('fill') the gap before continuing. FVGs are high-probability Retrace zones: after a Reveal, the nearest unfilled FVG is often exactly where price pulls back to.", "why": "FVGs are the market's footprints of urgency. Where price moved too fast to trade fairly, it tends to come back and make it fair.", "example": "Candle 1 high: 5,840. Candle 2 rips to 5,845. Candle 3 low: 5,842. The gap between 5,840 and 5,842 is the FVG. Price retraces into it 30 minutes later and bounces. Classic fill.", "related": ["order-block", "retrace", "imbalance", "silver-bullet"]}, {"slug": "imbalance", "term": "Imbalance", "category": "Price Action", "short": "Any inefficient price move where one side overwhelmed the other \u2014 the parent concept of the FVG.", "definition": "An Imbalance is any price region where buying or selling was so one-sided that normal two-way trade didn't occur. Fair Value Gaps are the most common form, but imbalances also include gaps between sessions and single-candle spikes. Markets seek efficiency, so imbalanced regions act as magnets \u2014 price revisits them to 'rebalance' trade. Marking imbalances gives you the map of where price is likely to return before continuing.", "why": "Efficient markets auction both ways. When they don't, the unfinished business draws price back. Imbalances are that unfinished business.", "example": "The 8:30 CPI spike rips 30 points in one candle with zero pullback. That whole candle is an imbalance. Over the next two hours, price methodically retrades the entire range.", "related": ["fair-value-gap", "order-block", "liquidity"]}, {"slug": "breaker-block", "term": "Breaker Block", "category": "Price Action", "short": "A failed order block that flips polarity \u2014 old support becomes new resistance (or vice versa).", "definition": "A Breaker Block is an order block that price traded through, which then flips its role: a bullish OB that gets broken becomes resistance on the retest; a bearish OB that gets broken becomes support. The logic: traders who entered at the original OB are now underwater, and when price returns to their entry, they exit at breakeven \u2014 creating the reaction. Breakers are premium Retrace zones because they combine structure (the break) with order flow (the trapped traders).", "why": "The best levels are the ones where someone's trapped. Breaker blocks mark exactly where the trapped money is waiting to get out.", "example": "Bullish OB at 5,835 fails as price crashes through to 5,820. When price rallies back to 5,835, the trapped longs sell at breakeven. The old support becomes the ceiling. Short the retest.", "related": ["order-block", "retrace", "mitigation"]}, {"slug": "mitigation", "term": "Mitigation", "category": "Price Action", "short": "Price returning to a zone so trapped traders can exit at breakeven \u2014 the engine behind retests.", "definition": "Mitigation is the process by which price returns to a level where a group of traders is trapped (underwater on their positions) so they can close their trades near breakeven. Their exits provide the order flow for the next move. Mitigation is the 'why' behind breaker blocks, retests of broken structure, and returns to order blocks. When you understand mitigation, you stop seeing random bounces and start seeing trapped money being released.", "why": "Every significant level has a story about who's trapped there. Mitigation is the chapter where they get out \u2014 and where you get in.", "example": "Shorts who entered at 5,830 watched price rally to 5,848. When price pulls back to 5,831, they exit at breakeven-plus-one. Their buy-to-cover orders fuel the next leg up. That's mitigation.", "related": ["breaker-block", "order-block", "retrace"]}, {"slug": "premium-discount", "term": "Premium and Discount", "category": "Price Action", "short": "The upper and lower halves of a range \u2014 you sell premium and buy discount, never the reverse.", "definition": "Premium and Discount divide any range at its midpoint (50% equilibrium). The upper half is Premium \u2014 where selling has the statistical edge. The lower half is Discount \u2014 where buying has the edge. The rule is simple: in a bullish context, you only enter longs in Discount; in a bearish context, you only enter shorts in Premium. The overnight midpoint \u2014 marked in White at 6:25 AM in the Protocol \u2014 is the LA Traders equilibrium line for the session. Above it, you're a seller. Below it, you're a buyer. Context decides.", "why": "Most losing trades are good ideas at bad prices. Premium/Discount is the filter that keeps you buying low and selling high \u2014 literally.", "example": "ON range: 5,828\u20135,848. Midpoint: 5,838. Price sweeps the high and retraces to 5,841 (still Premium). Short is valid. If it were at 5,836 (Discount), you'd skip the short and look for longs.", "related": ["equilibrium", "overnight-midpoint", "optimal-trade-entry"]}, {"slug": "equilibrium", "term": "Equilibrium", "category": "Price Action", "short": "The 50% midpoint of any range \u2014 the fairest price, and the line between premium and discount.", "definition": "Equilibrium is the exact 50% level of a defined range. It's the 'fair' price where neither buyers nor sellers have a positional edge. Price gravitates toward equilibrium in ranging conditions and accelerates away from it in trends. The overnight midpoint (White level, marked at 6:25 AM) is the session's equilibrium \u2014 and it's remarkable how often price returns to it during the New York morning.", "why": "Equilibrium is the anchor. When you're unsure where price is going, ask where it is relative to equilibrium \u2014 that alone answers half the question.", "example": "ON midpoint 5,838. Price opens, runs to 5,846, then spends the next hour bleeding back to 5,838.25. Equilibrium, doing its job.", "related": ["premium-discount", "overnight-midpoint"]}, {"slug": "optimal-trade-entry", "term": "Optimal Trade Entry (OTE)", "category": "Price Action", "short": "The 62%\u201379% retracement zone of a leg \u2014 the statistically sweet spot for entries.", "definition": "Optimal Trade Entry (OTE) is the fibonacci-defined retracement zone between 62% and 79% of a price leg (with 70.5% as the center). After a Reveal, you measure the leg that created the move, and the OTE zone is your highest-probability Retrace entry. It aligns with where order blocks and fair value gaps typically sit \u2014 deep enough that weak hands are shaken out, shallow enough that the move is still valid. Entry in OTE, stop beyond the origin of the leg, target the next liquidity pool.", "why": "OTE is where the risk-to-reward math works best: deep retrace = tight stop = the same target gives you 3R+ instead of 1.5R.", "example": "Reveal leg: 5,830 \u2192 5,846. OTE zone: 5,836\u20135,840 (62%\u201379% pullback). Price retraces to 5,838, you enter long. Stop below 5,830. Target ON high 5,847+. Nearly 3R.", "related": ["premium-discount", "retrace", "fibonacci-retracement"]}, {"slug": "fibonacci-retracement", "term": "Fibonacci Retracement", "category": "Price Action", "short": "Horizontal levels at 23.6%, 38.2%, 50%, 61.8%, and 78.6% of a measured leg, used to frame retrace entries.", "definition": "Fibonacci Retracement levels divide a price leg into proportional zones based on the golden ratio. In practice, LA Traders uses three: 50% (equilibrium), 62%\u201379% (the OTE zone), and the extremes (0% and 100%, which define the leg itself). The levels work not because of magic ratios, but because enough traders watch them that they become self-fulfilling reference points \u2014 and because they frame risk precisely.", "why": "Fibonacci levels are a ruler, not a crystal ball. They measure where you are in the retrace so you can define entry, stop, and invalidation in numbers instead of feelings.", "example": "Leg: 5,828 \u2192 5,848. 50% = 5,838. 62% = 5,835.6. 79% = 5,832.2. The 5,832\u20135,836 zone is OTE. Below 5,828, the long idea is dead. Clean, mechanical levels.", "related": ["optimal-trade-entry", "equilibrium", "retrace"]}, {"slug": "overnight-range", "term": "Overnight Range", "category": "Sessions & Time", "short": "The high and low formed during the overnight session \u2014 the first levels marked every morning.", "definition": "The Overnight Range (ON Range) is the high and low established during the overnight (Globex) session before the New York open. Marked in Blue at 6:00 AM, these are the two most important reference levels of the day: the ON high is the session's primary buy-side liquidity pool, and the ON low is the primary sell-side pool. The range also defines the day's initial equilibrium (its midpoint) and frames whether the New York session is likely to trend (range break) or rotate (range hold).", "why": "Everything in the New York session is measured against the overnight range. Mark it first, mark it always \u2014 it's the foundation every other level sits on.", "example": "ON high 5,847, ON low 5,828 \u2014 a 19-point range. New York opens at 5,840. The first question of the day: does price sweep a side of the range, or accept inside it?", "related": ["overnight-midpoint", "opening-candle", "six-am-protocol", "liquidity"]}, {"slug": "overnight-midpoint", "term": "Overnight Midpoint", "category": "Sessions & Time", "short": "The 50% level of the overnight range \u2014 the session's equilibrium, marked in White at 6:25 AM.", "definition": "The Overnight Midpoint is the exact 50% level between the overnight high and overnight low, marked in White during the 6:00 AM Protocol. It serves as the session's equilibrium line: above it, price is in premium (look for shorts); below it, price is in discount (look for longs). It's also a gravitational level \u2014 in ranging conditions, price returns to the midpoint repeatedly, making it both a target and a decision line.", "why": "The midpoint is the quickest bias check in trading. One glance tells you whether you're hunting longs or shorts this morning.", "example": "ON range 5,828\u20135,848 \u2192 midpoint 5,838. Price opens at 5,842, runs to 5,846, stalls. Above midpoint = premium. You wait for a short Reveal instead of chasing longs.", "related": ["overnight-range", "equilibrium", "premium-discount", "six-am-protocol"]}, {"slug": "opening-candle", "term": "The Opening Candle", "category": "Sessions & Time", "short": "The first candle of the New York session (6:30 AM PT) \u2014 marked in Gold as the day's reference range.", "definition": "The Opening Candle is the first printed candle of the New York session, marked in Gold at 6:30 AM in the LA Traders Protocol. Its high and low form the opening range \u2014 the level everything else measures against. Price acceptance above the opening range is bullish; acceptance below is bearish; and a sweep of one side followed by a reclaim is a session-defining Reveal. Many traders use the first 1-minute, 5-minute, or 15-minute candle \u2014 what matters is that you mark it consistently and treat it as a structural reference.", "why": "The opening candle is the New York session's opening statement. Everything after it is cross-examination.", "example": "6:30 AM candle prints 5,839\u20135,843. Price spends 20 minutes building above 5,843, then expands higher. Acceptance above the opening range. Longs have the ball.", "related": ["overnight-range", "six-am-protocol", "opening-range"]}, {"slug": "opening-range", "term": "Opening Range", "category": "Sessions & Time", "short": "The high/low band established in the first minutes of the session \u2014 the day's first battleground.", "definition": "The Opening Range (OR) is the high-to-low band formed in the initial minutes of the New York session (commonly the first 1, 5, or 15 minutes). It's the first liquidity structure of the day: breaks of the OR define early directional bias, and failures of those breaks (sweeps) provide the morning's best Reveals. LA Traders marks the 6:30 AM opening candle in Gold as the OR anchor and treats everything else as context around it.", "why": "The first move of the day is often a trap. The opening range is the trap's blueprint \u2014 mark it, and you can see the trap being set.", "example": "OR: 5,839\u20135,843. Price breaks 5,843, runs to 5,845.50, and closes back inside the range. OR breakout failed. That's your short Reveal toward the OR low and beyond.", "related": ["opening-candle", "liquidity-sweep", "reveal"]}, {"slug": "new-york-session", "term": "The New York Session", "category": "Sessions & Time", "short": "The 6:30\u201311:00 AM PT window where US equity volume concentrates \u2014 the only session LA Traders trades.", "definition": "The New York Session is the highest-volume trading window of the day, when US equity markets are open and institutional participation peaks. For LA Traders (on Pacific time), the tradeable window runs from the 6:30 AM PT open through roughly 11:00 AM PT, when the morning move completes and chop sets in. The edge of the session is structural: real volume, real moves, real liquidity. The overnight session sets the table; New York eats.", "why": "Amateurs trade all day and donate to the chop. Professionals trade the four hours that matter and walk away. The window is the edge.", "example": "You take your A+ short at 6:52, hit your Run target at 7:40, journal the trade, and close the platform at 8:00. Done for the day. That's the session discipline.", "related": ["six-am-protocol", "opening-candle", "killzone"]}, {"slug": "killzone", "term": "Killzone", "category": "Sessions & Time", "short": "A specific time window where high-probability setups concentrate \u2014 e.g., the New York open 60\u201390 minutes.", "definition": "A Killzone is a defined time window during which the probability of significant price movement is statistically elevated. The major killzones: London Open (2:00\u20135:00 AM ET), New York Open (7:00\u201310:00 AM ET), London Close (10:00 AM\u201312:00 PM ET), and the PM session (1:30\u20134:00 PM ET). Within the LA Traders framework, the primary killzone is the New York morning: 6:30\u201310:00 AM PT, with the first 90 minutes carrying the highest density of A+ setups.", "why": "Time is a filter like price is a filter. A setup at 6:45 AM inside the killzone is worth twice the identical setup at noon.", "example": "Same sweep-and-retrace pattern: at 6:50 AM it's an A+ short. At 12:30 PM it's lunch chop. The killzone is the difference.", "related": ["new-york-session", "six-am-protocol", "silver-bullet"]}, {"slug": "silver-bullet", "term": "Silver Bullet", "category": "Sessions & Time", "short": "A time-based setup targeting specific one-hour windows where FVG entries have statistical edge.", "definition": "The Silver Bullet is a time-and-price setup that restricts entries to specific one-hour windows (classically 10\u201311 AM ET, 2\u20133 PM ET, and 3\u20134 AM ET) and requires a fair value gap to form within that window in the direction of the day's bias. The premise: certain hours reliably produce expansion moves, and the FVG within those hours provides the precise entry. It's a specialized expression of what LA Traders does more broadly \u2014 trade only when time and structure align.", "why": "The Silver Bullet's real lesson isn't the hours \u2014 it's that time itself is an edge. Windows matter. Structure within windows matters more.", "example": "Bearish day. At 10:05 AM ET price rips down, leaving a bearish FVG at 5,836\u20135,838. Retrace into the gap at 10:20. Enter short. Silver bullet, textbook.", "related": ["killzone", "fair-value-gap", "new-york-session"]}, {"slug": "risk-to-reward", "term": "Risk-to-Reward (R:R)", "category": "Risk & Execution", "short": "The ratio between your stop distance and target distance \u2014 the math that decides if a trade is worth taking.", "definition": "Risk-to-Reward (R:R) is the ratio of potential loss to potential gain on a trade, measured in 'R' multiples where 1R equals your risk. A trade risking 4 points to make 12 points is a 3R setup. R:R is the foundation of trading math: at 2R, you only need a 34% win rate to break even. At 3R, 26%. The LA Traders rule: if the Run target doesn't offer at least 2R from your Retrace entry, the setup isn't A+ \u2014 regardless of how good the Reveal looks.", "why": "You don't need to be right often. You need to be paid when you're right and charged little when you're wrong. R:R is that math.", "example": "Entry 5,842. Stop 5,846 (4 points risk). Target 5,830 (12 points reward). 3R. Win one in three and you still make money.", "related": ["a-plus-setup", "run", "position-sizing", "expectancy"]}, {"slug": "position-sizing", "term": "Position Sizing", "category": "Risk & Execution", "short": "How many contracts or shares to trade, derived from your stop distance and fixed dollar risk.", "definition": "Position Sizing is the calculation that converts your risk tolerance into a trade size: (account risk per trade in dollars) \u00f7 (stop distance in dollars per contract/share) = number of contracts or shares. Professional risk per trade is typically 0.5%\u20131% of account equity. Position sizing is what makes losses survivable: with fixed fractional sizing, a string of losses shrinks your position automatically, and a string of wins compounds it. It's the quiet math behind every long trading career.", "why": "The setup decides whether to trade. The size decides whether you survive being wrong. Most blown accounts are sizing failures, not analysis failures.", "example": "$50,000 account, 1% risk = $500. ES stop is 4 points = $200 per contract. Size: 2 contracts ($400 risk). Not 5 because you 'feel good about this one.'", "related": ["risk-to-reward", "expectancy", "drawdown", "margin"]}, {"slug": "expectancy", "term": "Expectancy", "category": "Risk & Execution", "short": "The average R you earn per trade over a large sample \u2014 the true scoreboard of your edge.", "definition": "Expectancy is the mathematical average outcome of your trading system per trade: (win rate \u00d7 average win) \u2212 (loss rate \u00d7 average loss), expressed in R. A system with 40% winners at 3R and 60% losers at 1R has an expectancy of (0.4 \u00d7 3) \u2212 (0.6 \u00d7 1) = +0.6R per trade. Positive expectancy over a meaningful sample (100+ trades) is the definition of an edge. Everything else \u2014 win rate alone, profit factor, a good month \u2014 is incomplete math.", "why": "Expectancy is the only number that matters. A 70% win rate system can lose money (small wins, huge losses). A 35% win rate system can print (small losses, huge wins). Do the math.", "example": "Your last 50 trades: 20 wins averaging 2.8R, 30 losses at 1R. Expectancy = (0.4 \u00d7 2.8) \u2212 0.6 = +0.52R. At $500 risk per trade, that's $260 expected per trade. That's an edge worth scaling.", "related": ["risk-to-reward", "position-sizing", "journaling"]}, {"slug": "drawdown", "term": "Drawdown", "category": "Risk & Execution", "short": "The peak-to-trough decline in account equity \u2014 the cost of doing business, and the metric that kills careers.", "definition": "Drawdown is the decline from an account's equity peak to its subsequent trough, measured in percent or R. Every system has drawdowns \u2014 the question is whether yours are survivable. Rules of thumb: keep per-trade risk small enough that a 10-loss streak costs less than 10%, and define a personal circuit breaker (e.g., stop trading for the week after \u22125% or \u22124R). Drawdown is also psychological: most traders don't blow up from the math \u2014 they blow up from the revenge trading the drawdown triggers.", "why": "Drawdown is inevitable; blowing up is optional. The traders who last are the ones who planned for the losing streak before it happened.", "example": "Peak equity $52,000. Four straight losses at 1R each ($500 risk) brings you to $50,000 \u2014 a 3.8% drawdown. Normal. You keep executing. What you don't do: double size to 'make it back.'", "related": ["position-sizing", "expectancy", "revenge-trading"]}, {"slug": "revenge-trading", "term": "Revenge Trading", "category": "Risk & Execution", "short": "Re-entering immediately after a loss to 'win it back' \u2014 the fastest account killer in trading.", "definition": "Revenge Trading is the emotional re-entry after a losing trade, driven by the urge to recover the loss immediately rather than wait for the next valid setup. It violates every element of the process: no Reveal, no planned Retrace, no defined Run \u2014 just emotion with size. The LA Traders defense is structural: the checklist requires an A+ setup for every entry, and a post-loss rule (stand down for 15 minutes, one more trade max per session after two losses) removes the opportunity for the spiral.", "why": "One loss costs 1R. A revenge spiral costs 5R, a bad week, or the account. The market will be there tomorrow. Your capital might not be.", "example": "Your short stops out for \u22121R at 7:15. Furious, you market-sell the next candle at a worse price with no setup. That one stops out too. Now you're \u22122R and hunting. That's the spiral. The fix: close the platform after trade two.", "related": ["drawdown", "a-plus-setup", "journaling", "discipline"]}, {"slug": "journaling", "term": "Trade Journaling", "category": "Risk & Execution", "short": "Recording every trade with screenshots, reasoning, and outcome \u2014 the feedback loop that builds edge.", "definition": "Trade Journaling is the disciplined practice of documenting every trade: the setup (with chart screenshots), the RRR reasoning, entry, stop, target, outcome in R, and a post-trade review of what was done well or poorly. Journaling converts experience into data. After 50+ journaled trades, you can compute your real expectancy, identify which setups actually make money (versus which feel like they should), and find the leaks \u2014 the revenge trades, the early exits, the B setups that bleed you.", "why": "Memory lies. Every trader remembers their winners as skill and their losers as bad luck. The journal is the honest record that turns trading from gambling into a craft.", "example": "Your journal shows your sweeps of the ON high win at 55% with 2.4R average \u2014 but your mid-range entries win at 22%. The data tells you what to cut. Without it, you'd keep donating on the mid-range stuff forever.", "related": ["expectancy", "a-plus-setup", "discipline"]}, {"slug": "discipline", "term": "Discipline", "category": "Risk & Execution", "short": "Executing the process exactly \u2014 especially when you don't feel like it. The meta-skill that contains all others.", "definition": "Discipline in trading is the consistent execution of a defined process regardless of emotional state: marking the same levels at the same time every morning, taking only A+ setups, sizing every trade by the same formula, honoring every stop, and walking away when the window closes. Discipline isn't a personality trait \u2014 it's an environment: checklists, rules, and structure that make the right action automatic and the wrong action impossible. That's why the LA Traders system is built as a protocol, not a set of suggestions.", "why": "Everyone knows what to do. Discipline is doing it on the day you just lost 2R, the FOMO candle is ripping without you, and your brain is screaming for action.", "example": "It's 10:45 AM. No A+ setup all morning. Your friend texts you about the move you 'missed.' You close the platform anyway. That's the whole game.", "related": ["a-plus-setup", "journaling", "revenge-trading", "six-am-protocol"]}, {"slug": "es-futures", "term": "ES (E-mini S&P 500 Futures)", "category": "Instruments", "short": "The most liquid equity index futures contract in the world \u2014 the primary LA Traders instrument.", "definition": "ES is the E-mini S&P 500 futures contract traded on the CME, tracking the S&P 500 index at $50 per point per contract. It trades nearly 24 hours a day (Globex session), offers deep liquidity with 1-tick (0.25 point = $12.50) spreads, and is the most actively traded equity index future in the world. Its characteristics make it ideal for the RRR framework: clean technical levels, dense liquidity at obvious prices, and enough movement in the New York morning to offer multiple A+ setups per week.", "why": "Liquidity is everything. On ES, your levels get respected because the whole world is watching them, and your fills are instant because the book is deep.", "example": "ES sweeps the ON high at 5,847, retraces to the breaker at 5,842, runs to the midpoint at 5,837.50. An 11-point Run = $550 per contract, before size.", "related": ["nq-futures", "tick-value", "margin"]}, {"slug": "nq-futures", "term": "NQ (E-mini Nasdaq-100 Futures)", "category": "Instruments", "short": "The tech-heavy sibling of ES \u2014 faster, wilder, and less forgiving.", "definition": "NQ is the E-mini Nasdaq-100 futures contract, tracking the Nasdaq-100 index at $20 per point per contract. Compared to ES, NQ moves roughly 2\u20133\u00d7 as far in points per session with sharper reversals and more aggressive stop runs. The same RRR framework applies, but NQ demands wider stops (or smaller size) and stricter discipline \u2014 its A+ setups are bigger and its fake-outs are nastier. Most traders should master ES first, then graduate to NQ.", "why": "NQ amplifies everything \u2014 the wins and the mistakes. It's a great second instrument and a terrible first one.", "example": "The same sweep-retrace-run pattern that nets 11 points on ES often nets 40+ points on NQ \u2014 but the stop that was 4 points on ES needs to be 12\u201315 on NQ.", "related": ["es-futures", "tick-value", "position-sizing"]}, {"slug": "tick-value", "term": "Tick Value", "category": "Instruments", "short": "The dollar amount gained or lost per minimum price increment \u2014 the unit your P&L is built from.", "definition": "Tick Value is the dollar value of one minimum price movement (one tick) of a futures contract. ES: 0.25 index points = $12.50 per tick per contract ($50/point). NQ: 0.25 points = $5 per tick ($20/point). Tick value converts chart distances into dollars: an 11-point ES move is 44 ticks = $550 per contract. Knowing tick value cold is non-negotiable \u2014 your position sizing, stop placement, and R:R math all depend on it.", "why": "You can't manage risk you can't measure. Tick value is the measuring tape.", "example": "Your stop is 4 points on ES = 16 ticks \u00d7 $12.50 = $200 risk per contract. On a $50K account risking 1% ($500), that's 2 contracts. No calculator needed once you know the ticks.", "related": ["es-futures", "position-sizing", "margin"]}, {"slug": "margin", "term": "Margin (Futures)", "category": "Instruments", "short": "The good-faith deposit required to hold a futures position \u2014 leverage's entry fee.", "definition": "Futures Margin is the capital a broker requires to open and hold a position \u2014 not a cost, but collateral. Day-trading margins on ES typically run $500\u2013$1,500 per contract (broker-set), while exchange overnight margins are much higher (~$12,000+). Margin is what creates futures leverage: one $1,500 day margin controls a ~$290,000 notional ES position. That leverage is why position sizing by risk \u2014 not by margin available \u2014 is the rule. The broker will happily let you trade 10 contracts on a $15K account. The math says you shouldn't.", "why": "Margin tells you what you're allowed to do. Risk math tells you what you should do. Confusing the two is how accounts die.", "example": "$15,000 account, $1,500 day margin = you can open 10 ES contracts. One 4-point stop = $2,000 loss = 13% of the account. That's not trading; that's leverage roulette.", "related": ["position-sizing", "tick-value", "drawdown"]}, {"slug": "prop-firm", "term": "Prop Firm (Evaluation)", "category": "Instruments", "short": "A firm that funds traders with its capital after they pass a rules-based evaluation \u2014 the modern funded-trader path.", "definition": "A Proprietary Trading Firm (prop firm) funds traders with company capital in exchange for a profit split (typically 80/20 in the trader's favor). Modern online prop firms (Topstep, Apex, FTMO-style futures/CFD shops) gate funding behind an evaluation: hit a profit target (e.g., +$3,000) without breaching rules (max daily loss, max drawdown, consistency limits). The evaluation rules accidentally enforce good process \u2014 fixed risk, defined drawdown, daily loss limits \u2014 which makes the RRR framework and A+ selectivity a natural fit for passing and keeping funded accounts.", "why": "Prop capital removes the 'I need a big account' excuse. Pass a $50K eval for a few hundred dollars, trade with their money, keep 80% \u2014 as long as your process survives the rules.", "example": "$50K eval: +$3,000 target, $2,000 max drawdown, $1,000 daily loss limit. Trading only A+ setups at 1% risk, you pass in 3\u20134 weeks of normal execution. No hero trades needed.", "related": ["position-sizing", "drawdown", "expectancy", "discipline"]}, {"slug": "options-contract", "term": "Options Contract", "category": "Options", "short": "The right \u2014 not the obligation \u2014 to buy (call) or sell (put) an underlying at a set price before expiration.", "definition": "An Options Contract gives the holder the right, without the obligation, to buy (a Call) or sell (a Put) 100 shares of the underlying asset at a specified strike price on or before its expiration date. The buyer pays a premium for that right; the seller collects the premium and takes on the obligation. Options derive their value from the underlying's price, time to expiration, and implied volatility. For LA Traders, options on SPX/SPY or futures options offer defined-risk ways to express the same RRR directional reads with capped downside.", "why": "Options let you risk exactly the premium \u2014 no stop hunts on your equity, no gap-through-stop losses. Defined risk, same structure.", "example": "ES sweeps the ON high and you want the short. Instead of futures, you buy an SPY put: premium $1.20 = $120 max risk. The Run to the midpoint pays $3.40. Same RRR trade, defined risk.", "related": ["delta", "theta", "implied-volatility"]}, {"slug": "delta", "term": "Delta", "category": "Options", "short": "How much an option's price moves per $1 move in the underlying \u2014 the directional sensitivity.", "definition": "Delta measures an option's price sensitivity to a $1 move in the underlying, ranging from 0 to 1.00 (calls) or 0 to \u22121.00 (puts). A 0.50 delta call gains ~$0.50 for every $1 the underlying rises. Delta also roughly approximates the market's implied probability of the option finishing in-the-money: a 0.30 delta call has about a 30% implied chance. Traders use delta to size directional exposure: buying a 0.70 delta call behaves like holding 70 shares, with a fraction of the capital at risk.", "why": "Delta translates options into stock equivalents. Once you think in deltas, options stop being exotic and start being just another way to express a directional read.", "example": "SPY at 584. Your 580 call has 0.65 delta. SPY rallies $2 \u2192 the call gains ~$1.30. You captured 65% of the move with the premium as your only risk.", "related": ["options-contract", "theta", "implied-volatility"]}, {"slug": "theta", "term": "Theta", "category": "Options", "short": "The daily time decay of an option's value \u2014 the silent tax on every long option.", "definition": "Theta measures how much value an option loses per day as expiration approaches, all else equal. It's the price of time: a long option is a wasting asset, and theta is the burn rate. The decay accelerates into expiration \u2014 an option loses value slowly with 60 days out and violently in the final week. For buyers, theta is the enemy: your directional read has to be right AND timely. For sellers, theta is the paycheck. This is why LA Traders-style options entries happen at the Retrace \u2014 you want the move now, not eventually, because the clock is literally costing you money.", "why": "Every day you hold a long option, the market collects rent. Theta is why 'I'll wait and see' is a losing options strategy.", "example": "Your SPY put has \u22120.08 theta. Every day that passes costs you $8 per contract, move or no move. Three days of chop = $24 gone before the trade even starts.", "related": ["options-contract", "delta", "implied-volatility"]}, {"slug": "implied-volatility", "term": "Implied Volatility (IV)", "category": "Options", "short": "The market's forecast of future movement embedded in option prices \u2014 high IV = expensive options.", "definition": "Implied Volatility (IV) is the expected magnitude of future price movement implied by current option premiums. High IV means options are expensive (the market expects big moves \u2014 often around events like CPI or FOMC); low IV means they're cheap. IV is mean-reverting: it spikes around fear and collapses after the event ('vol crush'). Practical rule: buying options when IV is elevated means you can be right on direction and still lose money as IV deflates. Check IV before entry \u2014 it's the price tag on your conviction.", "why": "Direction is only half the options trade. The other half is whether you overpaid for the move. IV is how you know.", "example": "You buy SPY puts an hour before CPI at 38% IV. CPI hits, SPY dips $2 \u2014 but IV collapses to 24% and your puts barely gain. Right on direction, wrong on vol. The checklist item: check IV first.", "related": ["options-contract", "theta", "delta"]}]
+[
+  {
+    "slug": "rrr-framework",
+    "term": "RRR Framework",
+    "category": "RRR Framework",
+    "short": "The three-question filter every LA Traders setup must pass: Reveal, Retrace, Run.",
+    "definition": "The RRR Framework is the core decision-making process taught by LA Traders. Before any trade is taken, three questions must be answered in sequence: (1) REVEAL — what did the market just show you? A sweep of a level, a break of structure, or a rejection of a zone tells you which side is in control. (2) RETRACE — where should price pull back to? Direction rarely runs in a straight line, so you identify the level price should return to and wait. (3) RUN — where is price likely to travel next? With the reveal confirmed and the retrace respected, you enter with the move toward the next pool of liquidity.",
+    "why": "Most losing trades are taken without a process. The RRR Framework forces every setup through the same three gates, which means you're never trading on emotion, FOMO, or a hunch. If a setup can't answer all three questions, it isn't A+ — and if it isn't A+, you don't take it.",
+    "example": "ES sweeps the overnight high at 6:47 AM (REVEAL — sellers are in control above). You mark the 1-hour breaker at 5,842 as the level price should retrace to (RETRACE). When price returns and rejects the level, you enter short targeting the overnight midpoint at 5,831 (RUN). Three questions answered. A+ setup.",
+    "related": [
+      "reveal",
+      "retrace",
+      "run",
+      "a-plus-setup",
+      "liquidity"
+    ],
+    "protocol_fit": {
+      "color": "gold",
+      "stage": "The Entire Protocol",
+      "text": "The RRR Framework is the decision engine inside every stage of the 6:00 AM Protocol. After you mark your levels, every setup must pass through Reveal, Retrace, and Run before you pull the trigger."
+    }
+  },
+  {
+    "slug": "reveal",
+    "term": "Reveal",
+    "category": "RRR Framework",
+    "short": "The first RRR question: what did the market just show you?",
+    "definition": "The Reveal is the market's disclosure of intent. It happens when price does something meaningful at a marked level: sweeping liquidity above a high or below a low, breaking a swing structure point, or rejecting a zone with a strong reaction. The Reveal tells you which side — buyers or sellers — currently has control. Without a Reveal, you have no information, and trading without information is gambling.",
+    "why": "Amateurs enter because price 'looks like it's going up.' Professionals wait for the market to prove direction at a level that matters. The Reveal is that proof. It's the difference between reacting to structure and predicting it.",
+    "example": "Price runs 3 ticks above the overnight high, then immediately closes back below it on the 5-minute. That sweep-and-reclaim is a Reveal: buyers trapped above, sellers now in control.",
+    "related": [
+      "turtle-soup",
+      "change-of-character",
+      "a-plus-setup",
+      "run",
+      "rrr-framework",
+      "retrace",
+      "liquidity-sweep",
+      "break-of-structure"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 3 — The Reveal (6:30–7:00 AM)",
+      "text": "The Reveal is what you're watching for after the opening candle prints. When price sweeps a marked level and reclaims it, that's your signal to prepare the Retrace entry."
+    }
+  },
+  {
+    "slug": "retrace",
+    "term": "Retrace",
+    "category": "RRR Framework",
+    "short": "The second RRR question: where should price pull back to?",
+    "definition": "The Retrace is the expected pullback after a Reveal. Markets rarely move in straight lines — after showing direction, price typically returns to a prior level (a breaker, an order block, a fair value gap, or a structure point) before continuing. The Retrace is where you plan your entry, not where you chase. You identify the level in advance and wait for price to come to you.",
+    "why": "Chasing entries after a Reveal means buying the top of a move or selling the bottom. The Retrace gives you a defined entry zone with a defined invalidation — which means smaller stops and better risk-to-reward.",
+    "example": "After the sweep of the overnight high, you mark the 5,842 breaker as the Retrace zone. Price pulls back into it over the next 20 minutes, prints a rejection wick, and you enter. Stop above the sweep high. Defined risk.",
+    "related": [
+      "mitigation",
+      "breaker-block",
+      "a-plus-setup",
+      "rrr-framework",
+      "reveal",
+      "run",
+      "order-block",
+      "fair-value-gap"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "After the Reveal confirms direction, the Retrace is the wait. Price returns to your marked level — the order block, breaker, or FVG — and that's where you stage your entry."
+    }
+  },
+  {
+    "slug": "run",
+    "term": "Run",
+    "category": "RRR Framework",
+    "short": "The third RRR question: where is price likely to travel?",
+    "definition": "The Run is the profit-taking objective — the next pool of liquidity price is likely to seek after the Reveal and Retrace confirm the setup. Runs typically target the opposite side of the range: if you entered short after a sweep of the highs, your Run targets the midpoint, the overnight low, or the next structure level below. The Run is where you exit, not where you hope.",
+    "why": "Traders who don't know their target exit too early (leaving money on the table) or too late (watching winners turn into losers). The Run is defined before entry, so the exit is mechanical, not emotional.",
+    "example": "Short from 5,842 after the sweep. Run target: overnight midpoint at 5,831. 11 points. Stop is 4 points above entry. 2.75R. Mechanical exit at the level — no greed, no fear.",
+    "related": [
+      "a-plus-setup",
+      "rrr-framework",
+      "reveal",
+      "retrace",
+      "liquidity",
+      "risk-to-reward"
+    ],
+    "protocol_fit": {
+      "color": "gold",
+      "stage": "Stage 5 — The Run (8:00–11:00 AM)",
+      "text": "The Run is the payoff. With Reveal confirmed and Retrace respected, you enter with the move toward the next pool of liquidity — the overnight midpoint or the session's opposite extreme."
+    }
+  },
+  {
+    "slug": "a-plus-setup",
+    "term": "A+ Setup",
+    "category": "RRR Framework",
+    "short": "A trade that answers all three RRR questions with confluence at a marked level.",
+    "definition": "An A+ Setup is the only trade LA Traders takes. It requires: (1) a marked level from the 6:00 AM Protocol, (2) a clear Reveal at that level, (3) a clean Retrace to a defined entry zone, (4) a logical Run target that offers at least 2R, and (5) no conflicting news events. If any element is missing, the setup is a B or a C — and B and C setups are not traded. Ever.",
+    "why": "The gap between breakeven traders and profitable traders isn't skill — it's selectivity. Trading only A+ setups means fewer trades, higher win rate, and no death-by-a-thousand-cuts from mediocre entries.",
+    "example": "You watch price chop between 5,838 and 5,841 for 40 minutes. No sweep, no structure break, no reveal. You take zero trades. That's the A+ filter working.",
+    "related": [
+      "journaling",
+      "revenge-trading",
+      "risk-to-reward",
+      "rrr-framework",
+      "reveal",
+      "retrace",
+      "run",
+      "six-am-protocol"
+    ],
+    "protocol_fit": {
+      "color": "gold",
+      "stage": "Stage 5 — Execution",
+      "text": "The A+ Setup is the only trade the 6:00 AM Protocol permits. If a setup can't answer all three RRR questions at a marked level, it's not A+ — and if it's not A+, you don't take it."
+    }
+  },
+  {
+    "slug": "six-am-protocol",
+    "term": "The 6:00 AM Protocol",
+    "category": "RRR Framework",
+    "short": "The five-stage pre-market routine: mark overnight range, 4H structure, 1H structure, midpoint, and the NY opening candle.",
+    "definition": "The 6:00 AM Protocol is the standardized pre-market preparation routine every LA Traders member runs before the New York session. Five stages in sequence: (1) 6:00 AM — mark the overnight high, overnight low, and 4-hour structure in Blue and Purple. (2) 6:00–6:25 — mark the 1-hour structure, swing points, and higher/lower highs and lows in Red. (3) 6:25 — mark the overnight midpoint in White and check the news calendar. (4) 6:30 — mark the New York opening candle in Gold. (5) 6:35–11:00 — run the RRR framework, take only A+ setups, journal every trade.",
+    "why": "Consistent results come from consistent preparation. When every trader on the desk marks the same levels the same way at the same time, the entire community is watching the same structure — which is why the levels work.",
+    "example": "6:00 AM: ON high 5,847, ON low 5,828, 4H demand at 5,822. 6:25: midpoint 5,837.5, CPI at 8:30 — noted. 6:30: opening candle range 5,839–5,843. Levels marked. Now you wait for the reveal.",
+    "related": [
+      "killzone",
+      "new-york-session",
+      "overnight-midpoint",
+      "a-plus-setup",
+      "overnight-range",
+      "opening-candle",
+      "discipline"
+    ],
+    "protocol_fit": {
+      "color": "blue",
+      "stage": "The Entire Protocol",
+      "text": "This IS the 6:00 AM Protocol — the five-stage pre-market routine that structures every session: mark the overnight range, 4H structure, 1H structure, overnight midpoint, and the NY opening candle."
+    }
+  },
+  {
+    "slug": "market-structure",
+    "term": "Market Structure",
+    "category": "Market Structure",
+    "short": "The skeleton of price movement — the sequence of swing highs and swing lows that defines trend.",
+    "definition": "Market Structure is the framework of swing highs and swing lows that price creates as it moves. An uptrend is defined by higher highs (HH) and higher lows (HL). A downtrend is defined by lower highs (LH) and lower lows (LL). When that sequence breaks — a lower high in an uptrend, or a higher low in a downtrend — structure has shifted, and the previous trend assumption is invalid. LA Traders marks structure on the 4-hour and 1-hour charts before every session.",
+    "why": "Structure is the map. Without it, every candle looks the same. With it, you know exactly where price is in the larger sequence — and more importantly, you know when the sequence has changed.",
+    "example": "ES makes a high at 5,850, pulls back to 5,838, makes a new high at 5,853. That's HH + HL — uptrend intact. When price breaks below 5,838, structure shifts. Longs are done.",
+    "related": [
+      "change-of-character",
+      "break-of-structure",
+      "swing-high",
+      "swing-low",
+      "trend"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 2 — Mark Structure (6:25–6:30 AM)",
+      "text": "Market structure is what you mark at 6:25 AM — the 4H and 1H swing highs and lows that define the trend. Without structure marked, the Reveal has no context."
+    }
+  },
+  {
+    "slug": "break-of-structure",
+    "term": "Break of Structure (BOS)",
+    "category": "Market Structure",
+    "short": "When price closes beyond a significant swing point, confirming trend continuation or reversal.",
+    "definition": "A Break of Structure (BOS) occurs when price closes beyond a prior swing high (in an uptrend) or swing low (in a downtrend). A BOS in the direction of the trend confirms continuation. A BOS against the trend — often called a Change of Character (CHoCH) — is the first signal that the trend may be reversing. BOS is one of the strongest Reveals in the RRR framework because it's the market showing its hand at a structural level.",
+    "why": "A BOS isn't a wick poking through a level — it's a close beyond it. That distinction filters out most fake-outs and keeps you on the right side of the real move.",
+    "example": "Downtrend: LH at 5,845, LL at 5,830. Price closes a 15-minute candle above 5,845. That's a BOS against the downtrend — possible reversal. Wait for the retrace to confirm.",
+    "related": [
+      "market-structure",
+      "change-of-character",
+      "swing-high",
+      "reveal"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 3 — The Reveal (6:30–7:00 AM)",
+      "text": "A break of structure is one of the three ways the Reveal manifests. When price closes beyond a swing point at the open, it confirms which side is in control and sets up the Retrace."
+    }
+  },
+  {
+    "slug": "change-of-character",
+    "term": "Change of Character (CHoCH)",
+    "category": "Market Structure",
+    "short": "The first break of structure against the prevailing trend — the earliest reversal signal.",
+    "definition": "A Change of Character (CHoCH) is the first Break of Structure that runs counter to the current trend. In an uptrend, it's the first close below a prior higher low. In a downtrend, it's the first close above a prior lower high. A CHoCH doesn't guarantee reversal — but it's the market's first admission that the previous order flow may be done. In RRR terms, it's a powerful Reveal.",
+    "why": "The CHoCH is the earliest objective signal that the trend you're trading might be over. Traders who ignore it hold losers into reversals. Traders who respect it flip bias early and trade the new direction.",
+    "example": "Uptrend all morning. Price closes below the 5,838 higher low at 7:15 AM. CHoCH. You stop looking for longs and start watching for short setups on the retrace.",
+    "related": [
+      "trend",
+      "break-of-structure",
+      "market-structure",
+      "reveal"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 3 — The Reveal (6:30–7:00 AM)",
+      "text": "A change of character is the earliest reversal signal in the Protocol — the first break of structure against the prevailing trend. It flips the Reveal from continuation to reversal."
+    }
+  },
+  {
+    "slug": "swing-high",
+    "term": "Swing High",
+    "category": "Market Structure",
+    "short": "A local peak in price — a high with lower highs on both sides.",
+    "definition": "A Swing High is a candle whose high is higher than the highs of a defined number of candles on either side (typically 2–5). Swing highs mark the points where buyers exhausted and sellers took over. They're the connection points for trendlines, the levels for structure breaks, and — critically for LA Traders — the pools where buy-side liquidity sits.",
+    "why": "Swing highs aren't just 'highs' — they're the structural reference points the market respects. Mark them before the session, and you'll see price react to them all morning.",
+    "example": "The 6:47 AM candle prints a high of 5,847 with lower highs on the three candles either side. That's the swing high. Price returns to it 40 minutes later and rejects. Structure held.",
+    "related": [
+      "break-of-structure",
+      "swing-low",
+      "market-structure",
+      "liquidity"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 2 — Mark Structure (6:25–6:30 AM)",
+      "text": "Swing highs are the reference points you mark at 6:25 AM. They define the structure the Reveal will test and the levels where buy-side liquidity rests."
+    }
+  },
+  {
+    "slug": "swing-low",
+    "term": "Swing Low",
+    "category": "Market Structure",
+    "short": "A local trough in price — a low with higher lows on both sides.",
+    "definition": "A Swing Low is a candle whose low is lower than the lows of a defined number of candles on either side. Swing lows mark where sellers exhausted and buyers stepped in. They define uptrend structure (higher lows), serve as retrace targets, and mark the pools where sell-side liquidity rests.",
+    "why": "Swing lows are where your stops hide and where smart money looks to enter. Knowing where they are — before price gets there — is the entire edge.",
+    "example": "The overnight session bottoms at 5,828 with higher lows either side. That swing low is your sell-side liquidity pool. If price sweeps it and reclaims, that's a Reveal.",
+    "related": [
+      "swing-high",
+      "market-structure",
+      "liquidity"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 2 — Mark Structure (6:25–6:30 AM)",
+      "text": "Swing lows are the reference points you mark at 6:25 AM. They define the structure the Reveal will test and the levels where sell-side liquidity rests."
+    }
+  },
+  {
+    "slug": "trend",
+    "term": "Trend",
+    "category": "Market Structure",
+    "short": "The directional bias of price, defined by the sequence of higher highs/lows or lower highs/lows.",
+    "definition": "A Trend is the sustained directional movement of price, objectively defined by structure. Uptrend: higher highs and higher lows. Downtrend: lower highs and lower lows. No sequence = no trend = range. Trends persist until structure breaks. The LA Traders approach is to identify the trend on the 4-hour, refine it on the 1-hour, and only take setups in the direction of the prevailing structure until a CHoCH says otherwise.",
+    "why": "'The trend is your friend' is a cliché because it's true. Counter-trend trades have lower win rates and worse R:R. Trade with structure, not against it.",
+    "example": "4H: HH at 5,860, HL at 5,822. Uptrend. Your A+ longs are valid. Your shorts are counter-trend — skipped unless a CHoCH prints.",
+    "related": [
+      "market-structure",
+      "change-of-character",
+      "premium-discount"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 2 — Mark Structure (6:25–6:30 AM)",
+      "text": "Trend is established by the sequence of swing highs and lows you mark before the open. It tells you which direction to trade — the Reveal must align with the trend, not fight it."
+    }
+  },
+  {
+    "slug": "liquidity",
+    "term": "Liquidity",
+    "category": "Liquidity",
+    "short": "The pool of resting orders (stops and pending entries) clustered at obvious price levels.",
+    "definition": "Liquidity is the fuel markets run on. It exists wherever clusters of stop-loss orders and breakout entry orders rest: above swing highs (buy-side liquidity — shorts' stops and longs' breakout entries), below swing lows (sell-side liquidity — longs' stops and shorts' breakout entries), and at obvious round numbers. Price is drawn to liquidity because large players need opposing orders to fill their size. Understanding where liquidity sits tells you where price is likely to go — and where it's likely to reverse after taking it.",
+    "why": "The market moves from pool to pool. If you know where the pools are, you stop being the liquidity and start trading alongside the ones who take it.",
+    "example": "ON high at 5,847. Every breakout buyer has orders there; every short has stops above. Price runs to 5,849, fills them all, and reverses. The liquidity grab IS the Reveal.",
+    "related": [
+      "swing-low",
+      "swing-high",
+      "run",
+      "rrr-framework",
+      "liquidity-sweep",
+      "buy-side-liquidity",
+      "sell-side-liquidity",
+      "stop-hunt"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 3 — The Reveal (6:30–7:00 AM)",
+      "text": "Liquidity is where the Reveal happens. The pools of resting orders above highs and below lows are the targets price sweeps before reversing — marking them is step one of the Protocol."
+    }
+  },
+  {
+    "slug": "liquidity-sweep",
+    "term": "Liquidity Sweep",
+    "category": "Liquidity",
+    "short": "A fast run through a level that triggers resting stops, then reverses — the signature Reveal.",
+    "definition": "A Liquidity Sweep (also called a stop hunt or liquidity grab) is when price quickly trades through an obvious level — an overnight high, a swing low, an equal-highs trendline — triggers the stops resting there, and then immediately reverses and closes back inside the range. The sweep is the market filling large orders using the stopped-out traders as counterparty. For LA Traders, a clean sweep of a marked level is the single most powerful Reveal in the RRR framework.",
+    "why": "Sweeps look like breakouts to the untrained eye — that's the trap. The difference: a sweep fails to hold beyond the level. Waiting for the reclaim after the sweep is how you avoid being the trapped liquidity.",
+    "example": "Price spikes to 5,849 (3 ticks above ON high), triggers buy stops, then closes the 5-minute back at 5,844. Sweep complete. Sellers in control. Short the retrace.",
+    "related": [
+      "opening-range",
+      "sell-side-liquidity",
+      "buy-side-liquidity",
+      "liquidity",
+      "stop-hunt",
+      "reveal",
+      "turtle-soup"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 3 — The Reveal (6:30–7:00 AM)",
+      "text": "The liquidity sweep is the signature Reveal. When price runs through a marked level, triggers stops, and reverses — that's the moment the Protocol tells you to prepare the Retrace."
+    }
+  },
+  {
+    "slug": "buy-side-liquidity",
+    "term": "Buy-Side Liquidity",
+    "category": "Liquidity",
+    "short": "The pool of buy orders resting above resistance — shorts' stops and breakout longs.",
+    "definition": "Buy-Side Liquidity is the cluster of buy orders sitting above obvious highs: swing highs, overnight highs, equal highs, and round numbers. It consists of stop-loss orders from short positions (which are buy orders) and pending breakout entries from momentum buyers. Smart money sells into buy-side liquidity because it's the deepest pool of willing buyers. Once taken, the price often reverses — which is why the sweep of buy-side liquidity is a classic short Reveal.",
+    "why": "Every obvious high is a target. Mark your buy-side pools before the session and you'll stop being surprised when price runs them.",
+    "example": "Equal highs at 5,847 and 5,847.25 — a magnet. Price runs to 5,848.50, fills the breakout buyers, reverses hard. Buy-side liquidity: taken.",
+    "related": [
+      "liquidity",
+      "sell-side-liquidity",
+      "liquidity-sweep"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 3 — The Reveal (6:30–7:00 AM)",
+      "text": "Buy-side liquidity above the overnight high is the first target of the session. When price sweeps it and reclaims, the Reveal is bearish — shorts are in control."
+    }
+  },
+  {
+    "slug": "sell-side-liquidity",
+    "term": "Sell-Side Liquidity",
+    "category": "Liquidity",
+    "short": "The pool of sell orders resting below support — longs' stops and breakout shorts.",
+    "definition": "Sell-Side Liquidity is the cluster of sell orders sitting below obvious lows: swing lows, overnight lows, equal lows, and key support. It's made of longs' stop-losses (which are sell orders) and pending breakout shorts. Smart money buys into sell-side liquidity because it's the deepest pool of willing sellers. A sweep of sell-side liquidity followed by a reclaim is a classic long Reveal in the RRR framework.",
+    "why": "The overnight low is the most-watched sell-side pool on the board. Watch what price does when it gets there — the reaction tells you everything.",
+    "example": "ON low 5,828. Price dips to 5,826.75, stops out the longs, then rips back above 5,830. Sell-side taken, longs trapped. You enter long on the retrace.",
+    "related": [
+      "liquidity",
+      "buy-side-liquidity",
+      "liquidity-sweep"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 3 — The Reveal (6:30–7:00 AM)",
+      "text": "Sell-side liquidity below the overnight low is the bearish target. When price sweeps it and reclaims, the Reveal is bullish — longs are in control."
+    }
+  },
+  {
+    "slug": "stop-hunt",
+    "term": "Stop Hunt",
+    "category": "Liquidity",
+    "short": "Deliberate price movement through a level to trigger clustered stop-loss orders before reversing.",
+    "definition": "A Stop Hunt is a liquidity sweep viewed from the other side: the intentional driving of price through an obvious level to trigger the stops resting there. Whether or not you believe it's 'deliberate,' the mechanic is the same — large orders need liquidity, and stops are liquidity. Stop hunts are why obvious levels get wicked through before real moves begin. The LA Traders defense: never place stops at obvious levels, and never enter on the first touch of a level. Wait for the hunt, then trade the reclaim.",
+    "why": "If your stop is at the same place as everyone else's, you're the target. Understanding stop hunts flips you from hunted to hunter.",
+    "example": "You went long at 5,840 with a stop at 5,837.90 — just below the ON low of 5,838. Price dips to 5,837.75, takes your stop, then rallies 20 points. Classic stop hunt. The fix: enter AFTER the sweep, not before it.",
+    "related": [
+      "liquidity-sweep",
+      "liquidity",
+      "turtle-soup"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 3 — The Reveal (6:30–7:00 AM)",
+      "text": "A stop hunt is the mechanism behind the Reveal. Price runs through a level to trigger clustered stops, then reverses — which is exactly the pattern the Protocol trains you to wait for."
+    }
+  },
+  {
+    "slug": "turtle-soup",
+    "term": "Turtle Soup",
+    "category": "Liquidity",
+    "short": "Fading the false breakout — entering against the move after a level is swept and reclaimed.",
+    "definition": "Turtle Soup is a counter-trend entry pattern named after the famous Turtle Traders (who traded breakouts). The Turtle Soup trade fades them: when price breaks an obvious level (like a prior high) and immediately fails — closing back inside the range — you enter in the opposite direction, targeting the other side of the range. It's the original liquidity-sweep trade and the mechanical core of the Reveal step in the RRR framework.",
+    "why": "False breakouts are more common than real ones at well-marked levels. Turtle Soup is the systematic way to profit from that fact.",
+    "example": "Price breaks the 20-day high by 2 ticks, holds for one candle, then closes back below. Turtle Soup short. Stop above the sweep high. Target: the range midpoint.",
+    "related": [
+      "liquidity-sweep",
+      "stop-hunt",
+      "reveal"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "Turtle Soup is the trade you take after the Reveal. The sweep happens, price reclaims the level, and you enter against the false breakout — the Retrace entry following a liquidity sweep."
+    }
+  },
+  {
+    "slug": "order-block",
+    "term": "Order Block",
+    "category": "Price Action",
+    "short": "The last opposing candle before a strong directional move — a zone where institutions likely entered.",
+    "definition": "An Order Block (OB) is the final down candle before a strong up move (bullish OB) or the final up candle before a strong down move (bearish OB). The theory: that candle represents the last moment large players accumulated or distributed before driving price, so when price returns to the zone, those same players defend it. Order blocks are primary Retrace zones in the RRR framework — after a Reveal, you look for the OB that created the move and plan your entry at its return.",
+    "why": "Order blocks give you a specific, defensible zone for entries instead of 'somewhere around there.' Entry at the OB, stop beyond it — tight, defined risk.",
+    "example": "Price drops hard from 5,845. The last green 5-minute candle before the drop spans 5,844–5,846. That's your bearish OB. When price retraces into it, you enter short. Stop above 5,846.50.",
+    "related": [
+      "imbalance",
+      "fair-value-gap",
+      "breaker-block",
+      "retrace",
+      "mitigation"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "The order block is the zone where price should Retrace to after the Reveal. Mark it during structure, then wait for price to return and respect it before entering the Run."
+    }
+  },
+  {
+    "slug": "fair-value-gap",
+    "term": "Fair Value Gap (FVG)",
+    "category": "Price Action",
+    "short": "A three-candle imbalance where the middle candle's range doesn't overlap — price often returns to fill it.",
+    "definition": "A Fair Value Gap (FVG) is a three-candle pattern where the middle candle moves so aggressively that its range doesn't overlap with the candles on either side — leaving a 'gap' between candle 1's high and candle 3's low (in an up move) or vice versa. The gap represents one-sided order flow, and price frequently returns to trade through ('fill') the gap before continuing. FVGs are high-probability Retrace zones: after a Reveal, the nearest unfilled FVG is often exactly where price pulls back to.",
+    "why": "FVGs are the market's footprints of urgency. Where price moved too fast to trade fairly, it tends to come back and make it fair.",
+    "example": "Candle 1 high: 5,840. Candle 2 rips to 5,845. Candle 3 low: 5,842. The gap between 5,840 and 5,842 is the FVG. Price retraces into it 30 minutes later and bounces. Classic fill.",
+    "related": [
+      "order-block",
+      "retrace",
+      "imbalance",
+      "silver-bullet"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "A fair value gap is a Retrace magnet. When the Reveal creates an FVG, the Protocol says: wait for price to return and fill the gap before entering — that's your Retrace entry zone."
+    }
+  },
+  {
+    "slug": "imbalance",
+    "term": "Imbalance",
+    "category": "Price Action",
+    "short": "Any inefficient price move where one side overwhelmed the other — the parent concept of the FVG.",
+    "definition": "An Imbalance is any price region where buying or selling was so one-sided that normal two-way trade didn't occur. Fair Value Gaps are the most common form, but imbalances also include gaps between sessions and single-candle spikes. Markets seek efficiency, so imbalanced regions act as magnets — price revisits them to 'rebalance' trade. Marking imbalances gives you the map of where price is likely to return before continuing.",
+    "why": "Efficient markets auction both ways. When they don't, the unfinished business draws price back. Imbalances are that unfinished business.",
+    "example": "The 8:30 CPI spike rips 30 points in one candle with zero pullback. That whole candle is an imbalance. Over the next two hours, price methodically retrades the entire range.",
+    "related": [
+      "fair-value-gap",
+      "order-block",
+      "liquidity"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "Imbalances are where price will Retrace. The Protocol teaches you to mark these inefficient moves and wait for price to return to them — the market always seeks efficiency before the Run."
+    }
+  },
+  {
+    "slug": "breaker-block",
+    "term": "Breaker Block",
+    "category": "Price Action",
+    "short": "A failed order block that flips polarity — old support becomes new resistance (or vice versa).",
+    "definition": "A Breaker Block is an order block that price traded through, which then flips its role: a bullish OB that gets broken becomes resistance on the retest; a bearish OB that gets broken becomes support. The logic: traders who entered at the original OB are now underwater, and when price returns to their entry, they exit at breakeven — creating the reaction. Breakers are premium Retrace zones because they combine structure (the break) with order flow (the trapped traders).",
+    "why": "The best levels are the ones where someone's trapped. Breaker blocks mark exactly where the trapped money is waiting to get out.",
+    "example": "Bullish OB at 5,835 fails as price crashes through to 5,820. When price rallies back to 5,835, the trapped longs sell at breakeven. The old support becomes the ceiling. Short the retest.",
+    "related": [
+      "order-block",
+      "retrace",
+      "mitigation"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "A breaker block is a Retrace level that flips polarity. When the Reveal breaks structure, the failed order block becomes the level price should Retrace to — old support becomes new resistance."
+    }
+  },
+  {
+    "slug": "mitigation",
+    "term": "Mitigation",
+    "category": "Price Action",
+    "short": "Price returning to a zone so trapped traders can exit at breakeven — the engine behind retests.",
+    "definition": "Mitigation is the process by which price returns to a level where a group of traders is trapped (underwater on their positions) so they can close their trades near breakeven. Their exits provide the order flow for the next move. Mitigation is the 'why' behind breaker blocks, retests of broken structure, and returns to order blocks. When you understand mitigation, you stop seeing random bounces and start seeing trapped money being released.",
+    "why": "Every significant level has a story about who's trapped there. Mitigation is the chapter where they get out — and where you get in.",
+    "example": "Shorts who entered at 5,830 watched price rally to 5,848. When price pulls back to 5,831, they exit at breakeven-plus-one. Their buy-to-cover orders fuel the next leg up. That's mitigation.",
+    "related": [
+      "breaker-block",
+      "order-block",
+      "retrace"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "Mitigation is the engine of the Retrace. Price returns to a zone so trapped traders can exit at breakeven — which is exactly the level where you stage your entry after the Reveal."
+    }
+  },
+  {
+    "slug": "premium-discount",
+    "term": "Premium and Discount",
+    "category": "Price Action",
+    "short": "The upper and lower halves of a range — you sell premium and buy discount, never the reverse.",
+    "definition": "Premium and Discount divide any range at its midpoint (50% equilibrium). The upper half is Premium — where selling has the statistical edge. The lower half is Discount — where buying has the edge. The rule is simple: in a bullish context, you only enter longs in Discount; in a bearish context, you only enter shorts in Premium. The overnight midpoint — marked in White at 6:25 AM in the Protocol — is the LA Traders equilibrium line for the session. Above it, you're a seller. Below it, you're a buyer. Context decides.",
+    "why": "Most losing trades are good ideas at bad prices. Premium/Discount is the filter that keeps you buying low and selling high — literally.",
+    "example": "ON range: 5,828–5,848. Midpoint: 5,838. Price sweeps the high and retraces to 5,841 (still Premium). Short is valid. If it were at 5,836 (Discount), you'd skip the short and look for longs.",
+    "related": [
+      "trend",
+      "equilibrium",
+      "overnight-midpoint",
+      "optimal-trade-entry"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 2 — Mark Structure (6:25–6:30 AM)",
+      "text": "Premium and discount tell you where to look for entries. The Protocol says: sell premium, buy discount. If the Reveal is bearish, you short from premium; if bullish, you long from discount."
+    }
+  },
+  {
+    "slug": "equilibrium",
+    "term": "Equilibrium",
+    "category": "Price Action",
+    "short": "The 50% midpoint of any range — the fairest price, and the line between premium and discount.",
+    "definition": "Equilibrium is the exact 50% level of a defined range. It's the 'fair' price where neither buyers nor sellers have a positional edge. Price gravitates toward equilibrium in ranging conditions and accelerates away from it in trends. The overnight midpoint (White level, marked at 6:25 AM) is the session's equilibrium — and it's remarkable how often price returns to it during the New York morning.",
+    "why": "Equilibrium is the anchor. When you're unsure where price is going, ask where it is relative to equilibrium — that alone answers half the question.",
+    "example": "ON midpoint 5,838. Price opens, runs to 5,846, then spends the next hour bleeding back to 5,838.25. Equilibrium, doing its job.",
+    "related": [
+      "fibonacci-retracement",
+      "premium-discount",
+      "overnight-midpoint"
+    ],
+    "protocol_fit": {
+      "color": "blue",
+      "stage": "Stage 1 — Mark the Range (6:00–6:25 AM)",
+      "text": "Equilibrium is the overnight midpoint — the 50% level you mark at 6:25 AM. It's the session's fair-value line and the first target of the Run after a Reveal."
+    }
+  },
+  {
+    "slug": "optimal-trade-entry",
+    "term": "Optimal Trade Entry (OTE)",
+    "category": "Price Action",
+    "short": "The 62%–79% retracement zone of a leg — the statistically sweet spot for entries.",
+    "definition": "Optimal Trade Entry (OTE) is the fibonacci-defined retracement zone between 62% and 79% of a price leg (with 70.5% as the center). After a Reveal, you measure the leg that created the move, and the OTE zone is your highest-probability Retrace entry. It aligns with where order blocks and fair value gaps typically sit — deep enough that weak hands are shaken out, shallow enough that the move is still valid. Entry in OTE, stop beyond the origin of the leg, target the next liquidity pool.",
+    "why": "OTE is where the risk-to-reward math works best: deep retrace = tight stop = the same target gives you 3R+ instead of 1.5R.",
+    "example": "Reveal leg: 5,830 → 5,846. OTE zone: 5,836–5,840 (62%–79% pullback). Price retraces to 5,838, you enter long. Stop below 5,830. Target ON high 5,847+. Nearly 3R.",
+    "related": [
+      "premium-discount",
+      "retrace",
+      "fibonacci-retracement"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "The OTE zone is where the Retrace should land. When price Reveal is confirmed and price retraces to the 62–79% zone, that's the highest-probability entry the Protocol recognizes."
+    }
+  },
+  {
+    "slug": "fibonacci-retracement",
+    "term": "Fibonacci Retracement",
+    "category": "Price Action",
+    "short": "Horizontal levels at 23.6%, 38.2%, 50%, 61.8%, and 78.6% of a measured leg, used to frame retrace entries.",
+    "definition": "Fibonacci Retracement levels divide a price leg into proportional zones based on the golden ratio. In practice, LA Traders uses three: 50% (equilibrium), 62%–79% (the OTE zone), and the extremes (0% and 100%, which define the leg itself). The levels work not because of magic ratios, but because enough traders watch them that they become self-fulfilling reference points — and because they frame risk precisely.",
+    "why": "Fibonacci levels are a ruler, not a crystal ball. They measure where you are in the retrace so you can define entry, stop, and invalidation in numbers instead of feelings.",
+    "example": "Leg: 5,828 → 5,848. 50% = 5,838. 62% = 5,835.6. 79% = 5,832.2. The 5,832–5,836 zone is OTE. Below 5,828, the long idea is dead. Clean, mechanical levels.",
+    "related": [
+      "optimal-trade-entry",
+      "equilibrium",
+      "retrace"
+    ],
+    "protocol_fit": {
+      "color": "purple",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "Fibonacci levels frame the Retrace. After the Reveal, you measure the leg and wait for price to return to the 62–79% OTE zone — that's where the Protocol says to enter."
+    }
+  },
+  {
+    "slug": "overnight-range",
+    "term": "Overnight Range",
+    "category": "Sessions & Time",
+    "short": "The high and low formed during the overnight session — the first levels marked every morning.",
+    "definition": "The Overnight Range (ON Range) is the high and low established during the overnight (Globex) session before the New York open. Marked in Blue at 6:00 AM, these are the two most important reference levels of the day: the ON high is the session's primary buy-side liquidity pool, and the ON low is the primary sell-side pool. The range also defines the day's initial equilibrium (its midpoint) and frames whether the New York session is likely to trend (range break) or rotate (range hold).",
+    "why": "Everything in the New York session is measured against the overnight range. Mark it first, mark it always — it's the foundation every other level sits on.",
+    "example": "ON high 5,847, ON low 5,828 — a 19-point range. New York opens at 5,840. The first question of the day: does price sweep a side of the range, or accept inside it?",
+    "related": [
+      "overnight-midpoint",
+      "opening-candle",
+      "six-am-protocol",
+      "liquidity"
+    ],
+    "protocol_fit": {
+      "color": "blue",
+      "stage": "Stage 1 — Mark the Range (6:00–6:25 AM)",
+      "text": "The overnight range is the first thing you mark at 6:00 AM. Its high and low are the liquidity targets the Reveal will sweep — without them, you have no levels to watch."
+    }
+  },
+  {
+    "slug": "overnight-midpoint",
+    "term": "Overnight Midpoint",
+    "category": "Sessions & Time",
+    "short": "The 50% level of the overnight range — the session's equilibrium, marked in White at 6:25 AM.",
+    "definition": "The Overnight Midpoint is the exact 50% level between the overnight high and overnight low, marked in White during the 6:00 AM Protocol. It serves as the session's equilibrium line: above it, price is in premium (look for shorts); below it, price is in discount (look for longs). It's also a gravitational level — in ranging conditions, price returns to the midpoint repeatedly, making it both a target and a decision line.",
+    "why": "The midpoint is the quickest bias check in trading. One glance tells you whether you're hunting longs or shorts this morning.",
+    "example": "ON range 5,828–5,848 → midpoint 5,838. Price opens at 5,842, runs to 5,846, stalls. Above midpoint = premium. You wait for a short Reveal instead of chasing longs.",
+    "related": [
+      "overnight-range",
+      "equilibrium",
+      "premium-discount",
+      "six-am-protocol"
+    ],
+    "protocol_fit": {
+      "color": "blue",
+      "stage": "Stage 1 — Mark the Range (6:00–6:25 AM)",
+      "text": "The overnight midpoint is the 50% level marked at 6:25 AM. It's the session's equilibrium and the primary target of the Run — price often travels from the Reveal to the midpoint."
+    }
+  },
+  {
+    "slug": "opening-candle",
+    "term": "The Opening Candle",
+    "category": "Sessions & Time",
+    "short": "The first candle of the New York session (6:30 AM PT) — marked in Gold as the day's reference range.",
+    "definition": "The Opening Candle is the first printed candle of the New York session, marked in Gold at 6:30 AM in the LA Traders Protocol. Its high and low form the opening range — the level everything else measures against. Price acceptance above the opening range is bullish; acceptance below is bearish; and a sweep of one side followed by a reclaim is a session-defining Reveal. Many traders use the first 1-minute, 5-minute, or 15-minute candle — what matters is that you mark it consistently and treat it as a structural reference.",
+    "why": "The opening candle is the New York session's opening statement. Everything after it is cross-examination.",
+    "example": "6:30 AM candle prints 5,839–5,843. Price spends 20 minutes building above 5,843, then expands higher. Acceptance above the opening range. Longs have the ball.",
+    "related": [
+      "new-york-session",
+      "overnight-range",
+      "six-am-protocol",
+      "opening-range"
+    ],
+    "protocol_fit": {
+      "color": "gold",
+      "stage": "Stage 2 — The Opening Candle (6:30 AM)",
+      "text": "The opening candle is the last level marked in the Protocol. Its high and low define the day's first battleground — the Reveal often happens when price sweeps the opening candle's range."
+    }
+  },
+  {
+    "slug": "opening-range",
+    "term": "Opening Range",
+    "category": "Sessions & Time",
+    "short": "The high/low band established in the first minutes of the session — the day's first battleground.",
+    "definition": "The Opening Range (OR) is the high-to-low band formed in the initial minutes of the New York session (commonly the first 1, 5, or 15 minutes). It's the first liquidity structure of the day: breaks of the OR define early directional bias, and failures of those breaks (sweeps) provide the morning's best Reveals. LA Traders marks the 6:30 AM opening candle in Gold as the OR anchor and treats everything else as context around it.",
+    "why": "The first move of the day is often a trap. The opening range is the trap's blueprint — mark it, and you can see the trap being set.",
+    "example": "OR: 5,839–5,843. Price breaks 5,843, runs to 5,845.50, and closes back inside the range. OR breakout failed. That's your short Reveal toward the OR low and beyond.",
+    "related": [
+      "opening-candle",
+      "liquidity-sweep",
+      "reveal"
+    ],
+    "protocol_fit": {
+      "color": "gold",
+      "stage": "Stage 2 — The Opening Candle (6:30 AM)",
+      "text": "The opening range is the first few minutes of the session. Its high and low are the levels the Reveal will test — a sweep of the opening range and reclaim is a textbook Reveal."
+    }
+  },
+  {
+    "slug": "new-york-session",
+    "term": "The New York Session",
+    "category": "Sessions & Time",
+    "short": "The 6:30–11:00 AM PT window where US equity volume concentrates — the only session LA Traders trades.",
+    "definition": "The New York Session is the highest-volume trading window of the day, when US equity markets are open and institutional participation peaks. For LA Traders (on Pacific time), the tradeable window runs from the 6:30 AM PT open through roughly 11:00 AM PT, when the morning move completes and chop sets in. The edge of the session is structural: real volume, real moves, real liquidity. The overnight session sets the table; New York eats.",
+    "why": "Amateurs trade all day and donate to the chop. Professionals trade the four hours that matter and walk away. The window is the edge.",
+    "example": "You take your A+ short at 6:52, hit your Run target at 7:40, journal the trade, and close the platform at 8:00. Done for the day. That's the session discipline.",
+    "related": [
+      "silver-bullet",
+      "six-am-protocol",
+      "opening-candle",
+      "killzone"
+    ],
+    "protocol_fit": {
+      "color": "blue",
+      "stage": "The Entire Protocol",
+      "text": "The New York session is the only session the Protocol covers. From 6:30 AM to 11:00 AM ET, volume concentrates and the Reveal-Retrace-Run cycle repeats — this is where LA Traders trades."
+    }
+  },
+  {
+    "slug": "killzone",
+    "term": "Killzone",
+    "category": "Sessions & Time",
+    "short": "A specific time window where high-probability setups concentrate — e.g., the New York open 60–90 minutes.",
+    "definition": "A Killzone is a defined time window during which the probability of significant price movement is statistically elevated. The major killzones: London Open (2:00–5:00 AM ET), New York Open (7:00–10:00 AM ET), London Close (10:00 AM–12:00 PM ET), and the PM session (1:30–4:00 PM ET). Within the LA Traders framework, the primary killzone is the New York morning: 6:30–10:00 AM PT, with the first 90 minutes carrying the highest density of A+ setups.",
+    "why": "Time is a filter like price is a filter. A setup at 6:45 AM inside the killzone is worth twice the identical setup at noon.",
+    "example": "Same sweep-and-retrace pattern: at 6:50 AM it's an A+ short. At 12:30 PM it's lunch chop. The killzone is the difference.",
+    "related": [
+      "new-york-session",
+      "six-am-protocol",
+      "silver-bullet"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 3 — The Reveal (6:30–7:00 AM)",
+      "text": "The Killzone is the first 60–90 minutes of the New York session — the window where the Reveal and Retrace happen. The Protocol concentrates all entries in this high-probability window."
+    }
+  },
+  {
+    "slug": "silver-bullet",
+    "term": "Silver Bullet",
+    "category": "Sessions & Time",
+    "short": "A time-based setup targeting specific one-hour windows where FVG entries have statistical edge.",
+    "definition": "The Silver Bullet is a time-and-price setup that restricts entries to specific one-hour windows (classically 10–11 AM ET, 2–3 PM ET, and 3–4 AM ET) and requires a fair value gap to form within that window in the direction of the day's bias. The premise: certain hours reliably produce expansion moves, and the FVG within those hours provides the precise entry. It's a specialized expression of what LA Traders does more broadly — trade only when time and structure align.",
+    "why": "The Silver Bullet's real lesson isn't the hours — it's that time itself is an edge. Windows matter. Structure within windows matters more.",
+    "example": "Bearish day. At 10:05 AM ET price rips down, leaving a bearish FVG at 5,836–5,838. Retrace into the gap at 10:20. Enter short. Silver bullet, textbook.",
+    "related": [
+      "killzone",
+      "fair-value-gap",
+      "new-york-session"
+    ],
+    "protocol_fit": {
+      "color": "red",
+      "stage": "Stage 4 — The Retrace (7:00–8:00 AM)",
+      "text": "The Silver Bullet is a specific one-hour window within the Retrace stage where FVG entries have statistical edge. It's a time-based refinement of the Protocol's Retrace phase."
+    }
+  },
+  {
+    "slug": "risk-to-reward",
+    "term": "Risk-to-Reward (R:R)",
+    "category": "Risk & Execution",
+    "short": "The ratio between your stop distance and target distance — the math that decides if a trade is worth taking.",
+    "definition": "Risk-to-Reward (R:R) is the ratio of potential loss to potential gain on a trade, measured in 'R' multiples where 1R equals your risk. A trade risking 4 points to make 12 points is a 3R setup. R:R is the foundation of trading math: at 2R, you only need a 34% win rate to break even. At 3R, 26%. The LA Traders rule: if the Run target doesn't offer at least 2R from your Retrace entry, the setup isn't A+ — regardless of how good the Reveal looks.",
+    "why": "You don't need to be right often. You need to be paid when you're right and charged little when you're wrong. R:R is that math.",
+    "example": "Entry 5,842. Stop 5,846 (4 points risk). Target 5,830 (12 points reward). 3R. Win one in three and you still make money.",
+    "related": [
+      "a-plus-setup",
+      "run",
+      "position-sizing",
+      "expectancy"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Risk-to-reward is the filter every A+ setup must pass. Before the Run, you calculate: is the distance to the target at least 2x the distance to the stop? If not, the Protocol says: pass."
+    }
+  },
+  {
+    "slug": "position-sizing",
+    "term": "Position Sizing",
+    "category": "Risk & Execution",
+    "short": "How many contracts or shares to trade, derived from your stop distance and fixed dollar risk.",
+    "definition": "Position Sizing is the calculation that converts your risk tolerance into a trade size: (account risk per trade in dollars) ÷ (stop distance in dollars per contract/share) = number of contracts or shares. Professional risk per trade is typically 0.5%–1% of account equity. Position sizing is what makes losses survivable: with fixed fractional sizing, a string of losses shrinks your position automatically, and a string of wins compounds it. It's the quiet math behind every long trading career.",
+    "why": "The setup decides whether to trade. The size decides whether you survive being wrong. Most blown accounts are sizing failures, not analysis failures.",
+    "example": "$50,000 account, 1% risk = $500. ES stop is 4 points = $200 per contract. Size: 2 contracts ($400 risk). Not 5 because you 'feel good about this one.'",
+    "related": [
+      "prop-firm",
+      "tick-value",
+      "nq-futures",
+      "risk-to-reward",
+      "expectancy",
+      "drawdown",
+      "margin"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Position sizing is how many contracts you trade, derived from your fixed dollar risk and stop distance. The Protocol requires you to know your size before the Retrace completes — never after."
+    }
+  },
+  {
+    "slug": "expectancy",
+    "term": "Expectancy",
+    "category": "Risk & Execution",
+    "short": "The average R you earn per trade over a large sample — the true scoreboard of your edge.",
+    "definition": "Expectancy is the mathematical average outcome of your trading system per trade: (win rate × average win) − (loss rate × average loss), expressed in R. A system with 40% winners at 3R and 60% losers at 1R has an expectancy of (0.4 × 3) − (0.6 × 1) = +0.6R per trade. Positive expectancy over a meaningful sample (100+ trades) is the definition of an edge. Everything else — win rate alone, profit factor, a good month — is incomplete math.",
+    "why": "Expectancy is the only number that matters. A 70% win rate system can lose money (small wins, huge losses). A 35% win rate system can print (small losses, huge wins). Do the math.",
+    "example": "Your last 50 trades: 20 wins averaging 2.8R, 30 losses at 1R. Expectancy = (0.4 × 2.8) − 0.6 = +0.52R. At $500 risk per trade, that's $260 expected per trade. That's an edge worth scaling.",
+    "related": [
+      "prop-firm",
+      "drawdown",
+      "risk-to-reward",
+      "position-sizing",
+      "journaling"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Expectancy is the metric that validates the Protocol. Over 100+ A+ setups, your average R per trade tells you if the system works — if expectancy is positive, you keep running the process."
+    }
+  },
+  {
+    "slug": "drawdown",
+    "term": "Drawdown",
+    "category": "Risk & Execution",
+    "short": "The peak-to-trough decline in account equity — the cost of doing business, and the metric that kills careers.",
+    "definition": "Drawdown is the decline from an account's equity peak to its subsequent trough, measured in percent or R. Every system has drawdowns — the question is whether yours are survivable. Rules of thumb: keep per-trade risk small enough that a 10-loss streak costs less than 10%, and define a personal circuit breaker (e.g., stop trading for the week after −5% or −4R). Drawdown is also psychological: most traders don't blow up from the math — they blow up from the revenge trading the drawdown triggers.",
+    "why": "Drawdown is inevitable; blowing up is optional. The traders who last are the ones who planned for the losing streak before it happened.",
+    "example": "Peak equity $52,000. Four straight losses at 1R each ($500 risk) brings you to $50,000 — a 3.8% drawdown. Normal. You keep executing. What you don't do: double size to 'make it back.'",
+    "related": [
+      "prop-firm",
+      "margin",
+      "position-sizing",
+      "expectancy",
+      "revenge-trading"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Drawdown is the cost of doing business. The Protocol's fixed-risk rule exists to keep drawdowns survivable — one losing trade should never threaten your ability to take the next A+ setup."
+    }
+  },
+  {
+    "slug": "revenge-trading",
+    "term": "Revenge Trading",
+    "category": "Risk & Execution",
+    "short": "Re-entering immediately after a loss to 'win it back' — the fastest account killer in trading.",
+    "definition": "Revenge Trading is the emotional re-entry after a losing trade, driven by the urge to recover the loss immediately rather than wait for the next valid setup. It violates every element of the process: no Reveal, no planned Retrace, no defined Run — just emotion with size. The LA Traders defense is structural: the checklist requires an A+ setup for every entry, and a post-loss rule (stand down for 15 minutes, one more trade max per session after two losses) removes the opportunity for the spiral.",
+    "why": "One loss costs 1R. A revenge spiral costs 5R, a bad week, or the account. The market will be there tomorrow. Your capital might not be.",
+    "example": "Your short stops out for −1R at 7:15. Furious, you market-sell the next candle at a worse price with no setup. That one stops out too. Now you're −2R and hunting. That's the spiral. The fix: close the platform after trade two.",
+    "related": [
+      "drawdown",
+      "a-plus-setup",
+      "journaling",
+      "discipline"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Revenge trading is the Protocol's enemy. The entire system — mark levels, wait for the Reveal, take only A+ setups — exists to prevent the emotional re-entry that destroys accounts."
+    }
+  },
+  {
+    "slug": "journaling",
+    "term": "Trade Journaling",
+    "category": "Risk & Execution",
+    "short": "Recording every trade with screenshots, reasoning, and outcome — the feedback loop that builds edge.",
+    "definition": "Trade Journaling is the disciplined practice of documenting every trade: the setup (with chart screenshots), the RRR reasoning, entry, stop, target, outcome in R, and a post-trade review of what was done well or poorly. Journaling converts experience into data. After 50+ journaled trades, you can compute your real expectancy, identify which setups actually make money (versus which feel like they should), and find the leaks — the revenge trades, the early exits, the B setups that bleed you.",
+    "why": "Memory lies. Every trader remembers their winners as skill and their losers as bad luck. The journal is the honest record that turns trading from gambling into a craft.",
+    "example": "Your journal shows your sweeps of the ON high win at 55% with 2.4R average — but your mid-range entries win at 22%. The data tells you what to cut. Without it, you'd keep donating on the mid-range stuff forever.",
+    "related": [
+      "revenge-trading",
+      "expectancy",
+      "a-plus-setup",
+      "discipline"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Journaling is how you audit the Protocol. Every trade logged with RRR stages, entry reasoning, and outcome builds the dataset that tells you which setups work and which to stop taking."
+    }
+  },
+  {
+    "slug": "discipline",
+    "term": "Discipline",
+    "category": "Risk & Execution",
+    "short": "Executing the process exactly — especially when you don't feel like it. The meta-skill that contains all others.",
+    "definition": "Discipline in trading is the consistent execution of a defined process regardless of emotional state: marking the same levels at the same time every morning, taking only A+ setups, sizing every trade by the same formula, honoring every stop, and walking away when the window closes. Discipline isn't a personality trait — it's an environment: checklists, rules, and structure that make the right action automatic and the wrong action impossible. That's why the LA Traders system is built as a protocol, not a set of suggestions.",
+    "why": "Everyone knows what to do. Discipline is doing it on the day you just lost 2R, the FOMO candle is ripping without you, and your brain is screaming for action.",
+    "example": "It's 10:45 AM. No A+ setup all morning. Your friend texts you about the move you 'missed.' You close the platform anyway. That's the whole game.",
+    "related": [
+      "prop-firm",
+      "a-plus-setup",
+      "journaling",
+      "revenge-trading",
+      "six-am-protocol"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Discipline is the meta-skill the Protocol demands. The system only works if you run it exactly — mark the levels, wait for the Reveal, take only A+ setups — especially when you don't feel like it."
+    }
+  },
+  {
+    "slug": "es-futures",
+    "term": "ES (E-mini S&P 500 Futures)",
+    "category": "Instruments",
+    "short": "The most liquid equity index futures contract in the world — the primary LA Traders instrument.",
+    "definition": "ES is the E-mini S&P 500 futures contract traded on the CME, tracking the S&P 500 index at $50 per point per contract. It trades nearly 24 hours a day (Globex session), offers deep liquidity with 1-tick (0.25 point = $12.50) spreads, and is the most actively traded equity index future in the world. Its characteristics make it ideal for the RRR framework: clean technical levels, dense liquidity at obvious prices, and enough movement in the New York morning to offer multiple A+ setups per week.",
+    "why": "Liquidity is everything. On ES, your levels get respected because the whole world is watching them, and your fills are instant because the book is deep.",
+    "example": "ES sweeps the ON high at 5,847, retraces to the breaker at 5,842, runs to the midpoint at 5,837.50. An 11-point Run = $550 per contract, before size.",
+    "related": [
+      "nq-futures",
+      "tick-value",
+      "margin"
+    ],
+    "protocol_fit": {
+      "color": "gold",
+      "stage": "Execution",
+      "text": "ES futures are the primary instrument the Protocol is built for. The overnight range, opening candle, and liquidity sweeps that drive the Reveal-Retrace-Run cycle are most reliable on ES."
+    }
+  },
+  {
+    "slug": "nq-futures",
+    "term": "NQ (E-mini Nasdaq-100 Futures)",
+    "category": "Instruments",
+    "short": "The tech-heavy sibling of ES — faster, wilder, and less forgiving.",
+    "definition": "NQ is the E-mini Nasdaq-100 futures contract, tracking the Nasdaq-100 index at $20 per point per contract. Compared to ES, NQ moves roughly 2–3× as far in points per session with sharper reversals and more aggressive stop runs. The same RRR framework applies, but NQ demands wider stops (or smaller size) and stricter discipline — its A+ setups are bigger and its fake-outs are nastier. Most traders should master ES first, then graduate to NQ.",
+    "why": "NQ amplifies everything — the wins and the mistakes. It's a great second instrument and a terrible first one.",
+    "example": "The same sweep-retrace-run pattern that nets 11 points on ES often nets 40+ points on NQ — but the stop that was 4 points on ES needs to be 12–15 on NQ.",
+    "related": [
+      "es-futures",
+      "tick-value",
+      "position-sizing"
+    ],
+    "protocol_fit": {
+      "color": "gold",
+      "stage": "Execution",
+      "text": "NQ futures run the same Protocol but with more volatility. The Reveal is often faster and the Run is larger, but the Retrace levels are less clean — the Protocol's fixed-risk rule matters more here."
+    }
+  },
+  {
+    "slug": "tick-value",
+    "term": "Tick Value",
+    "category": "Instruments",
+    "short": "The dollar amount gained or lost per minimum price increment — the unit your P&L is built from.",
+    "definition": "Tick Value is the dollar value of one minimum price movement (one tick) of a futures contract. ES: 0.25 index points = $12.50 per tick per contract ($50/point). NQ: 0.25 points = $5 per tick ($20/point). Tick value converts chart distances into dollars: an 11-point ES move is 44 ticks = $550 per contract. Knowing tick value cold is non-negotiable — your position sizing, stop placement, and R:R math all depend on it.",
+    "why": "You can't manage risk you can't measure. Tick value is the measuring tape.",
+    "example": "Your stop is 4 points on ES = 16 ticks × $12.50 = $200 risk per contract. On a $50K account risking 1% ($500), that's 2 contracts. No calculator needed once you know the ticks.",
+    "related": [
+      "nq-futures",
+      "es-futures",
+      "position-sizing",
+      "margin"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Tick value is the unit your position sizing is built from. Before entering the Run, you convert your dollar risk to contracts using tick value — the Protocol requires you to know your size precisely."
+    }
+  },
+  {
+    "slug": "margin",
+    "term": "Margin (Futures)",
+    "category": "Instruments",
+    "short": "The good-faith deposit required to hold a futures position — leverage's entry fee.",
+    "definition": "Futures Margin is the capital a broker requires to open and hold a position — not a cost, but collateral. Day-trading margins on ES typically run $500–$1,500 per contract (broker-set), while exchange overnight margins are much higher (~$12,000+). Margin is what creates futures leverage: one $1,500 day margin controls a ~$290,000 notional ES position. That leverage is why position sizing by risk — not by margin available — is the rule. The broker will happily let you trade 10 contracts on a $15K account. The math says you shouldn't.",
+    "why": "Margin tells you what you're allowed to do. Risk math tells you what you should do. Confusing the two is how accounts die.",
+    "example": "$15,000 account, $1,500 day margin = you can open 10 ES contracts. One 4-point stop = $2,000 loss = 13% of the account. That's not trading; that's leverage roulette.",
+    "related": [
+      "es-futures",
+      "position-sizing",
+      "tick-value",
+      "drawdown"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Margin is the entry fee to the trade. The Protocol's fixed-risk rule ensures you never risk more than you can afford — margin is a constraint, not a strategy. Know it before you size."
+    }
+  },
+  {
+    "slug": "prop-firm",
+    "term": "Prop Firm (Evaluation)",
+    "category": "Instruments",
+    "short": "A firm that funds traders with its capital after they pass a rules-based evaluation — the modern funded-trader path.",
+    "definition": "A Proprietary Trading Firm (prop firm) funds traders with company capital in exchange for a profit split (typically 80/20 in the trader's favor). Modern online prop firms (Topstep, Apex, FTMO-style futures/CFD shops) gate funding behind an evaluation: hit a profit target (e.g., +$3,000) without breaching rules (max daily loss, max drawdown, consistency limits). The evaluation rules accidentally enforce good process — fixed risk, defined drawdown, daily loss limits — which makes the RRR framework and A+ selectivity a natural fit for passing and keeping funded accounts.",
+    "why": "Prop capital removes the 'I need a big account' excuse. Pass a $50K eval for a few hundred dollars, trade with their money, keep 80% — as long as your process survives the rules.",
+    "example": "$50K eval: +$3,000 target, $2,000 max drawdown, $1,000 daily loss limit. Trading only A+ setups at 1% risk, you pass in 3–4 weeks of normal execution. No hero trades needed.",
+    "related": [
+      "position-sizing",
+      "drawdown",
+      "expectancy",
+      "discipline"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Prop firms enforce the risk discipline the Protocol teaches. Their evaluation rules — daily loss limits, max drawdown — mirror the fixed-risk approach that makes the RRR Framework sustainable."
+    }
+  },
+  {
+    "slug": "options-contract",
+    "term": "Options Contract",
+    "category": "Options",
+    "short": "The right — not the obligation — to buy (call) or sell (put) an underlying at a set price before expiration.",
+    "definition": "An Options Contract gives the holder the right, without the obligation, to buy (a Call) or sell (a Put) 100 shares of the underlying asset at a specified strike price on or before its expiration date. The buyer pays a premium for that right; the seller collects the premium and takes on the obligation. Options derive their value from the underlying's price, time to expiration, and implied volatility. For LA Traders, options on SPX/SPY or futures options offer defined-risk ways to express the same RRR directional reads with capped downside.",
+    "why": "Options let you risk exactly the premium — no stop hunts on your equity, no gap-through-stop losses. Defined risk, same structure.",
+    "example": "ES sweeps the ON high and you want the short. Instead of futures, you buy an SPY put: premium $1.20 = $120 max risk. The Run to the midpoint pays $3.40. Same RRR trade, defined risk.",
+    "related": [
+      "delta",
+      "theta",
+      "implied-volatility"
+    ],
+    "protocol_fit": {
+      "color": "gold",
+      "stage": "Execution",
+      "text": "Options are a secondary instrument. The same Reveal-Retrace-Run logic applies, but the Protocol's fixed-risk rule requires you to size options positions by delta and premium, not share count."
+    }
+  },
+  {
+    "slug": "delta",
+    "term": "Delta",
+    "category": "Options",
+    "short": "How much an option's price moves per $1 move in the underlying — the directional sensitivity.",
+    "definition": "Delta measures an option's price sensitivity to a $1 move in the underlying, ranging from 0 to 1.00 (calls) or 0 to −1.00 (puts). A 0.50 delta call gains ~$0.50 for every $1 the underlying rises. Delta also roughly approximates the market's implied probability of the option finishing in-the-money: a 0.30 delta call has about a 30% implied chance. Traders use delta to size directional exposure: buying a 0.70 delta call behaves like holding 70 shares, with a fraction of the capital at risk.",
+    "why": "Delta translates options into stock equivalents. Once you think in deltas, options stop being exotic and start being just another way to express a directional read.",
+    "example": "SPY at 584. Your 580 call has 0.65 delta. SPY rallies $2 → the call gains ~$1.30. You captured 65% of the move with the premium as your only risk.",
+    "related": [
+      "options-contract",
+      "theta",
+      "implied-volatility"
+    ],
+    "protocol_fit": {
+      "color": "gold",
+      "stage": "Execution",
+      "text": "Delta measures directional exposure. When the Protocol calls for a position size, options traders translate it through delta — a 0.50 delta call behaves like 50 shares of the underlying."
+    }
+  },
+  {
+    "slug": "theta",
+    "term": "Theta",
+    "category": "Options",
+    "short": "The daily time decay of an option's value — the silent tax on every long option.",
+    "definition": "Theta measures how much value an option loses per day as expiration approaches, all else equal. It's the price of time: a long option is a wasting asset, and theta is the burn rate. The decay accelerates into expiration — an option loses value slowly with 60 days out and violently in the final week. For buyers, theta is the enemy: your directional read has to be right AND timely. For sellers, theta is the paycheck. This is why LA Traders-style options entries happen at the Retrace — you want the move now, not eventually, because the clock is literally costing you money.",
+    "why": "Every day you hold a long option, the market collects rent. Theta is why 'I'll wait and see' is a losing options strategy.",
+    "example": "Your SPY put has −0.08 theta. Every day that passes costs you $8 per contract, move or no move. Three days of chop = $24 gone before the trade even starts.",
+    "related": [
+      "options-contract",
+      "delta",
+      "implied-volatility"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "Theta is the time cost the Protocol respects. The Run should happen within the session — if you're holding long options overnight, theta is working against you and the trade thesis needs re-evaluating."
+    }
+  },
+  {
+    "slug": "implied-volatility",
+    "term": "Implied Volatility (IV)",
+    "category": "Options",
+    "short": "The market's forecast of future movement embedded in option prices — high IV = expensive options.",
+    "definition": "Implied Volatility (IV) is the expected magnitude of future price movement implied by current option premiums. High IV means options are expensive (the market expects big moves — often around events like CPI or FOMC); low IV means they're cheap. IV is mean-reverting: it spikes around fear and collapses after the event ('vol crush'). Practical rule: buying options when IV is elevated means you can be right on direction and still lose money as IV deflates. Check IV before entry — it's the price tag on your conviction.",
+    "why": "Direction is only half the options trade. The other half is whether you overpaid for the move. IV is how you know.",
+    "example": "You buy SPY puts an hour before CPI at 38% IV. CPI hits, SPY dips $2 — but IV collapses to 24% and your puts barely gain. Right on direction, wrong on vol. The checklist item: check IV first.",
+    "related": [
+      "options-contract",
+      "theta",
+      "delta"
+    ],
+    "protocol_fit": {
+      "color": "white",
+      "stage": "Risk Management",
+      "text": "IV determines option pricing. The Protocol's risk discipline extends to not overpaying for options — high IV means expensive premiums, which changes position sizing and the risk-to-reward calculation."
+    }
+  }
+]

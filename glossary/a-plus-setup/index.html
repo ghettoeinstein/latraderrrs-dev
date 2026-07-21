@@ -36,6 +36,34 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
 .related{margin-top:56px;padding-top:32px;border-top:1px solid var(--line);}
 .related h3{font-family:var(--font-display);font-weight:400;font-size:18px;margin-bottom:18px;color:var(--ash);}
 .cta-band{margin-top:64px;}
+
+/* Protocol callout box */
+.protocol-callout{margin:36px 0;border-radius:14px;padding:28px 30px;position:relative;overflow:hidden;}
+.protocol-callout::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;}
+.protocol-callout.pc-blue{background:rgba(54,97,201,0.08);border:1px solid rgba(54,97,201,0.2);}
+.protocol-callout.pc-blue::before{background:var(--blue);}
+.protocol-callout.pc-purple{background:rgba(124,79,196,0.08);border:1px solid rgba(124,79,196,0.2);}
+.protocol-callout.pc-purple::before{background:var(--purple);}
+.protocol-callout.pc-red{background:rgba(195,61,46,0.08);border:1px solid rgba(195,61,46,0.2);}
+.protocol-callout.pc-red::before{background:var(--red);}
+.protocol-callout.pc-white{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);}
+.protocol-callout.pc-white::before{background:var(--bone);}
+.protocol-callout.pc-gold{background:var(--gold-glow);border:1px solid var(--gold-dim);}
+.protocol-callout.pc-gold::before{background:var(--gold);}
+.protocol-callout .pc-label{font-family:var(--font-mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.protocol-callout .pc-icon{width:8px;height:8px;border-radius:50%;display:inline-block;}
+.protocol-callout.pc-blue .pc-label{color:#6b8ad6;}
+.protocol-callout.pc-blue .pc-icon{background:var(--blue);}
+.protocol-callout.pc-purple .pc-label{color:var(--purple-bright);}
+.protocol-callout.pc-purple .pc-icon{background:var(--purple);}
+.protocol-callout.pc-red .pc-label{color:#e06b5a;}
+.protocol-callout.pc-red .pc-icon{background:var(--red);}
+.protocol-callout.pc-white .pc-label{color:var(--bone);}
+.protocol-callout.pc-white .pc-icon{background:var(--bone);}
+.protocol-callout.pc-gold .pc-label{color:var(--gold-bright);}
+.protocol-callout.pc-gold .pc-icon{background:var(--gold);}
+.protocol-callout .pc-stage{font-family:var(--font-display);font-weight:400;font-size:15px;color:var(--bone);margin-bottom:8px;}
+.protocol-callout .pc-text{font-size:14.5px;line-height:1.7;color:var(--bone-dim);margin:0;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "A+ Setup", "description": "A trade that answers all three RRR questions with confluence at a marked level.", "inDefinedTermSet": "https://latraderrrs.com/glossary/", "url": "https://latraderrrs.com/glossary/a-plus-setup/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is A+ Setup in trading?", "acceptedAnswer": {"@type": "Answer", "text": "A trade that answers all three RRR questions with confluence at a marked level."}}, {"@type": "Question", "name": "Why does A+ Setup matter for day traders?", "acceptedAnswer": {"@type": "Answer", "text": "The gap between breakeven traders and profitable traders isn't skill — it's selectivity. Trading only A+ setups means fewer trades, higher win rate, and no death-by-a-thousand-cuts from mediocre entries."}}, {"@type": "Question", "name": "What is an example of A+ Setup?", "acceptedAnswer": {"@type": "Answer", "text": "You watch price chop between 5,838 and 5,841 for 40 minutes. No sweep, no structure break, no reveal. You take zero trades. That's the A+ filter working."}}]}</script>
 </head>
@@ -138,7 +166,9 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
         <div class="mega-col">
           <h5>Education &amp; Tools</h5>
           <ul>
-            <li><a href="/#checklist">Free Checklist</a></li>
+            <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+            <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+            <li><a href="/#checklist">Free PDF Checklist</a></li>
             <li><a href="/#oslite">RRR OS Lite — $17</a></li>
             <li><a href="/glossary/prop-firm/">Prop Firm Path</a></li>
             <li><a href="/glossary/journaling/">Trade Journaling</a></li>
@@ -178,15 +208,23 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
     <p>You watch price chop between 5,838 and 5,841 for 40 minutes. No sweep, no structure break, no reveal. You take zero trades. That&#x27;s the A+ filter working.</p>
   </div>
 
+  <div class="protocol-callout pc-gold">
+    <div class="pc-label"><span class="pc-icon"></span>How This Fits the 6:00 AM Protocol</div>
+    <div class="pc-stage">Stage 5 — Execution</div>
+    <p class="pc-text">The A+ Setup is the only trade the 6:00 AM Protocol permits. If a setup can&#x27;t answer all three RRR questions at a marked level, it&#x27;s not A+ — and if it&#x27;s not A+, you don&#x27;t take it.</p>
+  </div>
+
   <div class="related">
     <h3>Related terms</h3>
-    <div class="chips"><a class="chip" href="/glossary/rrr-framework/">RRR Framework</a><a class="chip" href="/glossary/reveal/">Reveal</a><a class="chip" href="/glossary/retrace/">Retrace</a><a class="chip" href="/glossary/run/">Run</a><a class="chip" href="/glossary/six-am-protocol/">The 6:00 AM Protocol</a></div>
+    <div class="chips"><a class="chip" href="/glossary/journaling/">Trade Journaling</a><a class="chip" href="/glossary/revenge-trading/">Revenge Trading</a><a class="chip" href="/glossary/risk-to-reward/">Risk-to-Reward (R:R)</a><a class="chip" href="/glossary/rrr-framework/">RRR Framework</a><a class="chip" href="/glossary/reveal/">Reveal</a><a class="chip" href="/glossary/retrace/">Retrace</a><a class="chip" href="/glossary/run/">Run</a><a class="chip" href="/glossary/six-am-protocol/">The 6:00 AM Protocol</a></div>
   </div>
 
   <div class="cta-band">
     <h3>Learn the full system</h3>
     <p>The RRR Daily Trading Checklist — the exact morning routine LA Traders runs before every New York session. Free.</p>
-    <a class="btn" href="/#checklist">Get the Free Checklist</a>
+    <a class="btn" href="/tools/daily-checklist/">Open the Daily Checklist</a>
+    <span style="margin:0 12px;color:var(--ash-dim);font-size:12px;">or</span>
+    <a class="btn btn-ghost" href="/#checklist">Get the PDF Version</a>
   </div>
 </div>
 <footer class="site-footer">

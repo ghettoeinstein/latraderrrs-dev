@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Tools — Interactive Checklist, Position Size Calculator | LA Traders</title>
+<meta name="description" content="Free interactive trading tools from LA Traders: the RRR Daily Checklist with streak tracking, a futures position size calculator for ES and NQ, and a session clock counting down to the next Protocol stage.">
+<link rel="canonical" href="https://latraderrrs.com/tools/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trading Tools — Interactive Checklist, Position Size Calculator | LA Traders">
+<meta property="og:description" content="Free interactive trading tools from LA Traders: the RRR Daily Checklist, position size calculator, and session clock.">
+<meta property="og:url" content="https://latraderrrs.com/tools/">
+<meta property="og:site_name" content="LA Traders">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/latraders.css">
+<style>
+.tools-wrap{max-width:960px;margin:0 auto;padding:0 var(--gutter);}
+.crumb{margin:48px 0 10px;}
+h1{font-size:clamp(34px,5.4vw,54px);margin-bottom:20px;}
+.sub{font-size:var(--text-lg);color:var(--ash);line-height:1.6;max-width:640px;margin-bottom:48px;padding-left:20px;border-left:2px solid var(--gold-dim);}
+
+/* Session Clock Widget */
+.clock-widget{background:linear-gradient(160deg,var(--panel-2),var(--panel));border:1px solid var(--line-strong);border-radius:16px;padding:36px;margin-bottom:48px;position:relative;overflow:hidden;}
+.clock-widget::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold);transition:background .4s;}
+.clock-widget.stage-blue::before{background:var(--blue);}
+.clock-widget.stage-purple::before{background:var(--purple);}
+.clock-widget.stage-red::before{background:var(--red);}
+.clock-widget.stage-gold::before{background:var(--gold);}
+.clock-widget.stage-white::before{background:var(--bone);}
+.clock-widget.stage-off::before{background:var(--ash-dim);}
+.clock-label{font-family:var(--font-mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ash);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.clock-label .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);transition:background .4s;}
+.clock-widget.stage-blue .dot{background:var(--blue);}
+.clock-widget.stage-purple .dot{background:var(--purple);}
+.clock-widget.stage-red .dot{background:var(--red);}
+.clock-widget.stage-gold .dot{background:var(--gold);}
+.clock-widget.stage-off .dot{background:var(--ash-dim);}
+.clock-stage{font-family:var(--font-display);font-size:24px;font-weight:400;color:var(--bone);margin-bottom:8px;}
+.clock-countdown{font-family:var(--font-mono);font-size:48px;font-weight:700;color:var(--gold-bright);letter-spacing:2px;margin-bottom:10px;line-height:1;}
+.clock-next{font-size:14px;color:var(--ash);line-height:1.5;}
+.clock-next strong{color:var(--bone);font-weight:500;}
+.clock-ny-time{font-family:var(--font-mono);font-size:12px;color:var(--ash-dim);margin-top:16px;letter-spacing:1px;}
+
+/* Tool cards grid */
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:48px;}
+.tool-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:36px 32px;transition:transform var(--dur-med) var(--ease-out),border-color var(--dur-med),background var(--dur-med);display:flex;flex-direction:column;}
+.tool-card:hover{transform:translateY(-4px);background:var(--panel-2);border-color:var(--gold-dim);}
+.tool-card .tc-icon{font-family:var(--font-mono);font-size:28px;color:var(--gold);margin-bottom:20px;}
+.tool-card .tc-name{font-family:var(--font-display);font-size:22px;font-weight:400;color:var(--bone);margin-bottom:10px;}
+.tool-card:hover .tc-name{color:var(--gold-bright);}
+.tool-card .tc-desc{font-size:14.5px;line-height:1.65;color:var(--ash);margin-bottom:24px;flex:1;}
+.tool-card .tc-link{font-family:var(--font-mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);transition:color var(--dur-fast);}
+.tool-card:hover .tc-link{color:var(--gold-bright);}
+
+/* Journal section */
+.journal-section{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:36px;margin-bottom:48px;}
+.journal-section h2{font-family:var(--font-display);font-size:24px;font-weight:400;color:var(--bone);margin-bottom:14px;}
+.journal-section p{font-size:14.5px;line-height:1.65;color:var(--ash);margin-bottom:20px;max-width:560px;}
+.journal-section .js-features{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;}
+.journal-section .js-features span{font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dim);border-radius:20px;padding:6px 14px;}
+
+@media(max-width:680px){
+  .tool-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<nav class="nav-shell mega-nav">
+  <a class="nav-brand" href="/">LA TRADERS</a>
+  <div class="nav-links mega-links">
+    <div class="mega-item">
+      <a href="/#protocol">The System</a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h5>The Process</h5>
+          <ul>
+            <li><a href="/#protocol">The 6:00 AM Protocol</a></li>
+            <li><a href="/#rrr">RRR Framework</a></li>
+            <li><a href="/glossary/a-plus-setup/">The A+ Setup</a></li>
+            <li><a href="/glossary/six-am-protocol/">6:00 AM Protocol</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mega-item">
+      <a href="/glossary/">Glossary</a>
+      <div class="mega-dropdown mega-wide">
+        <div class="mega-col"><h5>RRR Framework</h5><ul>
+          <li><a href="/glossary/rrr-framework/">RRR Framework</a></li>
+          <li><a href="/glossary/reveal/">Reveal</a></li>
+          <li><a href="/glossary/retrace/">Retrace</a></li>
+          <li><a href="/glossary/run/">Run</a></li>
+          <li><a href="/glossary/a-plus-setup/">A+ Setup</a></li>
+          <li><a href="/glossary/six-am-protocol/">6:00 AM Protocol</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Market Structure</h5><ul>
+          <li><a href="/glossary/market-structure/">Market Structure</a></li>
+          <li><a href="/glossary/break-of-structure/">Break of Structure</a></li>
+          <li><a href="/glossary/change-of-character/">Change of Character</a></li>
+          <li><a href="/glossary/swing-high/">Swing High</a></li>
+          <li><a href="/glossary/swing-low/">Swing Low</a></li>
+          <li><a href="/glossary/trend/">Trend</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Liquidity</h5><ul>
+          <li><a href="/glossary/liquidity/">Liquidity</a></li>
+          <li><a href="/glossary/liquidity-sweep/">Liquidity Sweep</a></li>
+          <li><a href="/glossary/buy-side-liquidity/">Buy-Side Liquidity</a></li>
+          <li><a href="/glossary/sell-side-liquidity/">Sell-Side Liquidity</a></li>
+          <li><a href="/glossary/stop-hunt/">Stop Hunt</a></li>
+          <li><a href="/glossary/turtle-soup/">Turtle Soup</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Price Action</h5><ul>
+          <li><a href="/glossary/order-block/">Order Block</a></li>
+          <li><a href="/glossary/fair-value-gap/">Fair Value Gap</a></li>
+          <li><a href="/glossary/imbalance/">Imbalance</a></li>
+          <li><a href="/glossary/breaker-block/">Breaker Block</a></li>
+          <li><a href="/glossary/mitigation/">Mitigation</a></li>
+          <li><a href="/glossary/premium-discount/">Premium &amp; Discount</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Sessions &amp; Time</h5><ul>
+          <li><a href="/glossary/overnight-range/">Overnight Range</a></li>
+          <li><a href="/glossary/overnight-midpoint/">Overnight Midpoint</a></li>
+          <li><a href="/glossary/opening-candle/">Opening Candle</a></li>
+          <li><a href="/glossary/opening-range/">Opening Range</a></li>
+          <li><a href="/glossary/new-york-session/">New York Session</a></li>
+          <li><a href="/glossary/killzone/">Killzone</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Risk &amp; Execution</h5><ul>
+          <li><a href="/glossary/risk-to-reward/">Risk-to-Reward</a></li>
+          <li><a href="/glossary/position-sizing/">Position Sizing</a></li>
+          <li><a href="/glossary/expectancy/">Expectancy</a></li>
+          <li><a href="/glossary/drawdown/">Drawdown</a></li>
+          <li><a href="/glossary/revenge-trading/">Revenge Trading</a></li>
+          <li><a href="/glossary/journaling/">Trade Journaling</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Instruments</h5><ul>
+          <li><a href="/glossary/es-futures/">ES Futures</a></li>
+          <li><a href="/glossary/nq-futures/">NQ Futures</a></li>
+          <li><a href="/glossary/tick-value/">Tick Value</a></li>
+          <li><a href="/glossary/margin/">Margin</a></li>
+          <li><a href="/glossary/prop-firm/">Prop Firm</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Options</h5><ul>
+          <li><a href="/glossary/options-contract/">Options Contract</a></li>
+          <li><a href="/glossary/delta/">Delta</a></li>
+          <li><a href="/glossary/theta/">Theta</a></li>
+          <li><a href="/glossary/implied-volatility/">Implied Volatility</a></li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="mega-item">
+      <a href="/tools/">Tools</a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h5>Interactive Tools</h5>
+          <ul>
+            <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+            <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+            <li><a href="/#checklist">Free PDF Checklist</a></li>
+            <li><a href="/#oslite">RRR OS Lite — $17</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mega-item">
+      <a href="/terms/">Legal</a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="/terms/">Terms of Service</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="tools-wrap">
+  <div class="crumb"><a href="/">Home</a> / Tools</div>
+  <h1>Interactive <em>Trading Tools</em></h1>
+  <p class="sub">Free tools built for the RRR Framework — run the full 6:00 AM Protocol from marking levels to position sizing. No accounts, no signups, no backend. Everything runs in your browser.</p>
+
+  <!-- Session Clock Widget -->
+  <div class="clock-widget stage-off" id="clockWidget">
+    <div class="clock-label"><span class="dot"></span><span id="clockLabel">Session Clock — New York Time</span></div>
+    <div class="clock-stage" id="clockStage">Calculating next stage…</div>
+    <div class="clock-countdown" id="clockCountdown">—:—:—</div>
+    <div class="clock-next" id="clockNext">Loading…</div>
+    <div class="clock-ny-time" id="clockNY">New York: —</div>
+  </div>
+
+  <!-- Tool Cards -->
+  <div class="tool-grid">
+    <a class="tool-card" href="/tools/daily-checklist/">
+      <div class="tc-icon">☑</div>
+      <div class="tc-name">RRR Daily Checklist</div>
+      <div class="tc-desc">The interactive version of the 6:00 AM Protocol. Check off each stage — mark the range, mark structure, wait for the Reveal, wait for the Retrace, execute the Run. Streak counter keeps you coming back daily.</div>
+      <div class="tc-link">Open the Checklist →</div>
+    </a>
+
+    <a class="tool-card" href="/tools/position-size-calculator/">
+      <div class="tc-icon">⚡</div>
+      <div class="tc-name">Position Size Calculator</div>
+      <div class="tc-desc">Input your account size, risk percentage, and stop distance to get recommended contracts, max dollar risk, and $/tick. Preset for ES and NQ, with manual entry for any instrument.</div>
+      <div class="tc-link">Open the Calculator →</div>
+    </a>
+  </div>
+
+  <!-- Journal Section -->
+  <div class="journal-section">
+    <h2>RRR Trade Journal Template</h2>
+    <p>A spreadsheet template aligned to the RRR Framework — columns for Reveal, Retrace, Run, R:R planned vs. actual, position size, and outcome. Built-in win-rate, expectancy, and equity-curve formulas. Download, open in Excel or Google Sheets, and start logging.</p>
+    <div class="js-features">
+      <span>RRR Columns</span>
+      <span>R:R Tracking</span>
+      <span>Win Rate</span>
+      <span>Expectancy</span>
+      <span>Equity Curve</span>
+    </div>
+    <a class="btn" href="/tools/journal/rrr-trade-journal.csv" download>Download CSV Template</a>
+    <span style="margin:0 12px;color:var(--ash-dim);font-size:12px;">or</span>
+    <a class="btn btn-ghost" href="/glossary/journaling/">Learn Journaling →</a>
+  </div>
+
+  <div class="cta-band" style="margin-top:48px;">
+    <h3>Want the full playbook?</h3>
+    <p>RRR OS Lite includes the complete Protocol, chart templates, A+ criteria, and community access — $17 one-time.</p>
+    <a class="btn" href="/#oslite">Get RRR OS Lite — $17</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-mega">
+      <div class="footer-brandblock">
+        <div class="fbrand">
+          <img src="/assets/lion.jpg" alt="LA Traders lion mark">
+          <span>LA TRADERS</span>
+        </div>
+        <p class="fmission">One repeatable process for the New York session. No noise. No hopium. Just structure.</p>
+        <div class="fmeta">
+          Los Angeles, California<br>
+          Futures &amp; Options Education<br>
+          Est. New York Open, Every Session
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>The System</h4>
+        <ul>
+          <li><a href="/#protocol">The 6:00 AM Protocol</a></li>
+          <li><a href="/#rrr">RRR Framework</a></li>
+          <li><a href="/glossary/rrr-framework/">Reveal &rarr; Retrace &rarr; Run</a></li>
+          <li><a href="/glossary/a-plus-setup/">The A+ Setup</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Education</h4>
+        <ul>
+          <li><a href="/glossary/">Trading Glossary</a></li>
+          <li><a href="/glossary/market-structure/">Market Structure</a></li>
+          <li><a href="/glossary/liquidity/">Liquidity Concepts</a></li>
+          <li><a href="/glossary/risk-to-reward/">Risk Management</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+          <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+          <li><a href="/#checklist">Free PDF Checklist</a></li>
+          <li><a href="/#oslite">RRR OS Lite — $17</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/glossary/">Glossary</a></li>
+          <li><a href="/glossary/discipline/">Our Discipline</a></li>
+          <li><a href="/glossary/new-york-session/">The Session We Trade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div class="fcopy">&copy; LA Traders &mdash; All Rights Reserved</div>
+      <div class="flinks">
+        <a href="/">Home</a>
+        <a href="/#protocol">Protocol</a>
+        <a href="/#rrr">RRR Framework</a>
+        <a href="/glossary/">Glossary</a>
+        <a href="/tools/">Tools</a>
+        <a href="/#oslite">RRR OS Lite</a>
+        <a href="/terms/">Terms of Service</a>
+        <a href="/privacy/">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-risk">
+      <p><strong>RISK DISCLOSURE:</strong> Futures and options trading involves substantial risk of loss and is not suitable for every investor. The valuation of futures and options may fluctuate, and as a result, clients may lose more than their original investment. Past performance is not indicative of future results. LA Traders provides education and community only &mdash; nothing on this site constitutes financial advice, a solicitation, or a recommendation to buy or sell any security or futures contract. You are solely responsible for your own trading decisions.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+
+  // Protocol stages in ET (UTC-5 or UTC-4 depending on DST)
+  var STAGES = [
+    { name: 'Mark the Overnight Range', startH: 6, startM: 0, endH: 6, endM: 25, color: 'blue', desc: 'Stage 1 — Mark levels' },
+    { name: 'Mark 4H & 1H Structure', startH: 6, startM: 25, endH: 6, endM: 30, color: 'purple', desc: 'Stage 2 — Mark structure' },
+    { name: 'Wait for the Reveal', startH: 6, startM: 30, endH: 7, endM: 0, color: 'red', desc: 'Stage 3 — The Reveal' },
+    { name: 'Wait for the Retrace', startH: 7, startM: 0, endH: 8, endM: 0, color: 'purple', desc: 'Stage 4 — The Retrace' },
+    { name: 'Execute the Run', startH: 8, startM: 0, endH: 11, endM: 0, color: 'gold', desc: 'Stage 5 — The Run' }
+  ];
+
+  // Weekend check (markets closed Sat/Sun)
+  function isWeekend(now) {
+    var day = now.getDay();
+    return day === 0 || day === 6; // Sunday=0, Saturday=6
+  }
+
+  function getNYTime() {
+    // Use Intl.DateTimeFormat to get NY time reliably across timezones
+    var now = new Date();
+    var nyFormat = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/New_York',
+      hour: '2-digit', minute: '2-digit', second: '2-digit',
+      hour12: false,
+      weekday: 'short', month: 'short', day: 'numeric'
+    });
+    var parts = nyFormat.formatToParts(now);
+    var nyHour = parseInt(parts.find(function(p){return p.type==='hour';}).value);
+    var nyMin = parseInt(parts.find(function(p){return p.type==='minute';}).value);
+    var nySec = parseInt(parts.find(function(p){return p.type==='second';}).value);
+    var nyWeekday = parts.find(function(p){return p.type==='weekday';}).value;
+    var nyMonth = parts.find(function(p){return p.type==='month';}).value;
+    var nyDay = parseInt(parts.find(function(p){return p.type==='day';}).value);
+
+    var totalMin = nyHour * 60 + nyMin;
+    var isWeekend = (nyWeekday === 'Sat' || nyWeekday === 'Sun');
+
+    return {
+      hour: nyHour, minute: nyMin, second: nySec, totalMin: totalMin,
+      isWeekend: isWeekend,
+      display: nyWeekday + ', ' + nyMonth + ' ' + nyDay + ' — ' + String(nyHour).padStart(2,'0') + ':' + String(nyMin).padStart(2,'0') + ' ET'
+    };
+  }
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function updateClock() {
+    var ny = getNYTime();
+    var widget = document.getElementById('clockWidget');
+    var stage = document.getElementById('clockStage');
+    var countdown = document.getElementById('clockCountdown');
+    var next = document.getElementById('clockNext');
+    var nyTime = document.getElementById('clockNY');
+    var label = document.getElementById('clockLabel');
+
+    nyTime.textContent = 'New York: ' + ny.display;
+
+    if (ny.isWeekend) {
+      widget.className = 'clock-widget stage-off';
+      label.textContent = 'Markets Closed — Session Clock';
+      stage.textContent = 'Markets closed for the weekend';
+      countdown.textContent = '—:—:—';
+      next.innerHTML = 'The Protocol runs Monday–Friday. Come back at 6:00 AM ET on Monday.';
+      return;
+    }
+
+    // Find current or next stage
+    var currentStage = null;
+    var nextStage = null;
+    for (var i = 0; i < STAGES.length; i++) {
+      var s = STAGES[i];
+      var sStart = s.startH * 60 + s.startM;
+      var sEnd = s.endH * 60 + s.endM;
+      if (ny.totalMin >= sStart && ny.totalMin < sEnd) {
+        currentStage = s;
+        break;
+      }
+      if (ny.totalMin < sStart) {
+        nextStage = s;
+        break;
+      }
+    }
+
+    if (currentStage) {
+      // In a stage — show countdown to end of stage
+      var sEndMin = currentStage.endH * 60 + currentStage.endM;
+      var remaining = sEndMin - ny.totalMin;
+      var h = Math.floor(remaining / 60);
+      var m = remaining % 60;
+      var s = 60 - ny.second;
+      if (s === 60) s = 0;
+
+      widget.className = 'clock-widget stage-' + currentStage.color;
+      label.textContent = currentStage.desc + ' — In Progress';
+      stage.textContent = currentStage.name;
+      countdown.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+
+      // Next stage info
+      var nextIdx = STAGES.indexOf(currentStage) + 1;
+      if (nextIdx < STAGES.length) {
+        var ns = STAGES[nextIdx];
+        next.innerHTML = 'Next: <strong>' + ns.name + '</strong> at ' + pad(ns.startH) + ':' + pad(ns.startM) + ' AM ET';
+      } else {
+        next.innerHTML = 'Last stage of the Protocol. Session ends at 11:00 AM ET.';
+      }
+    } else if (nextStage) {
+      // Before the first stage or between stages
+      var sStartMin = nextStage.startH * 60 + nextStage.startM;
+      var remaining = sStartMin - ny.totalMin;
+      var h = Math.floor(remaining / 60);
+      var m = remaining % 60;
+      var s = 60 - ny.second;
+      if (s === 60) s = 0;
+
+      widget.className = 'clock-widget stage-' + nextStage.color;
+      label.textContent = 'Next Protocol Stage';
+      stage.textContent = nextStage.name;
+      countdown.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+      next.innerHTML = 'Starts at <strong>' + pad(nextStage.startH) + ':' + pad(nextStage.startM) + ' AM ET</strong>';
+    } else {
+      // After all stages (past 11 AM ET)
+      widget.className = 'clock-widget stage-off';
+      label.textContent = 'Session Complete — New York Time';
+      stage.textContent = 'Protocol session ended';
+      countdown.textContent = '—:—:—';
+      next.innerHTML = 'Today\'s session is done. Come back tomorrow at <strong>6:00 AM ET</strong>.';
+    }
+  }
+
+  updateClock();
+  setInterval(updateClock, 1000);
+})();
+</script>
+</body>
+</html>
