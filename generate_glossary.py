@@ -165,6 +165,8 @@ def foot():
         <a href="/#protocol">Protocol</a>
         <a href="/#rrr">RRR Framework</a>
         <a href="/#checklist">Checklist</a>
+        <a href="/terms/">Terms of Service</a>
+        <a href="/privacy/">Privacy Policy</a>
       </div>
     </div>
     <div class="footer-risk">
@@ -302,6 +304,9 @@ sm = ['<?xml version="1.0" encoding="UTF-8"?>',
 for u in urls:
     pri = "1.0" if u == "/" else ("0.9" if u == "/glossary/" else "0.8")
     sm.append(f'  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod><changefreq>weekly</changefreq><priority>{pri}</priority></url>')
+# Legal pages (low priority, yearly change)
+for u in ["/terms/", "/privacy/"]:
+    sm.append(f'  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>')
 sm.append("</urlset>")
 with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
     f.write("\n".join(sm))
@@ -368,3 +373,303 @@ with open(os.path.join(OUT, "llms.txt"), "w") as f:
     f.write(llms)
 print("llms.txt written")
 print("DONE")
+
+
+# ---------- LEGAL PAGES ----------
+LEGAL_CSS = """
+.legal-body{max-width:760px;}
+.legal-body h1{margin-bottom:14px;}
+.legal-updated{font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:2px;text-transform:uppercase;color:var(--ash-dim);margin-bottom:48px;}
+.legal-body h2{font-size:20px;margin:40px 0 12px;font-weight:400;}
+.legal-body h2 .num{color:var(--gold);font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:2px;display:block;margin-bottom:6px;}
+.legal-body p{font-size:14.5px;line-height:1.75;color:var(--bone-dim);margin-bottom:12px;}
+.legal-body ul{margin:10px 0 16px 22px;color:var(--bone-dim);font-size:14.5px;line-height:1.75;}
+.legal-body li{margin-bottom:8px;}
+.legal-body strong{color:var(--bone);font-weight:600;}
+.legal-note{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:20px 24px;margin:20px 0;}
+.legal-note p{margin:0;font-size:13.5px;font-style:italic;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-md);padding:26px 30px;margin:32px 0 8px;}
+.toc .toc-title{font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:14px;}
+.toc ol{margin-left:20px;color:var(--ash);font-size:13.5px;line-height:2;}
+.toc a{color:var(--ash);transition:color var(--dur-fast);}
+.toc a:hover{color:var(--gold);}
+"""
+
+TERMS_HTML = """<div class="wrap legal-body">
+  <div class="crumb"><a href="/">Home</a> / Terms of Service</div>
+  <h1>Terms of <em>Service</em></h1>
+  <div class="legal-updated">Last Updated: __TODAY__ &middot; LA Traders &middot; Los Angeles, California</div>
+
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#acceptance">Acceptance of Terms</a></li>
+      <li><a href="#education">Educational Content Only — No Financial Advice</a></li>
+      <li><a href="#risk">Risk Disclosure</a></li>
+      <li><a href="#accounts">Accounts &amp; Eligibility</a></li>
+      <li><a href="#payments">Paid Products, Billing &amp; Refunds</a></li>
+      <li><a href="#email">Email Marketing Communications</a></li>
+      <li><a href="#sms">SMS / Text Message Program</a></li>
+      <li><a href="#discord">Discord Community</a></li>
+      <li><a href="#conduct">Acceptable Use &amp; Conduct</a></li>
+      <li><a href="#ip">Intellectual Property</a></li>
+      <li><a href="#thirdparty">Third-Party Platforms &amp; Links</a></li>
+      <li><a href="#disclaimers">Disclaimers &amp; Limitation of Liability</a></li>
+      <li><a href="#indemnity">Indemnification</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#law">Governing Law &amp; Disputes</a></li>
+      <li><a href="#changes">Changes to These Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </div>
+
+  <h2 id="acceptance"><span class="num">Section 01</span>Acceptance of Terms</h2>
+  <p>These Terms of Service ("Terms") govern your access to and use of latraderrrs.com, the LA Traders glossary and educational content, the RRR Daily Trading Checklist, RRR OS Lite, our email list, our SMS/text message program, and our Discord community (collectively, the "Services"), operated by LA Traders ("LA Traders," "we," "us," or "our").</p>
+  <p>By accessing or using any of the Services — including downloading the checklist, purchasing a product, subscribing to emails or texts, or joining the Discord — you agree to be bound by these Terms and our <a href="/privacy/">Privacy Policy</a>. If you do not agree, do not use the Services.</p>
+
+  <h2 id="education"><span class="num">Section 02</span>Educational Content Only — No Financial Advice</h2>
+  <p><strong>Everything LA Traders publishes is education, not advice.</strong> All content — including the RRR framework, the 6:00 AM Protocol, glossary definitions, examples, chart markups, checklists, templates, Discord discussion, emails, and texts — is provided for general educational and informational purposes only.</p>
+  <p>Nothing in the Services constitutes, or should be construed as:</p>
+  <ul>
+    <li>Financial, investment, legal, tax, or accounting advice;</li>
+    <li>A recommendation, solicitation, or offer to buy or sell any security, futures contract, option, or other financial instrument;</li>
+    <li>Personalized investment advice or a recommendation that any particular trade or strategy is suitable for you;</li>
+    <li>A guarantee of any result, including passing any proprietary trading firm evaluation.</li>
+  </ul>
+  <p>We are not registered as an investment adviser, broker-dealer, or commodity trading advisor. You should consult a licensed financial professional before making any investment decision. <strong>You are solely responsible for your own trading decisions and their outcomes.</strong></p>
+
+  <h2 id="risk"><span class="num">Section 03</span>Risk Disclosure</h2>
+  <p><strong>Futures and options trading involves substantial risk of loss and is not suitable for every investor.</strong> You may lose more than your original investment. Leverage can work against you as well as for you. Past performance — ours or anyone's — is not indicative of future results.</p>
+  <p>Hypothetical, simulated, or example performance (including any example trades in our content) has inherent limitations: it is prepared with hindsight, does not involve financial risk, and cannot account for the impact of real market conditions or your own discipline. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown or discussed.</p>
+  <p>Only trade with risk capital — money you can afford to lose without affecting your lifestyle or financial security.</p>
+
+  <h2 id="accounts"><span class="num">Section 04</span>Accounts &amp; Eligibility</h2>
+  <p>You must be at least 18 years old (or the age of majority in your jurisdiction) to use the Services. By using the Services, you represent that you meet this requirement and that any information you provide (name, email, phone number, Discord handle) is accurate and yours to provide.</p>
+  <p>You are responsible for maintaining the confidentiality of any account credentials and for all activity under your accounts.</p>
+
+  <h2 id="payments"><span class="num">Section 05</span>Paid Products, Billing &amp; Refunds</h2>
+  <p>Certain products — including RRR OS Lite — are sold for a one-time fee displayed at checkout. Prices are in US dollars and may change at any time; the price you see at purchase is the price you pay.</p>
+  <ul>
+    <li><strong>Delivery:</strong> Digital products are delivered electronically to the email address you provide at checkout, typically within minutes.</li>
+    <li><strong>Refunds:</strong> Unless otherwise stated at the point of sale, digital products may be refunded within 14 days of purchase if you are not satisfied — email <a href="mailto:support@latraderrrs.com">support@latraderrrs.com</a> with your order email. After delivery of substantial digital content, refund requests are reviewed case by case.</li>
+    <li><strong>Taxes:</strong> You are responsible for any applicable sales or use taxes in your jurisdiction.</li>
+    <li><strong>No subscriptions by default:</strong> If any recurring product is introduced, renewal terms, cancellation mechanics, and pricing will be disclosed before you are charged.</li>
+  </ul>
+
+  <h2 id="email"><span class="num">Section 06</span>Email Marketing Communications</h2>
+  <p>When you provide your email address (for the free checklist, a purchase, or a signup), you consent to receive emails from LA Traders, including:</p>
+  <ul>
+    <li><strong>Transactional emails:</strong> delivery of your checklist or products, receipts, and support responses; and</li>
+    <li><strong>Marketing emails:</strong> session notes, educational content, product announcements, and offers.</li>
+  </ul>
+  <p><strong>How to opt out:</strong> Every marketing email includes a one-click unsubscribe link in the footer. Clicking it removes you from marketing emails promptly (and in all cases within 10 business days, per CAN-SPAM). Transactional emails related to a purchase continue as needed to deliver what you bought. You can also email <a href="mailto:support@latraderrrs.com">support@latraderrrs.com</a> to be removed.</p>
+  <p>We comply with the CAN-SPAM Act: accurate sender identity, honest subject lines, a functioning unsubscribe mechanism, and a valid physical contact address in every marketing email. We do not sell, rent, or share your email address with third parties for their own marketing.</p>
+
+  <h2 id="sms"><span class="num">Section 07</span>SMS / Text Message Program</h2>
+  <p>If you opt in to our SMS/text message program (for example, by texting a keyword to our number or submitting your phone number with SMS consent checked), the following terms apply:</p>
+  <ul>
+    <li><strong>Program description:</strong> LA Traders sends session-related and educational text messages, which may include pre-market protocol reminders, level-marking prompts, educational content, checklist delivery, and occasional product announcements.</li>
+    <li><strong>Consent:</strong> Consent to receive marketing texts is not a condition of any purchase. By opting in, you expressly consent to receive recurring automated text messages (including via an automatic telephone dialing system) from or on behalf of LA Traders at the number you provided, consistent with the Telephone Consumer Protection Act (TCPA).</li>
+    <li><strong>Message frequency:</strong> Varies; typically no more than 1 message per trading day, and most weeks fewer.</li>
+    <li><strong>Message and data rates:</strong> Message and data rates may apply per your mobile carrier plan. Carriers are not liable for delayed or undelivered messages.</li>
+    <li><strong>How to opt out:</strong> Reply <strong>STOP</strong> to any message to cancel at any time. You will receive one confirmation text, then no further messages unless you re-subscribe. For help, reply <strong>HELP</strong> or email <a href="mailto:support@latraderrrs.com">support@latraderrrs.com</a>.</li>
+    <li><strong>Supported carriers:</strong> Major US carriers; availability may vary.</li>
+  </ul>
+  <p>We do not sell or share your mobile number with third parties for their marketing purposes. See our <a href="/privacy/">Privacy Policy</a> for how SMS data is handled.</p>
+
+  <h2 id="discord"><span class="num">Section 08</span>Discord Community</h2>
+  <p>Access to the LA Traders Discord server (the "Community") may be included with certain products or offered separately. The Community is a moderated educational space. By joining, you agree:</p>
+  <ul>
+    <li><strong>Your Discord account is yours:</strong> You are responsible for your Discord account and everything posted from it. Discord's own Terms of Service and Community Guidelines apply in addition to these Terms.</li>
+    <li><strong>Community rules:</strong> No spam, self-promotion, or unsolicited DMs to members; no harassment, hate speech, or personal attacks; no posting of trade signals presented as advice ("calls to buy/sell"); no sharing of another member's private information; no redistribution of paid content (see Section 10).</li>
+    <li><strong>Not advice, again:</strong> Discussion in the Community — including from moderators — is educational conversation, not financial advice. Screenshots and trade reviews shared in the Community are for learning, and may not reflect typical results.</li>
+    <li><strong>Moderation:</strong> We may remove content, mute, suspend, or ban any member at our discretion to protect the Community. Severe or repeat violations result in removal without refund where permitted by law.</li>
+    <li><strong>Privacy in the Community:</strong> Anything you post in the Community is visible to other members. Do not post personal financial information, account numbers, or anything you would not want made public. We may use anonymized Community discussion (no names or handles) in educational content.</li>
+    <li><strong>Platform risk:</strong> Discord is a third-party platform. We are not responsible for Discord outages, data practices, or account actions taken by Discord itself.</li>
+  </ul>
+
+  <h2 id="conduct"><span class="num">Section 09</span>Acceptable Use &amp; Conduct</h2>
+  <p>You agree not to: (a) use the Services for any unlawful purpose; (b) scrape, crawl, or bulk-download the Services by automated means except for legitimate search-engine indexing; (c) attempt to gain unauthorized access to our systems or other users' accounts; (d) misrepresent your identity or affiliation; (e) resell, sublicense, or commercially exploit the Services without written permission; or (f) interfere with the operation of the Services.</p>
+
+  <h2 id="ip"><span class="num">Section 10</span>Intellectual Property</h2>
+  <p>The Services — including the LA Traders name and lion mark, the RRR framework name and materials, the 6:00 AM Protocol materials, all text, graphics, templates, checklists, and design — are owned by LA Traders and protected by copyright, trademark, and other laws.</p>
+  <p>With a purchase or free download, you receive a <strong>limited, non-exclusive, non-transferable license for personal use only</strong>. You may print the checklist for your own desk. You may not: republish, redistribute, resell, share your login or files, post paid materials publicly, or create derivative products for distribution. Sharing RRR OS Lite files or your Discord access is grounds for termination without refund.</p>
+
+  <h2 id="thirdparty"><span class="num">Section 11</span>Third-Party Platforms &amp; Links</h2>
+  <p>The Services run on or link to third-party platforms we do not control — including Discord, our email service provider, our SMS provider, payment processors (e.g., Stripe), and analytics tools. Your use of those platforms is governed by their own terms and privacy policies. We are not responsible for third-party content, policies, outages, or practices.</p>
+
+  <h2 id="disclaimers"><span class="num">Section 12</span>Disclaimers &amp; Limitation of Liability</h2>
+  <p><strong>THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED</strong>, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Services will be uninterrupted, error-free, or that any content will produce any particular trading result.</p>
+  <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, LA TRADERS AND ITS OWNERS, OPERATORS, AND CONTRIBUTORS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES — INCLUDING TRADING LOSSES, LOST PROFITS, OR LOST DATA — ARISING FROM OR RELATED TO YOUR USE OF THE SERVICES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</strong> Our total aggregate liability for any claim arising from the Services will not exceed the greater of (a) the amount you paid us in the 12 months before the claim or (b) $100.</p>
+
+  <h2 id="indemnity"><span class="num">Section 13</span>Indemnification</h2>
+  <p>You agree to indemnify and hold harmless LA Traders from any claims, damages, losses, and expenses (including reasonable attorneys' fees) arising from your use of the Services, your violation of these Terms, your trading activity, or your violation of any law or third-party rights.</p>
+
+  <h2 id="termination"><span class="num">Section 14</span>Termination</h2>
+  <p>You may stop using the Services at any time (unsubscribe from emails, reply STOP to texts, leave the Discord). We may suspend or terminate your access at any time for violation of these Terms or to protect the community, with or without notice. Sections that by their nature should survive (including 2, 3, 10, 12, 13, and 15) survive termination.</p>
+
+  <h2 id="law"><span class="num">Section 15</span>Governing Law &amp; Disputes</h2>
+  <p>These Terms are governed by the laws of the State of California, without regard to conflict-of-laws rules. Any dispute arising from the Services will be resolved in the state or federal courts located in Los Angeles County, California, and you consent to their jurisdiction, except that either party may bring an individual claim in small claims court.</p>
+
+  <h2 id="changes"><span class="num">Section 16</span>Changes to These Terms</h2>
+  <p>We may update these Terms from time to time. The "Last Updated" date at the top reflects the current version. Material changes will be announced via the site, email, or Discord. Continued use of the Services after changes take effect constitutes acceptance.</p>
+
+  <h2 id="contact"><span class="num">Section 17</span>Contact</h2>
+  <p>LA Traders &middot; Los Angeles, California<br>
+  Email: <a href="mailto:support@latraderrrs.com">support@latraderrrs.com</a><br>
+  Website: <a href="https://latraderrrs.com">latraderrrs.com</a></p>
+</div>"""
+
+PRIVACY_HTML = """<div class="wrap legal-body">
+  <div class="crumb"><a href="/">Home</a> / Privacy Policy</div>
+  <h1>Privacy <em>Policy</em></h1>
+  <div class="legal-updated">Last Updated: __TODAY__ &middot; LA Traders &middot; Los Angeles, California</div>
+
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#collect">Information We Collect</a></li>
+      <li><a href="#use">How We Use Information</a></li>
+      <li><a href="#email">Email Marketing</a></li>
+      <li><a href="#sms">SMS / Text Messaging Data</a></li>
+      <li><a href="#discord">Discord Community Data</a></li>
+      <li><a href="#cookies">Cookies &amp; Analytics</a></li>
+      <li><a href="#sharing">How We Share Information</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#rights">Your Rights &amp; Choices</a></li>
+      <li><a href="#ccpa">California Residents (CCPA/CPRA)</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#international">International Users</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </div>
+
+  <h2 id="overview"><span class="num">Section 01</span>Overview</h2>
+  <p>This Privacy Policy explains what information LA Traders ("we," "us," "our") collects when you use latraderrrs.com, download the RRR Daily Trading Checklist, purchase RRR OS Lite, subscribe to our emails or SMS program, or join our Discord community — and how we use, share, and protect it. By using the Services, you agree to this Policy.</p>
+  <div class="legal-note"><p>The short version: we collect the minimum needed to deliver what you asked for, we never sell your personal information, and every marketing channel has a one-step opt-out.</p></div>
+
+  <h2 id="collect"><span class="num">Section 02</span>Information We Collect</h2>
+  <p><strong>Information you give us directly:</strong></p>
+  <ul>
+    <li><strong>Email address</strong> — when you download the checklist, join the list, or make a purchase.</li>
+    <li><strong>Name and billing details</strong> — when you purchase a product (payment card details are processed by our payment processor and never touch our servers).</li>
+    <li><strong>Mobile phone number</strong> — only if you opt in to the SMS program.</li>
+    <li><strong>Discord username/handle and anything you post</strong> — if you join the Community.</li>
+    <li><strong>Support correspondence</strong> — when you email us.</li>
+  </ul>
+  <p><strong>Information collected automatically:</strong></p>
+  <ul>
+    <li><strong>Usage data</strong> — pages visited, time on page, referring links, and general device/browser information.</li>
+    <li><strong>Cookies and similar technologies</strong> — see Section 7.</li>
+    <li><strong>Approximate location</strong> — inferred from IP address at the region level (not precise GPS).</li>
+  </ul>
+  <p>We do <strong>not</strong> collect brokerage account data, trading account numbers, or government IDs.</p>
+
+  <h2 id="use"><span class="num">Section 03</span>How We Use Information</h2>
+  <ul>
+    <li>Deliver the checklist, products, and community access you requested;</li>
+    <li>Send transactional messages (receipts, delivery links, support responses);</li>
+    <li>Send marketing emails and (if opted in) SMS messages, per your consent;</li>
+    <li>Operate and moderate the Discord community;</li>
+    <li>Understand what content is useful and improve the Services;</li>
+    <li>Prevent abuse, fraud, and violations of our Terms;</li>
+    <li>Comply with legal obligations.</li>
+  </ul>
+
+  <h2 id="email"><span class="num">Section 04</span>Email Marketing</h2>
+  <p>When you subscribe, your email address and subscription source (e.g., "checklist download") are stored with our email service provider. We use this to send the content you asked for plus related educational and marketing emails.</p>
+  <p><strong>Opt-out:</strong> Every marketing email contains a one-click unsubscribe link. Unsubscribing stops marketing emails promptly; transactional emails tied to an active purchase may continue as needed. We honor unsubscribes within 10 business days at the latest, consistent with the CAN-SPAM Act, and we never sell or rent email addresses to third parties for their own marketing.</p>
+
+  <h2 id="sms"><span class="num">Section 05</span>SMS / Text Messaging Data</h2>
+  <p>If you opt in to SMS, we collect your mobile number, opt-in timestamp and method, and message delivery status. This information is used solely to operate the SMS program — sending the messages you signed up for, honoring STOP/HELP requests, and maintaining proof of consent as required by the TCPA.</p>
+  <ul>
+    <li><strong>Opt-out:</strong> Reply <strong>STOP</strong> at any time. Opt-outs are honored immediately, and your number is suppressed from future sends (we retain the suppression record to respect your choice).</li>
+    <li><strong>No sharing for third-party marketing:</strong> We do not sell, rent, or share your mobile number or SMS opt-in data with third parties or affiliates for their marketing purposes.</li>
+    <li><strong>Service providers:</strong> Your number is processed by our SMS delivery provider solely to transmit messages on our behalf, under contract.</li>
+  </ul>
+
+  <h2 id="discord"><span class="num">Section 06</span>Discord Community Data</h2>
+  <p>If you join our Discord server, we can see your Discord username, avatar, and anything you post in the server — that is how Discord works. We use this to moderate the community and grant role-based access (e.g., product-holder channels).</p>
+  <ul>
+    <li><strong>Public within the Community:</strong> Assume anything you post in the server is visible to other members. Do not share account numbers, addresses, or sensitive personal information.</li>
+    <li><strong>Discord's own data practices</strong> are governed by Discord's Privacy Policy; we do not control and are not responsible for Discord's data handling.</li>
+    <li><strong>Leaving:</strong> You can leave the server at any time. To request deletion of your moderation records with us, email <a href="mailto:privacy@latraderrrs.com">privacy@latraderrrs.com</a>.</li>
+  </ul>
+
+  <h2 id="cookies"><span class="num">Section 07</span>Cookies &amp; Analytics</h2>
+  <p>We use a small set of cookies and similar technologies:</p>
+  <ul>
+    <li><strong>Essential:</strong> required for the site to function (e.g., remembering your session or preferences).</li>
+    <li><strong>Analytics:</strong> to understand aggregate traffic (which pages are read, where visitors come from). We use privacy-respecting, aggregate analytics wherever practical.</li>
+    <li><strong>Marketing attribution:</strong> to know which channel (search, social, email) brought you to us.</li>
+  </ul>
+  <p>You can block or delete cookies through your browser settings; the site will still function for reading content. We honor browser "Do Not Track" signals where technically feasible and do not respond to them with additional tracking.</p>
+
+  <h2 id="sharing"><span class="num">Section 08</span>How We Share Information</h2>
+  <p><strong>We never sell your personal information.</strong> We share it only in these cases:</p>
+  <ul>
+    <li><strong>Service providers (processors):</strong> our email platform, SMS delivery provider, payment processor, hosting provider, and analytics tools — each under contract and limited to providing their service to us.</li>
+    <li><strong>Legal:</strong> if required by law, subpoena, or to protect the rights, safety, or property of LA Traders, our members, or the public.</li>
+    <li><strong>Business transfer:</strong> if LA Traders is involved in a merger, acquisition, or asset sale, your information may transfer as part of that transaction, with this Policy continuing to apply.</li>
+  </ul>
+
+  <h2 id="retention"><span class="num">Section 09</span>Data Retention</h2>
+  <p>We keep personal information only as long as needed: subscriber data while you remain subscribed; purchase records as required for tax and accounting (typically 7 years); SMS consent records as needed to demonstrate compliance; support correspondence for up to 24 months. When data is no longer needed, it is deleted or de-identified.</p>
+
+  <h2 id="security"><span class="num">Section 10</span>Security</h2>
+  <p>We use industry-standard measures: HTTPS everywhere, payment data handled exclusively by PCI-compliant processors, access to personal data limited to those who need it to operate the Services. No method of transmission or storage is 100% secure; if a breach affects your personal information, we will notify you as required by law.</p>
+
+  <h2 id="rights"><span class="num">Section 11</span>Your Rights &amp; Choices</h2>
+  <ul>
+    <li><strong>Access &amp; correction:</strong> ask us what personal information we hold about you and request corrections.</li>
+    <li><strong>Deletion:</strong> request deletion of your personal information, subject to legal retention requirements.</li>
+    <li><strong>Opt-outs:</strong> unsubscribe links in every email; STOP for texts; leave the Discord anytime.</li>
+    <li><strong>Cookie controls:</strong> via your browser settings.</li>
+  </ul>
+  <p>To exercise any of these, email <a href="mailto:privacy@latraderrrs.com">privacy@latraderrrs.com</a>. We respond within 30 days.</p>
+
+  <h2 id="ccpa"><span class="num">Section 12</span>California Residents (CCPA/CPRA)</h2>
+  <p>If you are a California resident, you have the right to: (a) know the categories and specific pieces of personal information we collect, use, and disclose; (b) request deletion of your personal information; (c) correct inaccurate information; (d) opt out of the sale or sharing of personal information — <strong>note that we do not sell or share personal information for cross-context behavioral advertising</strong>; and (e) not be discriminated against for exercising these rights. Submit requests to <a href="mailto:privacy@latraderrrs.com">privacy@latraderrrs.com</a>; we will verify your request before acting.</p>
+
+  <h2 id="children"><span class="num">Section 13</span>Children's Privacy</h2>
+  <p>The Services are not directed to children under 13 (or under 18 for purchases and community access), and we do not knowingly collect their personal information. If you believe a child has provided us information, contact us and we will delete it.</p>
+
+  <h2 id="international"><span class="num">Section 14</span>International Users</h2>
+  <p>The Services are operated from the United States. If you access them from elsewhere, you understand your information will be processed in the US, where data protection laws may differ from yours. Where GDPR applies, our legal bases for processing are: performance of a contract (delivering what you bought or requested), consent (marketing emails and SMS — withdrawable anytime), and legitimate interest (operating and improving the Services).</p>
+
+  <h2 id="changes"><span class="num">Section 15</span>Changes to This Policy</h2>
+  <p>We may update this Policy as the Services evolve. The "Last Updated" date reflects the current version; material changes will be announced via the site or email. Continued use after changes take effect constitutes acceptance.</p>
+
+  <h2 id="contact"><span class="num">Section 16</span>Contact</h2>
+  <p>LA Traders &middot; Los Angeles, California<br>
+  Privacy requests: <a href="mailto:privacy@latraderrrs.com">privacy@latraderrrs.com</a><br>
+  General support: <a href="mailto:support@latraderrrs.com">support@latraderrrs.com</a></p>
+</div>"""
+
+def build_legal_page(slug, title, desc, body_html):
+    canonical = f"{BASE}/{slug}/"
+    body_html = body_html.replace("__TODAY__", TODAY)
+    schema = ldjson({
+        "@context": "https://schema.org", "@type": "WebPage",
+        "name": title, "description": desc, "url": canonical,
+        "isPartOf": {"@type": "WebSite", "name": "LA Traders", "url": BASE + "/"},
+    })
+    return head(title, desc, canonical, schema, LEGAL_CSS) + body_html + foot()
+
+os.makedirs(os.path.join(OUT, "terms"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "privacy"), exist_ok=True)
+
+with open(os.path.join(OUT, "terms", "index.html"), "w") as f:
+    f.write(build_legal_page("terms", "Terms of Service — LA Traders",
+        "Terms of Service for LA Traders: educational content disclaimer, risk disclosure, email marketing, SMS text program, Discord community rules, billing, and intellectual property.",
+        TERMS_HTML))
+print("Built /terms/")
+
+with open(os.path.join(OUT, "privacy", "index.html"), "w") as f:
+    f.write(build_legal_page("privacy", "Privacy Policy — LA Traders",
+        "Privacy Policy for LA Traders: what we collect, email marketing (CAN-SPAM), SMS data (TCPA), Discord community data, cookies, your rights, and CCPA/CPRA disclosures.",
+        PRIVACY_HTML))
+print("Built /privacy/")
