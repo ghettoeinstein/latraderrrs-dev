@@ -331,6 +331,13 @@ p{color:var(--bone-dim);}
   font-family:var(--font-mono);letter-spacing:0.3px;
 }
 .footer-risk strong{color:#5a5a64;font-weight:400;}
+
+/* Design credit */
+.footer-credit{text-align:center;padding:20px 0 24px;border-top:1px solid var(--line);}
+.footer-credit .credit-text{font-family:var(--font-mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--ash-dim);}
+.footer-credit .credit-text a{font-weight:700;font-size:13px;letter-spacing:1px;color:var(--gold-bright);text-transform:none;transition:color var(--dur-fast);text-decoration:none;}
+.footer-credit .credit-text a:hover{color:var(--gold);}
+.footer-credit .credit-heart{color:var(--red);font-size:14px;}
 @media(max-width:960px){
   .footer-mega{grid-template-columns:1fr 1fr;gap:40px;}
   .footer-brandblock{grid-column:1 / -1;}
