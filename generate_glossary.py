@@ -95,10 +95,13 @@ def head(title, desc, canonical, extra_schema="", extra_css=""):
 <nav class="nav-shell">
   <a class="nav-brand" href="/">LA TRADERS</a>
   <div class="nav-links">
-    <a href="/">Home</a>
+    <a href="/#protocol">Protocol</a>
+    <a href="/#rrr">RRR Framework</a>
     <a href="/glossary/">Glossary</a>
     <a href="/#checklist">Checklist</a>
     <a href="/#oslite">RRR OS Lite</a>
+    <a href="/terms/">Terms</a>
+    <a href="/privacy/">Privacy</a>
   </div>
 </nav>
 """
@@ -161,10 +164,11 @@ def foot():
       <div class="fcopy">&copy; LA Traders &mdash; All Rights Reserved</div>
       <div class="flinks">
         <a href="/">Home</a>
-        <a href="/glossary/">Glossary</a>
         <a href="/#protocol">Protocol</a>
         <a href="/#rrr">RRR Framework</a>
+        <a href="/glossary/">Glossary</a>
         <a href="/#checklist">Checklist</a>
+        <a href="/#oslite">RRR OS Lite</a>
         <a href="/terms/">Terms of Service</a>
         <a href="/privacy/">Privacy Policy</a>
       </div>
