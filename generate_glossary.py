@@ -220,17 +220,17 @@ def head(title, desc, canonical, extra_schema="", extra_css=""):
       </div>
     </div>
     <div class="mega-item">
-      <a href="/#checklist">Products</a>
+      <a href="/tools/">Tools</a>
       <div class="mega-dropdown">
         <div class="mega-col">
-          <h5>Education &amp; Tools</h5>
+          <h5>Interactive Tools</h5>
           <ul>
             <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
             <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+            <li><a href="/tools/journal/">Trade Journal</a></li>
+            <li><a href="/tools/">Session Clock &amp; All Tools</a></li>
             <li><a href="/#checklist">Free PDF Checklist</a></li>
             <li><a href="/#oslite">RRR OS Lite — $17</a></li>
-            <li><a href="/glossary/prop-firm/">Prop Firm Path</a></li>
-            <li><a href="/glossary/journaling/">Trade Journaling</a></li>
           </ul>
         </div>
       </div>
@@ -287,12 +287,12 @@ def foot():
         </ul>
       </div>
       <div class="fcol">
-        <h4>Products</h4>
+        <h4>Tools</h4>
         <ul>
-          <li><a href="/#checklist">RRR Daily Checklist — Free</a></li>
-          <li><a href="/#oslite">RRR OS Lite — $17</a></li>
-          <li><a href="/glossary/prop-firm/">Prop Firm Path</a></li>
-          <li><a href="/glossary/journaling/">Trade Journaling</a></li>
+          <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+          <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+          <li><a href="/tools/journal/">Trade Journal</a></li>
+          <li><a href="/tools/">Session Clock &amp; All Tools</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -312,6 +312,7 @@ def foot():
         <a href="/#protocol">Protocol</a>
         <a href="/#rrr">RRR Framework</a>
         <a href="/glossary/">Glossary</a>
+        <a href="/tools/">Tools</a>
         <a href="/#checklist">Checklist</a>
         <a href="/#oslite">RRR OS Lite</a>
         <a href="/terms/">Terms of Service</a>
