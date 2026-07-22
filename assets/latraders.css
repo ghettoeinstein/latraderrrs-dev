@@ -463,6 +463,11 @@ p{color:var(--bone-dim);}
 @media(max-width:960px){
   .footer-mega{grid-template-columns:1fr 1fr;gap:40px;}
   .footer-brandblock{grid-column:1 / -1;}
+  /* odd number of fcols leaves one orphaned in the last row — center it instead of hugging the left edge */
+  .footer-mega > .fcol:last-child:nth-child(even){
+    grid-column:1 / -1;max-width:240px;margin:0 auto;text-align:center;
+  }
+  .footer-mega > .fcol:last-child:nth-child(even) ul{align-items:center;}
 }
 @media(max-width:560px){
   .footer-mega{grid-template-columns:1fr 1fr;gap:32px 22px;padding:52px 0 40px;}
@@ -474,6 +479,8 @@ p{color:var(--bone-dim);}
 @media(max-width:380px){
   .footer-mega{grid-template-columns:1fr;}
   .footer-brandblock{grid-column:auto;}
+  .footer-mega > .fcol:last-child:nth-child(even){grid-column:auto;max-width:none;margin:0;text-align:left;}
+  .footer-mega > .fcol:last-child:nth-child(even) ul{align-items:flex-start;}
 }
 
 /* Legacy compact footer (kept for simple pages) */
