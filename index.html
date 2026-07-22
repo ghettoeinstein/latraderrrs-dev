@@ -136,6 +136,9 @@
   }
   .nav-cta:hover{color:#0a0a0a; border-color:var(--gold);}
   .nav-cta:hover::before{transform:scaleX(1);}
+  .nav-item.nav-shop > .nav-cta::after{content:"▾"; font-size:8px; opacity:0.7; margin-left:6px;}
+  .nav-dropdown.align-right{left:auto; right:0;}
+  .nav-dropdown .dc .shop-price{color:var(--ash-dim); font-size:10px; margin-left:6px;}
   .nav-insta{
     display:flex; align-items:center; justify-content:center;
     width:38px; height:38px; border-radius:50%; margin-right:16px;
@@ -724,7 +727,18 @@
       <circle cx="17.4" cy="6.6" r="1.15" fill="url(#insta-grad)"/>
     </svg>
   </a>
-  <a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer" class="nav-cta">SHOP</a>
+  <div class="nav-item nav-shop">
+    <a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer" class="nav-cta">SHOP</a>
+    <div class="nav-dropdown align-right">
+      <div class="dc">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="https://latraderrrs.gumroad.com/l/rrr-os-lite" target="_blank" rel="noopener noreferrer">RRR OS Lite <span class="shop-price">$17</span></a></li>
+          <li><a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer">RRR Framework Cheatsheet &amp; Daily Execution Checklist <span class="shop-price">Free</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>
 
 <!-- HERO -->
