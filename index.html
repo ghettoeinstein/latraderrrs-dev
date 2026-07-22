@@ -136,6 +136,19 @@
   }
   .nav-cta:hover{color:#0a0a0a; border-color:var(--gold);}
   .nav-cta:hover::before{transform:scaleX(1);}
+  .nav-insta{
+    display:flex; align-items:center; justify-content:center;
+    width:38px; height:38px; border-radius:50%; margin-right:16px;
+    border:1px solid var(--gold-dim); position:relative;
+    transition:border-color .3s, transform .3s;
+    animation:insta-pulse 3.2s ease-in-out infinite;
+  }
+  .nav-insta svg{width:18px; height:18px; display:block;}
+  .nav-insta:hover{border-color:var(--purple-bright); transform:translateY(-2px) scale(1.08);}
+  @keyframes insta-pulse{
+    0%,100%{box-shadow:0 0 5px rgba(212,175,55,0.35), 0 0 0 rgba(124,79,196,0);}
+    50%{box-shadow:0 0 10px rgba(124,79,196,0.55), 0 0 14px rgba(212,175,55,0.35);}
+  }
 
   /* ---------------- HERO ---------------- */
   .hero{
@@ -686,7 +699,20 @@
       </div>
     </div>
   </div>
-  <a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer" class="nav-cta">Get the Checklist</a>
+  <a href="https://www.instagram.com/latraderrrs/" target="_blank" rel="noopener noreferrer" class="nav-insta" aria-label="Follow LA Traders on Instagram">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="insta-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#f0ce6a"/>
+          <stop offset="1" stop-color="#a67de0"/>
+        </linearGradient>
+      </defs>
+      <rect x="2.5" y="2.5" width="19" height="19" rx="6" stroke="url(#insta-grad)" stroke-width="1.6"/>
+      <circle cx="12" cy="12" r="4.6" stroke="url(#insta-grad)" stroke-width="1.6"/>
+      <circle cx="17.4" cy="6.6" r="1.15" fill="url(#insta-grad)"/>
+    </svg>
+  </a>
+  <a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer" class="nav-cta">SHOP</a>
 </nav>
 
 <!-- HERO -->
