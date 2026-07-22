@@ -5,6 +5,46 @@
 (function () {
   'use strict';
 
+  // ── anime.js (progressive enhancement, loaded from CDN) ──
+  var animeReady = false;
+  if (window.anime) {
+    animeReady = true;
+  } else {
+    var animeScript = document.createElement('script');
+    animeScript.src = 'https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js';
+    animeScript.onload = function () { animeReady = true; };
+    document.head.appendChild(animeScript);
+  }
+
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ── Footer: fluid reveal as it scrolls into view ──
+  function initFooterReveal() {
+    var footerMega = document.querySelector('.footer-mega');
+    if (!footerMega || reducedMotion || !('IntersectionObserver' in window)) return;
+    var cols = footerMega.children;
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        if (animeReady && window.anime) {
+          window.anime({
+            targets: cols,
+            opacity: [0, 1],
+            translateY: [24, 0],
+            delay: window.anime.stagger(70),
+            duration: 600,
+            easing: 'easeOutCubic'
+          });
+        }
+        io.disconnect();
+      });
+    }, { threshold: 0.15 });
+
+    io.observe(footerMega);
+  }
+  initFooterReveal();
+
   // Only on mobile
   if (window.matchMedia('(min-width: 861px)').matches) return;
 
@@ -87,7 +127,7 @@
   });
 
   // Build HTML
-  var html = '';
+  var html = '<a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer" class="mm-shop">Shop</a>';
   sections.forEach(function (sec) {
     html += '<div class="mm-section">';
     html += '<h5>' + sec.title + '</h5>';
@@ -115,6 +155,29 @@
   // ── Toggle logic ──
   var isOpen = false;
 
+  // Fluid spring motion via anime.js when available; CSS transition covers it otherwise
+  function animatePanel(open) {
+    if (reducedMotion || !(animeReady && window.anime)) return;
+    menu.style.transition = 'none';
+    backdrop.style.transition = 'none';
+    if (open) {
+      window.anime({
+        targets: menu,
+        translateX: ['24%', '0%'], translateY: ['-16%', '0%'],
+        scale: [0.92, 1], rotate: ['3deg', '0deg'], opacity: [0, 1],
+        duration: 600, easing: 'spring(1, 80, 12, 0)'
+      });
+    } else {
+      window.anime({
+        targets: menu,
+        translateX: '24%', translateY: '-16%',
+        scale: 0.92, rotate: '3deg', opacity: 0,
+        duration: 380, easing: 'easeInCubic'
+      });
+    }
+    window.anime({ targets: backdrop, opacity: open ? [0, 1] : 0, duration: open ? 350 : 300, easing: 'easeOutQuad' });
+  }
+
   function toggleMenu() {
     isOpen = !isOpen;
     hamburger.classList.toggle('open', isOpen);
@@ -122,6 +185,7 @@
     backdrop.classList.toggle('open', isOpen);
     hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     document.body.style.overflow = isOpen ? 'hidden' : '';
+    animatePanel(isOpen);
   }
 
   function closeMenu() {
@@ -132,6 +196,7 @@
     backdrop.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    animatePanel(false);
   }
 
   hamburger.addEventListener('click', function (e) {

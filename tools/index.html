@@ -352,12 +352,35 @@ h1{font-size:clamp(34px,5.4vw,54px);margin-bottom:20px;}
 
     return {
       hour: nyHour, minute: nyMin, second: nySec, totalMin: totalMin,
-      isWeekend: isWeekend,
+      isWeekend: isWeekend, weekday: nyWeekday,
       display: nyWeekday + ', ' + nyMonth + ' ' + nyDay + ' — ' + String(nyHour).padStart(2,'0') + ':' + String(nyMin).padStart(2,'0') + ' ET'
     };
   }
 
   function pad(n) { return String(n).padStart(2, '0'); }
+
+  var DAY_INDEX = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+
+  // Seconds remaining until the next 6:00 AM ET protocol open (skips weekends)
+  function secondsToNextOpen(ny) {
+    var dayIndex = DAY_INDEX[ny.weekday];
+    var daysToAdd;
+    if (dayIndex === 6) daysToAdd = 2;        // Sat -> Mon
+    else if (dayIndex === 0) daysToAdd = 1;   // Sun -> Mon
+    else if (dayIndex === 5) daysToAdd = 3;   // Fri (after close) -> Mon
+    else daysToAdd = 1;                       // Mon-Thu (after close) -> next day
+
+    var nowTotalSec = ny.totalMin * 60 + ny.second;
+    var targetTotalSec = daysToAdd * 86400 + 6 * 3600;
+    return targetTotalSec - nowTotalSec;
+  }
+
+  function formatCountdown(totalSec) {
+    var h = Math.floor(totalSec / 3600);
+    var m = Math.floor((totalSec % 3600) / 60);
+    var s = totalSec % 60;
+    return pad(h) + ':' + pad(m) + ':' + pad(s);
+  }
 
   function updateClock() {
     var ny = getNYTime();
@@ -374,8 +397,8 @@ h1{font-size:clamp(34px,5.4vw,54px);margin-bottom:20px;}
       widget.className = 'clock-widget stage-off';
       label.textContent = 'Markets Closed — Session Clock';
       stage.textContent = 'Markets closed for the weekend';
-      countdown.textContent = '—:—:—';
-      next.innerHTML = 'The Protocol runs Monday–Friday. Come back at 6:00 AM ET on Monday.';
+      countdown.textContent = formatCountdown(secondsToNextOpen(ny));
+      next.innerHTML = 'The Protocol runs Monday–Friday. Next session starts <strong>6:00 AM ET Monday</strong>.';
       return;
     }
 
@@ -437,8 +460,8 @@ h1{font-size:clamp(34px,5.4vw,54px);margin-bottom:20px;}
       widget.className = 'clock-widget stage-off';
       label.textContent = 'Session Complete — New York Time';
       stage.textContent = 'Protocol session ended';
-      countdown.textContent = '—:—:—';
-      next.innerHTML = 'Today\'s session is done. Come back tomorrow at <strong>6:00 AM ET</strong>.';
+      countdown.textContent = formatCountdown(secondsToNextOpen(ny));
+      next.innerHTML = 'Today\'s session is done. Next session starts <strong>6:00 AM ET' + (ny.weekday === 'Fri' ? ' Monday' : '') + '</strong>.';
     }
   }
 
