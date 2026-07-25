@@ -139,6 +139,30 @@
   .nav-item.nav-shop > .nav-cta::after{content:"▾"; font-size:8px; opacity:0.7; margin-left:6px;}
   .nav-dropdown.align-right{left:auto; right:0;}
   .nav-dropdown .dc .shop-price{color:var(--ash-dim); font-size:10px; margin-left:6px;}
+  /* Shop pyramid dropdown */
+  .shop-pyramid{padding:16px;gap:12px;min-width:280px;}
+  .shop-pyramid-top{
+    display:flex;flex-direction:column;align-items:center;gap:2px;
+    padding:14px 20px;border-radius:10px;
+    background:linear-gradient(135deg, rgba(88,101,242,0.15), rgba(88,101,242,0.05));
+    border:1px solid rgba(88,101,242,0.4);
+    transition:background .3s,border-color .3s,transform .2s;
+  }
+  .shop-pyramid-top .sp-label{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#C8C9FF;}
+  .shop-pyramid-top .sp-sub{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#8B8FE8;}
+  .shop-pyramid-top:hover{background:rgba(88,101,242,0.2);border-color:#5865F2;transform:translateY(-2px);}
+  .shop-pyramid-top:hover .sp-label{color:#fff;}
+  .shop-pyramid-bottom{display:flex;gap:10px;}
+  .sp-item{
+    flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;
+    padding:11px 14px;border-radius:8px;
+    background:rgba(255,255,255,0.03);border:1px solid var(--line);
+    transition:background .25s,border-color .25s,transform .2s;
+  }
+  .sp-item .sp-name{font-size:12px;font-weight:600;color:var(--bone);}
+  .sp-item .sp-price{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
+  .sp-item:hover{background:rgba(255,255,255,0.06);border-color:var(--gold-dim);transform:translateY(-2px);}
+  .sp-item:hover .sp-name{color:var(--gold-bright);}
   .nav-discord{
     font-size:11px; letter-spacing:1px; text-transform:uppercase;
     padding:10px 20px; border:1px solid #5865F2; border-radius:40px;
@@ -265,6 +289,12 @@
     backdrop-filter:blur(8px);
   }
   .btn-ghost:hover{border-color:var(--purple); background:rgba(124,79,196,0.1); transform:translateY(-3px);}
+  .btn-discord{
+    background:rgba(88,101,242,0.12); color:#C8C9FF;
+    border:1px solid #5865F2;
+    box-shadow:0 8px 30px rgba(88,101,242,0.2);
+  }
+  .btn-discord:hover{background:#5865F2; color:#fff; transform:translateY(-3px); box-shadow:0 14px 40px rgba(88,101,242,0.4); border-color:#5865F2;}
   .hero-rrr{
     margin-top:72px; display:flex; align-items:center; gap:18px;
     font-family:'Space Mono', monospace; font-size:11px; letter-spacing:3px;
@@ -747,14 +777,20 @@
   <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="nav-cta nav-discord">Join the Trading Room</a>
   <div class="nav-item nav-shop">
     <a href="https://latraderrrs.gumroad.com" target="_blank" rel="noopener noreferrer" class="nav-cta">SHOP</a>
-    <div class="nav-dropdown align-right">
-      <div class="dc">
-        <h5>Shop</h5>
-        <ul>
-          <li><a href="https://latraderrrs.gumroad.com/l/rrr-os-lite" target="_blank" rel="noopener noreferrer">RRR OS Lite <span class="shop-price">$17</span></a></li>
-          <li><a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer">RRR Framework Cheatsheet &amp; Daily Execution Checklist <span class="shop-price">Free</span></a></li>
-          <li><a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer">Trading Room <span class="shop-price">Discord</span></a></li>
-        </ul>
+    <div class="nav-dropdown align-right shop-pyramid">
+      <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="shop-pyramid-top">
+        <span class="sp-label">Join the Trading Room</span>
+        <span class="sp-sub">Discord Community</span>
+      </a>
+      <div class="shop-pyramid-bottom">
+        <a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer" class="sp-item">
+          <span class="sp-name">Free Checklist</span>
+          <span class="sp-price">Free</span>
+        </a>
+        <a href="https://latraderrrs.gumroad.com/l/rrr-os-lite" target="_blank" rel="noopener noreferrer" class="sp-item">
+          <span class="sp-name">RRR OS Lite</span>
+          <span class="sp-price">$17</span>
+        </a>
       </div>
     </div>
   </div>
@@ -774,6 +810,7 @@
   <p class="hero-sub">LA Traders teaches <strong>one repeatable process</strong> for the New York session <strong>(for every session)</strong> — mark the levels, wait for the reveal, take the A+ setup. No noise. No hopium. Just structure.</p>
   <div class="hero-ctas">
     <a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download the Free Checklist</a>
+    <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="btn btn-discord">Join the Trading Room</a>
     <a href="#oslite" class="btn btn-ghost">See RRR OS Lite — $17</a>
   </div>
   <div class="hero-rrr">Reveal <span class="arrow">→</span> Retrace <span class="arrow">→</span> Run</div>

@@ -277,6 +277,31 @@ p{color:var(--bone-dim);}
 .mega-dropdown .mega-col a{font-size:12px;letter-spacing:0.3px;text-transform:none;color:var(--ash);white-space:nowrap;transition:color var(--dur-fast),padding-left var(--dur-fast);}
 .mega-dropdown .mega-col a:hover{color:var(--gold-bright);padding-left:6px;}
 
+/* Shop pyramid dropdown (mega-nav) */
+.shop-pyramid-mega{padding:16px;gap:12px;min-width:280px;}
+.shop-pyramid-top{
+  display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding:14px 20px;border-radius:10px;
+  background:linear-gradient(135deg, rgba(88,101,242,0.15), rgba(88,101,242,0.05));
+  border:1px solid rgba(88,101,242,0.4);
+  transition:background .3s,border-color .3s,transform .2s;
+}
+.shop-pyramid-top .sp-label{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#C8C9FF;}
+.shop-pyramid-top .sp-sub{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#8B8FE8;}
+.shop-pyramid-top:hover{background:rgba(88,101,242,0.2);border-color:#5865F2;transform:translateY(-2px);}
+.shop-pyramid-top:hover .sp-label{color:#fff;}
+.shop-pyramid-bottom{display:flex;gap:10px;}
+.sp-item{
+  flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding:11px 14px;border-radius:8px;
+  background:rgba(255,255,255,0.03);border:1px solid var(--line);
+  transition:background .25s,border-color .25s,transform .2s;
+}
+.sp-item .sp-name{font-size:12px;font-weight:600;color:var(--bone);}
+.sp-item .sp-price{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
+.sp-item:hover{background:rgba(255,255,255,0.06);border-color:var(--gold-dim);transform:translateY(-2px);}
+.sp-item:hover .sp-name{color:var(--gold-bright);}
+
 /* ---------- MOBILE HAMBURGER + SLIDE-IN SIDEBAR (purple/gold, tilt) ---------- */
 .hamburger{
   display:none;width:44px;height:44px;position:relative;cursor:pointer;z-index:200;
