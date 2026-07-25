@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remote Services Menu — LA Traders</title>
+<meta name="description" content="Every LA Traders remote service, organized under one method: Reveal, Retrace, Run. From a $35 helpdesk ticket to full team onboarding — same framework, different depth.">
+<link rel="canonical" href="https://latraderrrs.com/products/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Remote Services Menu — LA Traders">
+<meta property="og:description" content="Eleven ways into the RRR method. Same spine, every time. From $35 to $3,000+.">
+<meta property="og:url" content="https://latraderrrs.com/products/">
+<meta property="og:site_name" content="LA Traders">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Remote Services Menu — LA Traders">
+<meta name="twitter:description" content="Eleven ways into the RRR method. Same spine, every time. From $35 to $3,000+.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/latraders.css">
+<style>
+  /* Page-specific styles — tokens come from latraders.css :root */
+  .products-wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  @media(max-width:620px){.products-wrap{padding:0 20px;}}
+
+  /* ── HERO ── */
+  .p-hero{
+    position:relative;padding:140px 0 80px;overflow:hidden;
+    border-bottom:1px solid var(--line);
+    background:radial-gradient(ellipse 80% 60% at 50% 0%, rgba(124,79,196,0.12), transparent 70%);
+  }
+  .p-hero-eyebrow{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:5px;text-transform:uppercase;
+    color:var(--purple-bright);margin-bottom:24px;
+  }
+  .p-hero h1{
+    font-family:var(--font-display);font-weight:300;
+    font-size:clamp(40px,6vw,72px);line-height:1.05;letter-spacing:-0.02em;
+    color:var(--bone);max-width:900px;margin-bottom:28px;
+  }
+  .p-hero h1 em{font-style:italic;font-weight:400;color:var(--gold-bright);}
+  .p-hero .lede{
+    font-size:18px;line-height:1.75;color:var(--ash);max-width:680px;margin-bottom:40px;
+  }
+  .p-hero .lede strong{color:var(--bone-dim);font-weight:500;}
+  .p-hero-ctas{display:flex;flex-wrap:wrap;gap:14px;}
+  @media(max-width:480px){.p-hero-ctas{flex-direction:column;align-items:stretch;}.p-hero-ctas .btn{justify-content:center;}}
+
+  /* ── RRR LEGEND STRIP ── */
+  .rrr-legend{
+    border-bottom:1px solid var(--line);background:var(--void-2);
+    padding:32px 0;
+  }
+  .rrr-legend-row{display:flex;flex-wrap:wrap;gap:40px;}
+  .rrr-legend-item{display:flex;align-items:center;gap:14px;flex:1 1 240px;}
+  .rrr-legend-item .lc-candle{width:24px;height:48px;flex-shrink:0;}
+  .rrr-legend-item .lc-k{font-family:var(--font-mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ash-dim);margin-bottom:4px;}
+  .rrr-legend-item .lc-v{font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--bone);}
+
+  /* ── PHASE SECTIONS ── */
+  .phase{padding:96px 0;border-bottom:1px solid var(--line);position:relative;}
+  .phase--reveal{background:var(--void);}
+  .phase--retrace{background:var(--void-2);}
+  .phase--run{background:var(--panel);}
+  .phase-head{
+    display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px;
+    margin-bottom:56px;padding-left:28px;border-left:3px solid var(--phase-rule,var(--gold));
+  }
+  .phase--reveal .phase-head{--phase-rule:var(--gold);}
+  .phase--retrace .phase-head{--phase-rule:var(--purple-bright);}
+  .phase--run .phase-head{--phase-rule:var(--gold-bright);}
+  .phase-title-group{display:flex;align-items:center;gap:20px;}
+  .phase-candle{width:30px;height:64px;flex-shrink:0;}
+  .phase-name{
+    font-family:var(--font-display);font-size:clamp(32px,4vw,56px);font-weight:300;
+    margin:0 0 8px;letter-spacing:-0.02em;
+  }
+  .phase--reveal .phase-name{color:var(--gold-bright);}
+  .phase--retrace .phase-name{color:var(--purple-bright);}
+  .phase--run .phase-name{
+    background:linear-gradient(90deg,var(--gold-bright),var(--purple-bright));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .phase-def{color:var(--ash);font-size:15px;max-width:440px;line-height:1.65;margin:0;}
+  .phase-index{font-family:var(--font-display);font-style:italic;font-size:14px;color:var(--ash-dim);white-space:nowrap;}
+
+  /* ── PRODUCT CARDS ── */
+  .cards{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;
+  }
+  .card{
+    background:var(--panel);border:1px solid var(--line-strong);
+    border-left:3px solid var(--card-rule,var(--gold));
+    border-radius:var(--radius-md);padding:32px 28px 28px;
+    display:flex;flex-direction:column;gap:16px;
+    transition:transform .4s var(--ease-out),border-color .3s,box-shadow .3s;
+    position:relative;overflow:hidden;
+  }
+  .phase--reveal .card{--card-rule:var(--gold);}
+  .phase--retrace .card{--card-rule:var(--purple-bright);}
+  .phase--run .card{--card-rule:var(--gold-bright);}
+  .card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,0.4);border-left-color:var(--gold-bright);}
+  .card::after{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(ellipse 280px 180px at 0% 0%, var(--card-glow,rgba(212,175,55,0.06)), transparent 70%);
+    opacity:0;transition:opacity .4s;pointer-events:none;
+  }
+  .phase--reveal .card{--card-glow:rgba(212,175,55,0.08);}
+  .phase--retrace .card{--card-glow:rgba(124,79,196,0.08);}
+  .phase--run .card{--card-glow:rgba(212,175,55,0.08);}
+  .card:hover::after{opacity:1;}
+
+  .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;}
+  .card-num{font-family:var(--font-display);font-style:italic;font-size:13px;color:var(--ash-dim);}
+  .card-candle{width:14px;height:34px;}
+  .card-badge{
+    font-family:var(--font-mono);font-size:9px;letter-spacing:1px;text-transform:uppercase;
+    color:var(--purple-bright);border:1px solid rgba(147,132,209,0.4);border-radius:var(--radius-pill);
+    padding:3px 10px;margin-left:auto;white-space:nowrap;
+  }
+  .card h3{
+    font-family:var(--font-display);font-size:20px;font-weight:600;margin:0;
+    line-height:1.35;color:var(--bone);
+  }
+  .card-meta{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .card-price{font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--gold-bright);}
+  .card-cadence{font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--ash-dim);}
+  .card p.desc{font-size:14.5px;line-height:1.7;color:var(--ash);margin:0;flex-grow:1;}
+  .card-cta{margin-top:4px;width:100%;text-align:center;}
+
+  /* ── MARQUEE BAND ── */
+  .p-marquee{
+    padding:28px 0;border-top:1px solid var(--line);background:var(--void);
+    overflow:hidden;
+  }
+  .p-marquee-inner{
+    display:flex;justify-content:center;gap:20px;
+    font-family:var(--font-mono);font-size:12px;letter-spacing:4px;
+    text-transform:uppercase;color:var(--ash-dim);
+  }
+  .p-marquee-inner .sep{color:var(--gold);}
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:860px){
+    .phase-head{align-items:flex-start;}
+    .phase{padding:64px 0;}
+    .p-hero{padding:100px 0 60px;}
+  }
+  @media(max-width:480px){
+    .cards{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav-shell mega-nav">
+  <a class="nav-brand" href="/">LA TRADERS</a>
+  <div class="nav-links mega-links">
+    <div class="mega-item">
+      <a href="/#protocol">The System</a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h5>The Process</h5>
+          <ul>
+            <li><a href="/#protocol">The 6:00 AM Protocol</a></li>
+            <li><a href="/#rrr">RRR Framework</a></li>
+            <li><a href="/glossary/a-plus-setup/">The A+ Setup</a></li>
+            <li><a href="/glossary/six-am-protocol/">6:00 AM Protocol</a></li>
+          </ul>
+        </div>
+        <div class="mega-col">
+          <h5>RRR Framework</h5>
+          <ul>
+            <li><a href="/glossary/rrr-framework/">RRR Framework</a></li>
+            <li><a href="/glossary/reveal/">Reveal</a></li>
+            <li><a href="/glossary/retrace/">Retrace</a></li>
+            <li><a href="/glossary/run/">Run</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mega-item">
+      <a href="/glossary/">Glossary</a>
+      <div class="mega-dropdown mega-wide">
+        <div class="mega-col"><h5>RRR Framework</h5><ul>
+          <li><a href="/glossary/rrr-framework/">RRR Framework</a></li>
+          <li><a href="/glossary/reveal/">Reveal</a></li>
+          <li><a href="/glossary/retrace/">Retrace</a></li>
+          <li><a href="/glossary/run/">Run</a></li>
+          <li><a href="/glossary/a-plus-setup/">A+ Setup</a></li>
+          <li><a href="/glossary/six-am-protocol/">6:00 AM Protocol</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Market Structure</h5><ul>
+          <li><a href="/glossary/market-structure/">Market Structure</a></li>
+          <li><a href="/glossary/break-of-structure/">Break of Structure</a></li>
+          <li><a href="/glossary/change-of-character/">Change of Character</a></li>
+          <li><a href="/glossary/swing-high/">Swing High</a></li>
+          <li><a href="/glossary/swing-low/">Swing Low</a></li>
+          <li><a href="/glossary/trend/">Trend</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Liquidity</h5><ul>
+          <li><a href="/glossary/liquidity/">Liquidity</a></li>
+          <li><a href="/glossary/liquidity-sweep/">Liquidity Sweep</a></li>
+          <li><a href="/glossary/buy-side-liquidity/">Buy-Side Liquidity</a></li>
+          <li><a href="/glossary/sell-side-liquidity/">Sell-Side Liquidity</a></li>
+          <li><a href="/glossary/stop-hunt/">Stop Hunt</a></li>
+          <li><a href="/glossary/turtle-soup/">Turtle Soup</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Price Action</h5><ul>
+          <li><a href="/glossary/order-block/">Order Block</a></li>
+          <li><a href="/glossary/fair-value-gap/">Fair Value Gap</a></li>
+          <li><a href="/glossary/imbalance/">Imbalance</a></li>
+          <li><a href="/glossary/breaker-block/">Breaker Block</a></li>
+          <li><a href="/glossary/mitigation/">Mitigation</a></li>
+          <li><a href="/glossary/premium-discount/">Premium &amp; Discount</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Sessions &amp; Time</h5><ul>
+          <li><a href="/glossary/overnight-range/">Overnight Range</a></li>
+          <li><a href="/glossary/overnight-midpoint/">Overnight Midpoint</a></li>
+          <li><a href="/glossary/opening-candle/">Opening Candle</a></li>
+          <li><a href="/glossary/opening-range/">Opening Range</a></li>
+          <li><a href="/glossary/new-york-session/">New York Session</a></li>
+          <li><a href="/glossary/killzone/">Killzone</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Risk &amp; Execution</h5><ul>
+          <li><a href="/glossary/risk-to-reward/">Risk-to-Reward</a></li>
+          <li><a href="/glossary/position-sizing/">Position Sizing</a></li>
+          <li><a href="/glossary/expectancy/">Expectancy</a></li>
+          <li><a href="/glossary/drawdown/">Drawdown</a></li>
+          <li><a href="/glossary/revenge-trading/">Revenge Trading</a></li>
+          <li><a href="/glossary/journaling/">Trade Journaling</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Instruments</h5><ul>
+          <li><a href="/glossary/es-futures/">ES Futures</a></li>
+          <li><a href="/glossary/nq-futures/">NQ Futures</a></li>
+          <li><a href="/glossary/tick-value/">Tick Value</a></li>
+          <li><a href="/glossary/margin/">Margin</a></li>
+          <li><a href="/glossary/prop-firm/">Prop Firm</a></li>
+        </ul></div>
+        <div class="mega-col"><h5>Options</h5><ul>
+          <li><a href="/glossary/options-contract/">Options Contract</a></li>
+          <li><a href="/glossary/delta/">Delta</a></li>
+          <li><a href="/glossary/theta/">Theta</a></li>
+          <li><a href="/glossary/implied-volatility/">Implied Volatility</a></li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="mega-item">
+      <a href="/products/">Products</a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h5>Remote Services</h5>
+          <ul>
+            <li><a href="/products/#reveal">Reveal — See It</a></li>
+            <li><a href="/products/#retrace">Retrace — Wait for It</a></li>
+            <li><a href="/products/#run">Run — Take It</a></li>
+            <li><a href="/products/">View All 11 Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mega-item">
+      <a href="/tools/">Tools</a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h5>Interactive Tools</h5>
+          <ul>
+            <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+            <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+            <li><a href="/tools/journal/">Trade Journal</a></li>
+            <li><a href="/tools/">Session Clock &amp; All Tools</a></li>
+            <li><a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer">Free PDF Checklist</a></li>
+            <li><a href="/#oslite">RRR OS Lite — $17</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mega-item">
+      <a href="/terms/">Legal</a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="/terms/">Terms of Service</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mega-item">
+      <a href="https://latraderrrs.gumroad.com" target="_blank" rel="noopener noreferrer">Shop</a>
+      <div class="mega-dropdown shop-split-mega">
+        <div class="mega-col">
+          <h5>Get Started Free</h5>
+          <ul>
+            <li><a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer">RRR Checklist <span class="badge badge-free">Free</span></a></li>
+            <li><a href="/tools/daily-checklist/">Interactive Checklist <span class="badge badge-free">Free</span></a></li>
+          </ul>
+        </div>
+        <div class="mega-col">
+          <h5>Level Up</h5>
+          <ul>
+            <li><a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer">Trading Room <span class="badge badge-paid">$47.97/mo</span></a></li>
+            <li><a href="https://latraderrrs.gumroad.com/l/rrr-os-lite" target="_blank" rel="noopener noreferrer">RRR OS Lite <span class="badge badge-paid">$17</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="nav-cta nav-discord mega-nav-cta">Join the Trading Room</a>
+</nav>
+
+<!-- ════════════ HERO ════════════ -->
+<section class="p-hero" id="top">
+  <div class="products-wrap">
+    <p class="p-hero-eyebrow reveal">The Remote Services Menu</p>
+    <h1 class="reveal d1">One method.<br>Eleven ways in.<br><em>Same spine, every time.</em></h1>
+    <p class="lede reveal d2">The A+ setup, the disciplined account, and the funded evaluation are all built the same way — <strong>Reveal, Retrace, Run.</strong> Whether you need one question answered by Friday or you're onboarding a whole desk, you're buying the same method at a different depth. Nothing here is a generic add-on — it's the checklist, taught live, at the size you actually need it.</p>
+    <div class="p-hero-ctas reveal d3">
+      <a href="#reveal" class="btn btn-primary">See the Menu ↓</a>
+      <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Join the Trading Room</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ RRR LEGEND ════════════ -->
+<section class="rrr-legend">
+  <div class="products-wrap rrr-legend-row">
+    <div class="rrr-legend-item reveal">
+      <svg class="lc-candle" data-candle="reveal" viewBox="0 0 24 48"></svg>
+      <div>
+        <p class="lc-k">Phase One</p>
+        <p class="lc-v">Reveal — see it</p>
+      </div>
+    </div>
+    <div class="rrr-legend-item reveal d1">
+      <svg class="lc-candle" data-candle="retrace" viewBox="0 0 24 48"></svg>
+      <div>
+        <p class="lc-k">Phase Two</p>
+        <p class="lc-v">Retrace — wait for it</p>
+      </div>
+    </div>
+    <div class="rrr-legend-item reveal d2">
+      <svg class="lc-candle" data-candle="run" viewBox="0 0 24 48"></svg>
+      <div>
+        <p class="lc-k">Phase Three</p>
+        <p class="lc-v">Run — take it</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ REVEAL ════════════ -->
+<section class="phase phase--reveal" id="reveal">
+  <div class="products-wrap">
+    <div class="phase-head reveal">
+      <div class="phase-title-group">
+        <svg class="phase-candle" data-candle="reveal" viewBox="0 0 30 64"></svg>
+        <div>
+          <h2 class="phase-name">Reveal</h2>
+          <p class="phase-def">The A+ setup exists on the chart whether or not you can see it yet. This phase is entirely vision — charts, structure, and an honest read on what you're actually doing.</p>
+        </div>
+      </div>
+      <p class="phase-index">01 — 03</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal" data-cardsize="s">
+        <div class="card-top">
+          <span class="card-num">01</span>
+          <svg class="card-candle" data-candle="reveal" data-size="s" viewBox="0 0 14 34"></svg>
+        </div>
+        <h3>TradingView Setup Session</h3>
+        <div class="card-meta"><span class="card-price">$75</span><span class="card-cadence">/ 30 min</span></div>
+        <p class="desc">Remote build-out of the exact chart layout, indicators, and alerts used to reveal RRR setups — not a generic TradingView walkthrough. You leave the call with a chart that shows you what you're actually looking at.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:tradingview-setup" data-cal="TODO:tradingview-setup-booking">Reserve your session</a>
+      </article>
+
+      <article class="card reveal d1" data-cardsize="s">
+        <div class="card-top">
+          <span class="card-num">02</span>
+          <svg class="card-candle" data-candle="reveal" data-size="s" viewBox="0 0 14 34"></svg>
+        </div>
+        <h3>Trade Journal Review</h3>
+        <div class="card-meta"><span class="card-price">$65</span><span class="card-cadence">/ 30 min</span></div>
+        <p class="desc">Send your last 2–4 weeks of trades. The live review reveals what's actually happening versus what you think is happening — where the edge is leaking, and why.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:journal-review" data-cal="TODO:journal-review-booking">Reserve your session</a>
+      </article>
+
+      <article class="card reveal d2" data-cardsize="xs">
+        <div class="card-top">
+          <span class="card-num">03</span>
+          <svg class="card-candle" data-candle="reveal" data-size="xs" viewBox="0 0 14 34"></svg>
+        </div>
+        <h3>Ask-a-Trader Helpdesk Ticket</h3>
+        <div class="card-meta"><span class="card-price">$35</span><span class="card-cadence">/ async, 24–48hr</span></div>
+        <p class="desc">One specific question, answered directly. The lowest-friction way to get a second set of eyes on a setup before it's real money.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:helpdesk-ticket">Ask your question</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ RETRACE ════════════ -->
+<section class="phase phase--retrace" id="retrace">
+  <div class="products-wrap">
+    <div class="phase-head reveal">
+      <div class="phase-title-group">
+        <svg class="phase-candle" data-candle="retrace" viewBox="0 0 30 64"></svg>
+        <div>
+          <h2 class="phase-name">Retrace</h2>
+          <p class="phase-def">The discipline phase. RRR only works if you retrace to the level and let the trade come to you instead of chasing it — this is where risk structure and repetition get built.</p>
+        </div>
+      </div>
+      <p class="phase-index">04 — 07</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal" data-cardsize="m">
+        <div class="card-top">
+          <span class="card-num">04</span>
+          <svg class="card-candle" data-candle="retrace" data-size="m" viewBox="0 0 14 34"></svg>
+        </div>
+        <h3>Prop Firm Account Configuration Call</h3>
+        <div class="card-meta"><span class="card-price">$125</span><span class="card-cadence">/ 45 min</span></div>
+        <p class="desc">Build the account structure and risk parameters — position sizing, daily loss limits, consistency rules — so the account itself enforces the "wait for the retrace" discipline.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:propfirm-config-call" data-cal="TODO:propfirm-config-booking">Reserve your session</a>
+      </article>
+
+      <article class="card reveal d1" data-cardsize="m">
+        <div class="card-top">
+          <span class="card-num">05</span>
+          <svg class="card-candle" data-candle="retrace" data-size="m" viewBox="0 0 14 34"></svg>
+          <span class="card-badge">Monthly</span>
+        </div>
+        <h3>Trading Helpdesk</h3>
+        <div class="card-meta"><span class="card-price">$97</span><span class="card-cadence">/ mo</span></div>
+        <p class="desc">Unlimited async Q&amp;A plus one live 20-minute call a month — the ongoing accountability layer for staying inside the RRR risk rules week to week.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:helpdesk-monthly">Join — $97/mo</a>
+      </article>
+
+      <article class="card reveal d2" data-cardsize="m">
+        <div class="card-top">
+          <span class="card-num">06</span>
+          <svg class="card-candle" data-candle="retrace" data-size="m" viewBox="0 0 14 34"></svg>
+          <span class="card-badge">Monthly</span>
+        </div>
+        <h3>Discord Signal Room</h3>
+        <div class="card-meta"><span class="card-price">$49</span><span class="card-cadence">/ mo</span></div>
+        <p class="desc">Real-time levels and setups, filtered through RRR — where "is this an A+ or am I chasing" gets answered live, in the room.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:discord-signal-room">Join — $49/mo</a>
+      </article>
+
+      <article class="card reveal d3" data-cardsize="s">
+        <div class="card-top">
+          <span class="card-num">07</span>
+          <svg class="card-candle" data-candle="retrace" data-size="s" viewBox="0 0 14 34"></svg>
+          <span class="card-badge">Monthly</span>
+        </div>
+        <h3>Weekly Group Coaching Call</h3>
+        <div class="card-meta"><span class="card-price">$79</span><span class="card-cadence">/ mo</span></div>
+        <p class="desc">Live small-group session: market prep and trade review through the RRR lens, at a shared-time price point.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:weekly-group-coaching">Join — $79/mo</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ RUN ════════════ -->
+<section class="phase phase--run" id="run">
+  <div class="products-wrap">
+    <div class="phase-head reveal">
+      <div class="phase-title-group">
+        <svg class="phase-candle" data-candle="run" viewBox="0 0 30 64"></svg>
+        <div>
+          <h2 class="phase-name">Run</h2>
+          <p class="phase-def">Once reveal and retrace are second nature, this phase is about running the trade correctly, running the account through a funded evaluation, and eventually running it as a business.</p>
+        </div>
+      </div>
+      <p class="phase-index">08 — 11</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal" data-cardsize="l">
+        <div class="card-top">
+          <span class="card-num">08</span>
+          <svg class="card-candle" data-candle="run" data-size="m" viewBox="0 0 14 34"></svg>
+          <span class="card-badge">4-Week Program</span>
+        </div>
+        <h3>Prop Firm Path</h3>
+        <div class="card-meta"><span class="card-price">$497</span></div>
+        <p class="desc">The full Reveal → Retrace → Run cycle compressed into a structured path to pass a funded evaluation: weekly live calls, account setup, risk framework, daily helpdesk check-ins, a final review call.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:propfirm-path-4wk">Enroll — $497</a>
+      </article>
+
+      <article class="card reveal d1" data-cardsize="l">
+        <div class="card-top">
+          <span class="card-num">09</span>
+          <svg class="card-candle" data-candle="run" data-size="l" viewBox="0 0 14 34"></svg>
+          <span class="card-badge">8-Session 1:1</span>
+        </div>
+        <h3>Futures Trading Mentorship</h3>
+        <div class="card-meta"><span class="card-price">$1,200</span></div>
+        <p class="desc">Direct 1:1 mentorship over roughly four months: strategy build-out, live trade review, and the psychology/discipline work that lets someone actually run size once the setup and the wait are no longer the hard part.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:futures-mentorship-8session">Enroll — $1,200</a>
+      </article>
+
+      <article class="card reveal d2" data-cardsize="l">
+        <div class="card-top">
+          <span class="card-num">10</span>
+          <svg class="card-candle" data-candle="run" data-size="l" viewBox="0 0 14 34"></svg>
+          <span class="card-badge">Setup + Monthly</span>
+        </div>
+        <h3>Trading Concierge</h3>
+        <div class="card-meta"><span class="card-price">$1,500</span><span class="card-cadence">setup + $500/mo</span></div>
+        <p class="desc">Fully managed: platform setup, ongoing account monitoring, a monthly 1:1 strategy call, direct-line access. For a trader who's running real size and wants a standing second set of eyes.</p>
+        <a href="#" class="btn btn-primary card-cta" data-stripe="TODO:trading-concierge-setup">Start Concierge — $1,500</a>
+      </article>
+
+      <article class="card reveal d3" data-cardsize="xl">
+        <div class="card-top">
+          <span class="card-num">11</span>
+          <svg class="card-candle" data-candle="run" data-size="xl" viewBox="0 0 14 34"></svg>
+          <span class="card-badge">Custom Quote</span>
+        </div>
+        <h3>Team / Prop Firm Onboarding</h3>
+        <div class="card-meta"><span class="card-price">From $3,000</span></div>
+        <p class="desc">Cohort training for a prop firm or trading group — the RRR method taught to multiple traders at once, so a whole desk runs the same framework. Booked as a discovery call, quoted after scope is confirmed.</p>
+        <a href="#" class="btn btn-ghost card-cta" data-cal="TODO:team-onboarding-discovery">Book a discovery call</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ MARQUEE ════════════ -->
+<div class="p-marquee">
+  <div class="products-wrap p-marquee-inner">
+    <span>Reveal</span><span class="sep">→</span><span>Retrace</span><span class="sep">→</span><span>Run</span>
+  </div>
+</div>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-mega">
+      <div class="footer-brandblock">
+        <div class="fbrand">
+          <img src="/assets/lion.jpg" alt="LA Traders lion mark">
+          <span>LA TRADERS</span>
+        </div>
+        <p class="fmission">One repeatable process for the New York session. No noise. No hopium. Just structure.</p>
+        <div class="fmeta">
+          Los Angeles, California<br>
+          Futures &amp; Options Education<br>
+          Est. New York Open, Every Session
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>The System</h4>
+        <ul>
+          <li><a href="/#protocol">The 6:00 AM Protocol</a></li>
+          <li><a href="/#rrr">RRR Framework</a></li>
+          <li><a href="/glossary/rrr-framework/">Reveal &rarr; Retrace &rarr; Run</a></li>
+          <li><a href="/glossary/a-plus-setup/">The A+ Setup</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/products/#reveal">Reveal Phase</a></li>
+          <li><a href="/products/#retrace">Retrace Phase</a></li>
+          <li><a href="/products/#run">Run Phase</a></li>
+          <li><a href="/products/">All Remote Services</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="/tools/daily-checklist/">Interactive Checklist</a></li>
+          <li><a href="/tools/position-size-calculator/">Position Size Calculator</a></li>
+          <li><a href="/tools/journal/">Trade Journal</a></li>
+          <li><a href="/tools/">Session Clock &amp; All Tools</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/glossary/">Glossary</a></li>
+          <li><a href="/glossary/discipline/">Our Discipline</a></li>
+          <li><a href="/glossary/new-york-session/">The Session We Trade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div class="fcopy">&copy; LA Traders &mdash; All Rights Reserved</div>
+      <div class="flinks">
+        <a href="/">Home</a>
+        <a href="/#protocol">Protocol</a>
+        <a href="/#rrr">RRR Framework</a>
+        <a href="/glossary/">Glossary</a>
+        <a href="/products/">Services</a>
+        <a href="/tools/">Tools</a>
+        <a href="https://latraderrrs.gumroad.com/l/rrr-checklist">Checklist</a>
+        <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer">Trading Room</a>
+        <a href="/terms/">Terms of Service</a>
+        <a href="/privacy/">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-credit">
+      <span class="credit-text">Designed by <a href="https://calebpierre.com" target="_blank" rel="noopener">Caleb Pierre</a> — made with <span class="credit-heart">&hearts;</span> in Gardena by <a href="https://calebpierre.com" target="_blank" rel="noopener">Calebpierre.com</a></span>
+    </div>
+    <div class="footer-risk">
+      <p><strong>RISK DISCLOSURE:</strong> Futures and options trading involves substantial risk of loss and is not suitable for every investor. The valuation of futures and options may fluctuate, and as a result, clients may lose more than their original investment. Past performance is not indicative of future results. LA Traders provides education and community only &mdash; nothing on this site constitutes financial advice, a solicitation, or a recommendation to buy or sell any security or futures contract. You are solely responsible for your own trading decisions.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════ SCRIPTS ════════════ -->
+<script src="/assets/mobile-menu.js"></script>
+<script src="/assets/motion.js"></script>
+<script>
+// ─────────────────────────────────────────────────────
+// WIRE-UP: Replace TODO values with real Stripe
+// Payment Links and Cal.com/Calendly URLs here.
+// Every button with data-stripe/data-cal routes through this.
+// ─────────────────────────────────────────────────────
+const LINKS = {
+  "TODO:tradingview-setup": null,
+  "TODO:tradingview-setup-booking": null,
+  "TODO:journal-review": null,
+  "TODO:journal-review-booking": null,
+  "TODO:helpdesk-ticket": null,
+  "TODO:propfirm-config-call": null,
+  "TODO:propfirm-config-booking": null,
+  "TODO:helpdesk-monthly": null,
+  "TODO:discord-signal-room": null,
+  "TODO:weekly-group-coaching": null,
+  "TODO:propfirm-path-4wk": null,
+  "TODO:futures-mentorship-8session": null,
+  "TODO:trading-concierge-setup": null,
+  "TODO:team-onboarding-discovery": null
+};
+
+document.querySelectorAll('[data-stripe], [data-cal]').forEach(el => {
+  el.addEventListener('click', e => {
+    const stripeKey = el.getAttribute('data-stripe');
+    const calKey = el.getAttribute('data-cal');
+    const target = LINKS[stripeKey] || LINKS[calKey];
+    if (!target) {
+      e.preventDefault();
+      console.warn('[LA Traders] Link not wired yet:', stripeKey || calKey, '— set it in the LINKS object at the bottom of /products/index.html');
+      return;
+    }
+    window.location.href = target;
+  });
+});
+
+// ─────────────────────────────────────────────────────
+// CANDLE GLYPH RENDERER
+// Three phase shapes, four sizes — encodes meaning:
+// reveal = tight doji (indecision)
+// retrace = long lower wick (the pullback)
+// run = tall body / short wick (the breakout)
+// ─────────────────────────────────────────────────────
+const PALETTE = { reveal: '#D4AF37', retrace: '#9384d1', run: '#f0ce6a' };
+
+function drawCandle(svg) {
+  const type = svg.dataset.candle;
+  const size = svg.dataset.size || 'default';
+  const color = PALETTE[type] || '#D4AF37';
+  const vb = svg.viewBox.baseVal;
+  const w = vb.width, h = vb.height;
+  const cx = w / 2;
+  let bodyTop, bodyH, wickTop, wickBot, bodyW;
+  bodyW = Math.max(3, w * 0.5);
+
+  if (type === 'reveal') {
+    bodyH = h * 0.14; bodyTop = h * 0.43;
+    wickTop = h * 0.22; wickBot = h * 0.78;
+  } else if (type === 'retrace') {
+    bodyH = h * 0.20; bodyTop = h * 0.18;
+    wickTop = h * 0.10; wickBot = h * 0.92;
+  } else {
+    bodyH = h * 0.62; bodyTop = h * 0.16;
+    wickTop = h * 0.06; wickBot = bodyTop + bodyH + h * 0.08;
+  }
+
+  const sizeScale = { xs:0.72, s:0.85, m:1, l:1.12, xl:1.22, default:1 }[size] || 1;
+  bodyH *= sizeScale;
+
+  svg.innerHTML = `
+    <line x1="${cx}" y1="${wickTop}" x2="${cx}" y2="${wickBot}" stroke="${color}" stroke-width="${Math.max(1, w*0.06)}"/>
+    <rect x="${cx - bodyW/2}" y="${bodyTop}" width="${bodyW}" height="${bodyH}" fill="${color}" opacity="0.95" rx="${w*0.04}"/>
+  `;
+}
+
+document.querySelectorAll('svg[data-candle]').forEach(drawCandle);
+
+// ─────────────────────────────────────────────────────
+// ANIME.JS — HERO TIMELINE + CARD STAGGER
+// ─────────────────────────────────────────────────────
+var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var animeReady = !!window.anime;
+
+if (!animeReady) {
+  var polls = 0;
+  var pollInt = setInterval(function() {
+    polls++;
+    if (window.anime || polls > 30) {
+      clearInterval(pollInt);
+      animeReady = !!window.anime;
+      initAnime();
+    }
+  }, 100);
+} else {
+  initAnime();
+}
+
+function initAnime() {
+  if (reducedMotion || !animeReady) return;
+
+  // Hero timeline: eyebrow → h1 → lede → CTAs → legend
+  var tl = window.anime.timeline({ easing: 'easeOutExpo' });
+  tl.add({
+    targets: '.p-hero-eyebrow',
+    opacity: [0, 1], translateY: [16, 0], duration: 500
+  })
+  .add({
+    targets: '.p-hero h1',
+    opacity: [0, 1], translateY: [24, 0], duration: 700
+  }, '-=350')
+  .add({
+    targets: '.p-hero .lede',
+    opacity: [0, 1], translateY: [20, 0], duration: 500
+  }, '-=500')
+  .add({
+    targets: '.p-hero-ctas',
+    opacity: [0, 1], translateY: [16, 0], duration: 500
+  }, '-=400')
+  .add({
+    targets: '.rrr-legend-item',
+    opacity: [0, 1], translateX: [-20, 0],
+    delay: window.anime.stagger(120),
+    duration: 500, easing: 'easeOutQuad'
+  }, '-=300');
+
+  // Card stagger per phase section
+  ['reveal', 'retrace', 'run'].forEach(function(phase) {
+    var cards = document.querySelectorAll('.phase--' + phase + ' .card');
+    if (!cards.length) return;
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        io.unobserve(entry.target);
+        var card = entry.target;
+        window.anime({
+          targets: card,
+          opacity: [0, 1], translateY: [20, 0],
+          duration: 600, easing: 'easeOutCubic'
+        });
+        card.classList.add('in');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
+    cards.forEach(function(c) { io.observe(c); });
+  });
+
+  // Phase head reveal
+  document.querySelectorAll('.phase-head').forEach(function(head) {
+    var io2 = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        io2.unobserve(entry.target);
+        window.anime({
+          targets: head,
+          opacity: [0, 1], translateX: [-24, 0],
+          duration: 700, easing: 'easeOutExpo'
+        });
+        head.classList.add('in');
+      });
+    }, { threshold: 0.1 });
+    io2.observe(head);
+  });
+
+  // Button micro-interaction: scale on hover
+  document.querySelectorAll('.card .btn, .p-hero-ctas .btn').forEach(function(btn) {
+    btn.addEventListener('mouseenter', function() {
+      window.anime({ targets: btn, scale: 1.04, duration: 200, easing: 'easeOutQuad' });
+    });
+    btn.addEventListener('mouseleave', function() {
+      window.anime({ targets: btn, scale: 1, duration: 200, easing: 'easeOutQuad' });
+    });
+  });
+
+  // Candle draw animation — wick draws first, then body fills
+  document.querySelectorAll('svg[data-candle]').forEach(function(svg, i) {
+    var io3 = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        io3.unobserve(entry.target);
+        if (reducedMotion) return;
+        var line = svg.querySelector('line');
+        var rect = svg.querySelector('rect');
+        if (line) {
+          var h2 = svg.viewBox.baseVal.height;
+          window.anime({
+            targets: line,
+            opacity: [0, 1],
+            duration: 400,
+            easing: 'easeOutQuad'
+          });
+        }
+        if (rect) {
+          window.anime({
+            targets: rect,
+            opacity: [0, 0.95],
+            duration: 500,
+            delay: 200,
+            easing: 'easeOutQuad'
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    io3.observe(svg);
+  });
+}
+
+// Safety: reveal everything after 3s
+setTimeout(function() {
+  document.querySelectorAll('.reveal:not(.in)').forEach(function(el) {
+    el.classList.add('in');
+    el.style.opacity = '1';
+    el.style.transform = 'none';
+  });
+}, 3000);
+</script>
+</body>
+</html>

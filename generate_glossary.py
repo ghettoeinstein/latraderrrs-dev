@@ -220,7 +220,8 @@ def head(title, desc, canonical, extra_schema="", extra_css=""):
       </div>
     </div>
     <div class="mega-item">
-      <a href="/tools/">Tools</a>
+      <a href="/products/">Services</a>
+        <a href="/tools/">Tools</a>
       <div class="mega-dropdown">
         <div class="mega-col">
           <h5>Interactive Tools</h5>
@@ -231,6 +232,20 @@ def head(title, desc, canonical, extra_schema="", extra_css=""):
             <li><a href="/tools/">Session Clock &amp; All Tools</a></li>
             <li><a href="/#checklist">Free PDF Checklist</a></li>
             <li><a href="/#oslite">RRR OS Lite — $17</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mega-item">
+      <a href="/products/">Products</a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h5>Remote Services</h5>
+          <ul>
+            <li><a href="/products/">View All 11 Services</a></li>
+            <li><a href="/products/#reveal">Reveal — See It ($35–$75)</a></li>
+            <li><a href="/products/#retrace">Retrace — Wait for It ($49–$125)</a></li>
+            <li><a href="/products/#run">Run — Take It ($497–$3,000+)</a></li>
           </ul>
         </div>
       </div>

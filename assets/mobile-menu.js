@@ -117,6 +117,17 @@
     ]
   });
 
+  // Products — Remote Services
+  sections.push({
+    title: 'Remote Services',
+    links: [
+      { href: '/products/', label: 'All 11 Services' },
+      { href: '/products/#reveal', label: 'Reveal — See It ($35–$75)' },
+      { href: '/products/#retrace', label: 'Retrace — Wait for It ($49–$125)' },
+      { href: '/products/#run', label: 'Run — Take It ($497–$3,000+)' }
+    ]
+  });
+
   // Shop — Free
   sections.push({
     title: 'Get Started Free',
