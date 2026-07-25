@@ -31,7 +31,7 @@ CSS = """
 /* Glossary-specific styles only.
    Design tokens, base, buttons, cards, chips, nav, footer
    come from /assets/latraders.css (design system). */
-.wrap{max-width:var(--wrap-narrow);}
+.wrap{max-width:var(--wrap-narrow);margin:0 auto;padding:0 24px;}
 .crumb{margin:48px 0 10px;}
 .cat-tag{margin-bottom:20px;}
 h1{font-size:clamp(34px,5.4vw,54px);margin-bottom:20px;}
