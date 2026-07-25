@@ -390,35 +390,35 @@ def build_term_page(t):
     pf_text = pf.get("text", "Every term in the LA Traders system connects back to the 6:00 AM Protocol — the repeatable pre-market routine that structures every session.")
 
     body = f"""<div class="wrap">
-  <div class="crumb"><a href="/">Home</a> / <a href="/glossary/">Glossary</a> / {esc(t["term"])}</div>
+  <div class="crumb reveal"><a href="/">Home</a> / <a href="/glossary/">Glossary</a> / {esc(t["term"])}</div>
   <div class="cat-tag">{esc(t["category"])}</div>
-  <h1>What is <em>{esc(t["term"])}</em>?</h1>
-  <p class="short">{esc(t["short"])}</p>
+  <h1 class="reveal">What is <em>{esc(t["term"])}</em>?</h1>
+  <p class="short reveal d1">{esc(t["short"])}</p>
 
-  <h2><span class="num">The Definition</span>{esc(t["term"])}, defined</h2>
+  <h2 class="reveal"><span class="num">The Definition</span>{esc(t["term"])}, defined</h2>
   <p>{esc(t["definition"])}</p>
 
-  <h2><span class="num">Why It Matters</span>Why {esc(t["term"])} matters</h2>
+  <h2 class="reveal"><span class="num">Why It Matters</span>Why {esc(t["term"])} matters</h2>
   <p>{esc(t["why"])}</p>
 
-  <h2><span class="num">In Practice</span>{esc(t["term"])} — a real example</h2>
-  <div class="example-box">
+  <h2 class="reveal"><span class="num">In Practice</span>{esc(t["term"])} — a real example</h2>
+  <div class="example-box reveal">
     <div class="label">Example · New York Session</div>
     <p>{esc(t["example"])}</p>
   </div>
 
-  <div class="protocol-callout pc-{pf_color}">
+  <div class="reveal protocol-callout pc-{pf_color}">
     <div class="pc-label"><span class="pc-icon"></span>How This Fits the 6:00 AM Protocol</div>
     <div class="pc-stage">{esc(pf_stage)}</div>
     <p class="pc-text">{esc(pf_text)}</p>
   </div>
 
-  <div class="related">
+  <div class="related reveal">
     <h3>Related terms</h3>
     <div class="chips">{"".join(chips)}</div>
   </div>
 
-  <div class="cta-band">
+  <div class="cta-band reveal">
     <h3>Learn the full system</h3>
     <p>The RRR Daily Trading Checklist — the exact morning routine LA Traders runs before every New York session. Free.</p>
     <a class="btn" href="/tools/daily-checklist/">Open the Daily Checklist</a>
@@ -461,7 +461,7 @@ def build_index():
     <div class="stat-row"><span><b>{len(TERMS)}</b> terms</span><span><b>{len(CATS)}</b> categories</span><span>Updated {TODAY}</span></div>
   </div>
   {"".join(sections)}
-  <div class="cta-band">
+  <div class="cta-band reveal">
     <h3>Learn the full system</h3>
     <p>The RRR Daily Trading Checklist — the exact morning routine LA Traders runs before every New York session. Free.</p>
     <a class="btn" href="/tools/daily-checklist/">Open the Interactive Checklist</a>
@@ -585,7 +585,7 @@ LEGAL_CSS = """
 """
 
 TERMS_HTML = """<div class="wrap legal-body">
-  <div class="crumb"><a href="/">Home</a> / Terms of Service</div>
+  <div class="crumb reveal"><a href="/">Home</a> / Terms of Service</div>
   <h1>Terms of <em>Service</em></h1>
   <div class="legal-updated">Last Updated: __TODAY__ &middot; LA Traders &middot; Los Angeles, California</div>
 
@@ -710,7 +710,7 @@ TERMS_HTML = """<div class="wrap legal-body">
 </div>"""
 
 PRIVACY_HTML = """<div class="wrap legal-body">
-  <div class="crumb"><a href="/">Home</a> / Privacy Policy</div>
+  <div class="crumb reveal"><a href="/">Home</a> / Privacy Policy</div>
   <h1>Privacy <em>Policy</em></h1>
   <div class="legal-updated">Last Updated: __TODAY__ &middot; LA Traders &middot; Los Angeles, California</div>
 

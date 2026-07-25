@@ -127,6 +127,14 @@
     ]
   });
 
+  // Social
+  sections.push({
+    title: 'Follow',
+    links: [
+      { href: 'https://www.instagram.com/latraderrrs/', label: 'Instagram' }
+    ]
+  });
+
   // Legal
   sections.push({
     title: 'Legal',

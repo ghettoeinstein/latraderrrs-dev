@@ -218,35 +218,35 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
   <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="nav-cta nav-discord mega-nav-cta">Join the Trading Room</a>
 </nav>
 <div class="wrap">
-  <div class="crumb"><a href="/">Home</a> / <a href="/glossary/">Glossary</a> / Delta</div>
+  <div class="crumb reveal"><a href="/">Home</a> / <a href="/glossary/">Glossary</a> / Delta</div>
   <div class="cat-tag">Options</div>
-  <h1>What is <em>Delta</em>?</h1>
-  <p class="short">How much an option&#x27;s price moves per $1 move in the underlying — the directional sensitivity.</p>
+  <h1 class="reveal">What is <em>Delta</em>?</h1>
+  <p class="short reveal d1">How much an option&#x27;s price moves per $1 move in the underlying — the directional sensitivity.</p>
 
-  <h2><span class="num">The Definition</span>Delta, defined</h2>
+  <h2 class="reveal"><span class="num">The Definition</span>Delta, defined</h2>
   <p>Delta measures an option&#x27;s price sensitivity to a $1 move in the underlying, ranging from 0 to 1.00 (calls) or 0 to −1.00 (puts). A 0.50 delta call gains ~$0.50 for every $1 the underlying rises. Delta also roughly approximates the market&#x27;s implied probability of the option finishing in-the-money: a 0.30 delta call has about a 30% implied chance. Traders use delta to size directional exposure: buying a 0.70 delta call behaves like holding 70 shares, with a fraction of the capital at risk.</p>
 
-  <h2><span class="num">Why It Matters</span>Why Delta matters</h2>
+  <h2 class="reveal"><span class="num">Why It Matters</span>Why Delta matters</h2>
   <p>Delta translates options into stock equivalents. Once you think in deltas, options stop being exotic and start being just another way to express a directional read.</p>
 
-  <h2><span class="num">In Practice</span>Delta — a real example</h2>
-  <div class="example-box">
+  <h2 class="reveal"><span class="num">In Practice</span>Delta — a real example</h2>
+  <div class="example-box reveal">
     <div class="label">Example · New York Session</div>
     <p>SPY at 584. Your 580 call has 0.65 delta. SPY rallies $2 → the call gains ~$1.30. You captured 65% of the move with the premium as your only risk.</p>
   </div>
 
-  <div class="protocol-callout pc-gold">
+  <div class="reveal protocol-callout pc-gold">
     <div class="pc-label"><span class="pc-icon"></span>How This Fits the 6:00 AM Protocol</div>
     <div class="pc-stage">Execution</div>
     <p class="pc-text">Delta measures directional exposure. When the Protocol calls for a position size, options traders translate it through delta — a 0.50 delta call behaves like 50 shares of the underlying.</p>
   </div>
 
-  <div class="related">
+  <div class="related reveal">
     <h3>Related terms</h3>
     <div class="chips"><a class="chip" href="/glossary/options-contract/">Options Contract</a><a class="chip" href="/glossary/theta/">Theta</a><a class="chip" href="/glossary/implied-volatility/">Implied Volatility (IV)</a></div>
   </div>
 
-  <div class="cta-band">
+  <div class="cta-band reveal">
     <h3>Learn the full system</h3>
     <p>The RRR Daily Trading Checklist — the exact morning routine LA Traders runs before every New York session. Free.</p>
     <a class="btn" href="/tools/daily-checklist/">Open the Daily Checklist</a>
@@ -330,5 +330,6 @@ p{font-size:var(--text-base);line-height:1.75;margin-bottom:14px;}
   </div>
 </footer>
 <script src="/assets/mobile-menu.js"></script>
+<script src="/assets/motion.js"></script>
 </body>
 </html>
