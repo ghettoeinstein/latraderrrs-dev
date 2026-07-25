@@ -122,9 +122,9 @@
     title: 'Remote Services',
     links: [
       { href: '/products/', label: 'All 11 Services' },
-      { href: '/products/#reveal', label: 'Reveal — See It ($35–$75)' },
-      { href: '/products/#retrace', label: 'Retrace — Wait for It ($49–$125)' },
-      { href: '/products/#run', label: 'Run — Take It ($497–$3,000+)' }
+      { href: '/products/#diagnose', label: 'Diagnose — Sessions ($35–$125)' },
+      { href: '/products/#calibrate', label: 'Calibrate — Ongoing ($49–$97/mo)' },
+      { href: '/products/#execute', label: 'Execute — Programs ($497–$3,000+)' }
     ]
   });
 

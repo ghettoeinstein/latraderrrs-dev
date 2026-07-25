@@ -59,25 +59,25 @@
 
   /* ── PHASE SECTIONS ── */
   .phase{padding:96px 0;border-bottom:1px solid var(--line);position:relative;}
-  .phase--reveal{background:var(--void);}
-  .phase--retrace{background:var(--void-2);}
-  .phase--run{background:var(--panel);}
+  .phase--diagnose{background:var(--void);}
+  .phase--calibrate{background:var(--void-2);}
+  .phase--execute{background:var(--panel);}
   .phase-head{
     display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px;
     margin-bottom:56px;padding-left:28px;border-left:3px solid var(--phase-rule,var(--gold));
   }
-  .phase--reveal .phase-head{--phase-rule:var(--gold);}
-  .phase--retrace .phase-head{--phase-rule:var(--purple-bright);}
-  .phase--run .phase-head{--phase-rule:var(--gold-bright);}
+  .phase--diagnose .phase-head{--phase-rule:var(--gold);}
+  .phase--calibrate .phase-head{--phase-rule:var(--purple-bright);}
+  .phase--execute .phase-head{--phase-rule:var(--gold-bright);}
   .phase-title-group{display:flex;align-items:center;gap:20px;}
   .phase-candle{width:30px;height:64px;flex-shrink:0;}
   .phase-name{
     font-family:var(--font-display);font-size:clamp(32px,4vw,56px);font-weight:300;
     margin:0 0 8px;letter-spacing:-0.02em;
   }
-  .phase--reveal .phase-name{color:var(--gold-bright);}
-  .phase--retrace .phase-name{color:var(--purple-bright);}
-  .phase--run .phase-name{
+  .phase--diagnose .phase-name{color:var(--gold-bright);}
+  .phase--calibrate .phase-name{color:var(--purple-bright);}
+  .phase--execute .phase-name{
     background:linear-gradient(90deg,var(--gold-bright),var(--purple-bright));
     -webkit-background-clip:text;background-clip:text;color:transparent;
   }
@@ -96,18 +96,18 @@
     transition:transform .4s var(--ease-out),border-color .3s,box-shadow .3s;
     position:relative;overflow:hidden;
   }
-  .phase--reveal .card{--card-rule:var(--gold);}
-  .phase--retrace .card{--card-rule:var(--purple-bright);}
-  .phase--run .card{--card-rule:var(--gold-bright);}
+  .phase--diagnose .card{--card-rule:var(--gold);}
+  .phase--calibrate .card{--card-rule:var(--purple-bright);}
+  .phase--execute .card{--card-rule:var(--gold-bright);}
   .card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,0.4);border-left-color:var(--gold-bright);}
   .card::after{
     content:"";position:absolute;inset:0;
     background:radial-gradient(ellipse 280px 180px at 0% 0%, var(--card-glow,rgba(212,175,55,0.06)), transparent 70%);
     opacity:0;transition:opacity .4s;pointer-events:none;
   }
-  .phase--reveal .card{--card-glow:rgba(212,175,55,0.08);}
-  .phase--retrace .card{--card-glow:rgba(124,79,196,0.08);}
-  .phase--run .card{--card-glow:rgba(212,175,55,0.08);}
+  .phase--diagnose .card{--card-glow:rgba(212,175,55,0.08);}
+  .phase--calibrate .card{--card-glow:rgba(124,79,196,0.08);}
+  .phase--execute .card{--card-glow:rgba(212,175,55,0.08);}
   .card:hover::after{opacity:1;}
 
   .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;}
@@ -251,9 +251,9 @@
         <div class="mega-col">
           <h5>Remote Services</h5>
           <ul>
-            <li><a href="/products/#reveal">Reveal — See It</a></li>
-            <li><a href="/products/#retrace">Retrace — Wait for It</a></li>
-            <li><a href="/products/#run">Run — Take It</a></li>
+            <li><a href="/products/#diagnose">Diagnose — One-Off Sessions</a></li>
+            <li><a href="/products/#calibrate">Calibrate — Ongoing Support</a></li>
+            <li><a href="/products/#execute">Execute — Full Programs</a></li>
             <li><a href="/products/">View All 11 Services</a></li>
           </ul>
         </div>
@@ -315,7 +315,7 @@
   <div class="products-wrap">
     <p class="p-hero-eyebrow reveal">The Remote Services Menu</p>
     <h1 class="reveal d1">One method.<br>Eleven ways in.<br><em>Same spine, every time.</em></h1>
-    <p class="lede reveal d2">The A+ setup, the disciplined account, and the funded evaluation are all built the same way — <strong>Reveal, Retrace, Run.</strong> Whether you need one question answered by Friday or you're onboarding a whole desk, you're buying the same method at a different depth. Nothing here is a generic add-on — it's the checklist, taught live, at the size you actually need it.</p>
+    <p class="lede reveal d2">Every service teaches the same RRR framework — Reveal, Retrace, Run — but the menu below is organized by <strong>how deep you want to go.</strong> A $35 question and a $3,000 team onboarding are the same method at different depths. Nothing here is a generic add-on — it's the system, taught live, at the engagement level you actually need.</p>
     <div class="p-hero-ctas reveal d3">
       <a href="#reveal" class="btn btn-primary">See the Menu ↓</a>
       <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Join the Trading Room</a>
@@ -327,48 +327,48 @@
 <section class="rrr-legend">
   <div class="products-wrap rrr-legend-row">
     <div class="rrr-legend-item reveal">
-      <svg class="lc-candle" data-candle="reveal" viewBox="0 0 24 48"></svg>
+      <svg class="lc-candle" data-candle="diagnose" viewBox="0 0 24 48"></svg>
       <div>
-        <p class="lc-k">Phase One</p>
-        <p class="lc-v">Reveal — see it</p>
+        <p class="lc-k">One-Off Sessions</p>
+        <p class="lc-v">Diagnose — see it</p>
       </div>
     </div>
     <div class="rrr-legend-item reveal d1">
-      <svg class="lc-candle" data-candle="retrace" viewBox="0 0 24 48"></svg>
+      <svg class="lc-candle" data-candle="calibrate" viewBox="0 0 24 48"></svg>
       <div>
-        <p class="lc-k">Phase Two</p>
-        <p class="lc-v">Retrace — wait for it</p>
+        <p class="lc-k">Ongoing Support</p>
+        <p class="lc-v">Calibrate — stay sharp</p>
       </div>
     </div>
     <div class="rrr-legend-item reveal d2">
-      <svg class="lc-candle" data-candle="run" viewBox="0 0 24 48"></svg>
+      <svg class="lc-candle" data-candle="execute" viewBox="0 0 24 48"></svg>
       <div>
-        <p class="lc-k">Phase Three</p>
-        <p class="lc-v">Run — take it</p>
+        <p class="lc-k">Full Programs</p>
+        <p class="lc-v">Execute — scale it</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ════════════ REVEAL ════════════ -->
-<section class="phase phase--reveal" id="reveal">
+<section class="phase phase--diagnose" id="diagnose">
   <div class="products-wrap">
     <div class="phase-head reveal">
       <div class="phase-title-group">
-        <svg class="phase-candle" data-candle="reveal" viewBox="0 0 30 64"></svg>
+        <svg class="phase-candle" data-candle="diagnose" viewBox="0 0 30 64"></svg>
         <div>
-          <h2 class="phase-name">Reveal</h2>
-          <p class="phase-def">The A+ setup exists on the chart whether or not you can see it yet. This phase is entirely vision — charts, structure, and an honest read on what you're actually doing.</p>
+          <h2 class="phase-name">Diagnose</h2>
+          <p class="phase-def">Before you fix anything, you need to see what's actually happening. These are one-off sessions designed to diagnose your charts, your journal, or a single setup — fast, honest, no commitment beyond the call.</p>
         </div>
       </div>
-      <p class="phase-index">01 — 03</p>
+      <p class="phase-index">Sessions · 01 — 03</p>
     </div>
 
     <div class="cards">
       <article class="card reveal" data-cardsize="s">
         <div class="card-top">
           <span class="card-num">01</span>
-          <svg class="card-candle" data-candle="reveal" data-size="s" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="diagnose" data-size="s" viewBox="0 0 14 34"></svg>
         </div>
         <h3>TradingView Setup Session</h3>
         <div class="card-meta"><span class="card-price">$75</span><span class="card-cadence">/ 30 min</span></div>
@@ -379,7 +379,7 @@
       <article class="card reveal d1" data-cardsize="s">
         <div class="card-top">
           <span class="card-num">02</span>
-          <svg class="card-candle" data-candle="reveal" data-size="s" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="diagnose" data-size="s" viewBox="0 0 14 34"></svg>
         </div>
         <h3>Trade Journal Review</h3>
         <div class="card-meta"><span class="card-price">$65</span><span class="card-cadence">/ 30 min</span></div>
@@ -390,7 +390,7 @@
       <article class="card reveal d2" data-cardsize="xs">
         <div class="card-top">
           <span class="card-num">03</span>
-          <svg class="card-candle" data-candle="reveal" data-size="xs" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="diagnose" data-size="xs" viewBox="0 0 14 34"></svg>
         </div>
         <h3>Ask-a-Trader Helpdesk Ticket</h3>
         <div class="card-meta"><span class="card-price">$35</span><span class="card-cadence">/ async, 24–48hr</span></div>
@@ -402,24 +402,24 @@
 </section>
 
 <!-- ════════════ RETRACE ════════════ -->
-<section class="phase phase--retrace" id="retrace">
+<section class="phase phase--calibrate" id="calibrate">
   <div class="products-wrap">
     <div class="phase-head reveal">
       <div class="phase-title-group">
-        <svg class="phase-candle" data-candle="retrace" viewBox="0 0 30 64"></svg>
+        <svg class="phase-candle" data-candle="calibrate" viewBox="0 0 30 64"></svg>
         <div>
-          <h2 class="phase-name">Retrace</h2>
-          <p class="phase-def">The discipline phase. RRR only works if you retrace to the level and let the trade come to you instead of chasing it — this is where risk structure and repetition get built.</p>
+          <h2 class="phase-name">Calibrate</h2>
+          <p class="phase-def">Trading breaks down without accountability. These are the ongoing subscriptions — signal access, weekly coaching, unlimited Q&A — that keep you calibrated to the system week after week, not just on the day you felt motivated.</p>
         </div>
       </div>
-      <p class="phase-index">04 — 07</p>
+      <p class="phase-index">Ongoing · 04 — 07</p>
     </div>
 
     <div class="cards">
       <article class="card reveal" data-cardsize="m">
         <div class="card-top">
           <span class="card-num">04</span>
-          <svg class="card-candle" data-candle="retrace" data-size="m" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="calibrate" data-size="m" viewBox="0 0 14 34"></svg>
         </div>
         <h3>Prop Firm Account Configuration Call</h3>
         <div class="card-meta"><span class="card-price">$125</span><span class="card-cadence">/ 45 min</span></div>
@@ -430,7 +430,7 @@
       <article class="card reveal d1" data-cardsize="m">
         <div class="card-top">
           <span class="card-num">05</span>
-          <svg class="card-candle" data-candle="retrace" data-size="m" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="calibrate" data-size="m" viewBox="0 0 14 34"></svg>
           <span class="card-badge">Monthly</span>
         </div>
         <h3>Trading Helpdesk</h3>
@@ -442,7 +442,7 @@
       <article class="card reveal d2" data-cardsize="m">
         <div class="card-top">
           <span class="card-num">06</span>
-          <svg class="card-candle" data-candle="retrace" data-size="m" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="calibrate" data-size="m" viewBox="0 0 14 34"></svg>
           <span class="card-badge">Monthly</span>
         </div>
         <h3>Discord Signal Room</h3>
@@ -454,7 +454,7 @@
       <article class="card reveal d3" data-cardsize="s">
         <div class="card-top">
           <span class="card-num">07</span>
-          <svg class="card-candle" data-candle="retrace" data-size="s" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="calibrate" data-size="s" viewBox="0 0 14 34"></svg>
           <span class="card-badge">Monthly</span>
         </div>
         <h3>Weekly Group Coaching Call</h3>
@@ -467,24 +467,24 @@
 </section>
 
 <!-- ════════════ RUN ════════════ -->
-<section class="phase phase--run" id="run">
+<section class="phase phase--execute" id="execute">
   <div class="products-wrap">
     <div class="phase-head reveal">
       <div class="phase-title-group">
-        <svg class="phase-candle" data-candle="run" viewBox="0 0 30 64"></svg>
+        <svg class="phase-candle" data-candle="execute" viewBox="0 0 30 64"></svg>
         <div>
-          <h2 class="phase-name">Run</h2>
-          <p class="phase-def">Once reveal and retrace are second nature, this phase is about running the trade correctly, running the account through a funded evaluation, and eventually running it as a business.</p>
+          <h2 class="phase-name">Execute</h2>
+          <p class="phase-def">When you're ready to stop troubleshooting and start building. Structured programs, 1:1 mentorship, fully managed accounts, and team onboarding — for traders who are past the basics and running real size.</p>
         </div>
       </div>
-      <p class="phase-index">08 — 11</p>
+      <p class="phase-index">Programs · 08 — 11</p>
     </div>
 
     <div class="cards">
       <article class="card reveal" data-cardsize="l">
         <div class="card-top">
           <span class="card-num">08</span>
-          <svg class="card-candle" data-candle="run" data-size="m" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="execute" data-size="m" viewBox="0 0 14 34"></svg>
           <span class="card-badge">4-Week Program</span>
         </div>
         <h3>Prop Firm Path</h3>
@@ -496,7 +496,7 @@
       <article class="card reveal d1" data-cardsize="l">
         <div class="card-top">
           <span class="card-num">09</span>
-          <svg class="card-candle" data-candle="run" data-size="l" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="execute" data-size="l" viewBox="0 0 14 34"></svg>
           <span class="card-badge">8-Session 1:1</span>
         </div>
         <h3>Futures Trading Mentorship</h3>
@@ -508,7 +508,7 @@
       <article class="card reveal d2" data-cardsize="l">
         <div class="card-top">
           <span class="card-num">10</span>
-          <svg class="card-candle" data-candle="run" data-size="l" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="execute" data-size="l" viewBox="0 0 14 34"></svg>
           <span class="card-badge">Setup + Monthly</span>
         </div>
         <h3>Trading Concierge</h3>
@@ -520,7 +520,7 @@
       <article class="card reveal d3" data-cardsize="xl">
         <div class="card-top">
           <span class="card-num">11</span>
-          <svg class="card-candle" data-candle="run" data-size="xl" viewBox="0 0 14 34"></svg>
+          <svg class="card-candle" data-candle="execute" data-size="xl" viewBox="0 0 14 34"></svg>
           <span class="card-badge">Custom Quote</span>
         </div>
         <h3>Team / Prop Firm Onboarding</h3>
@@ -535,7 +535,7 @@
 <!-- ════════════ MARQUEE ════════════ -->
 <div class="p-marquee">
   <div class="products-wrap p-marquee-inner">
-    <span>Reveal</span><span class="sep">→</span><span>Retrace</span><span class="sep">→</span><span>Run</span>
+    <span>Diagnose</span><span class="sep">→</span><span>Calibrate</span><span class="sep">→</span><span>Execute</span>
   </div>
 </div>
 
@@ -567,9 +567,9 @@
       <div class="fcol">
         <h4>Services</h4>
         <ul>
-          <li><a href="/products/#reveal">Reveal Phase</a></li>
-          <li><a href="/products/#retrace">Retrace Phase</a></li>
-          <li><a href="/products/#run">Run Phase</a></li>
+          <li><a href="/products/#diagnose">Diagnose — Sessions</a></li>
+          <li><a href="/products/#calibrate">Calibrate — Ongoing</a></li>
+          <li><a href="/products/#execute">Execute — Programs</a></li>
           <li><a href="/products/">All Remote Services</a></li>
         </ul>
       </div>
@@ -663,7 +663,7 @@ document.querySelectorAll('[data-stripe], [data-cal]').forEach(el => {
 // retrace = long lower wick (the pullback)
 // run = tall body / short wick (the breakout)
 // ─────────────────────────────────────────────────────
-const PALETTE = { reveal: '#D4AF37', retrace: '#9384d1', run: '#f0ce6a' };
+const PALETTE = { diagnose: '#D4AF37', calibrate: '#9384d1', execute: '#f0ce6a' };
 
 function drawCandle(svg) {
   const type = svg.dataset.candle;
@@ -675,10 +675,10 @@ function drawCandle(svg) {
   let bodyTop, bodyH, wickTop, wickBot, bodyW;
   bodyW = Math.max(3, w * 0.5);
 
-  if (type === 'reveal') {
+  if (type === 'diagnose') {
     bodyH = h * 0.14; bodyTop = h * 0.43;
     wickTop = h * 0.22; wickBot = h * 0.78;
-  } else if (type === 'retrace') {
+  } else if (type === 'calibrate') {
     bodyH = h * 0.20; bodyTop = h * 0.18;
     wickTop = h * 0.10; wickBot = h * 0.92;
   } else {
@@ -746,7 +746,7 @@ function initAnime() {
   }, '-=300');
 
   // Card stagger per phase section
-  ['reveal', 'retrace', 'run'].forEach(function(phase) {
+  ['diagnose', 'calibrate', 'execute'].forEach(function(phase) {
     var cards = document.querySelectorAll('.phase--' + phase + ' .card');
     if (!cards.length) return;
     var io = new IntersectionObserver(function(entries) {
