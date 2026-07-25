@@ -117,13 +117,23 @@
     ]
   });
 
-  // Shop
+  // Shop — Free
   sections.push({
-    title: 'Shop',
+    title: 'Get Started Free',
     links: [
-      { href: 'https://latraderrrs.gumroad.com/l/rrr-os-lite', label: 'RRR OS Lite — $17' },
-      { href: 'https://latraderrrs.gumroad.com/l/rrr-checklist', label: 'Free Checklist' },
-      { href: 'https://latraderrrs.gumroad.com/l/tradingroom', label: 'Trading Room (Discord)' }
+      { href: 'https://latraderrrs.gumroad.com/l/rrr-checklist', label: 'RRR Checklist — Free' },
+      { href: '/tools/daily-checklist/', label: 'Interactive Checklist — Free' },
+      { href: '/glossary/prop-firm/', label: 'Prop Firm Path — Free' },
+      { href: '/glossary/journaling/', label: 'Trade Journaling — Free' }
+    ]
+  });
+
+  // Shop — Paid
+  sections.push({
+    title: 'Level Up',
+    links: [
+      { href: 'https://latraderrrs.gumroad.com/l/tradingroom', label: 'Trading Room — $47.97/mo' },
+      { href: 'https://latraderrrs.gumroad.com/l/rrr-os-lite', label: 'RRR OS Lite — $17' }
     ]
   });
 

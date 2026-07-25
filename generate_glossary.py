@@ -249,20 +249,20 @@ def head(title, desc, canonical, extra_schema="", extra_css=""):
     </div>
     <div class="mega-item">
       <a href="https://latraderrrs.gumroad.com" target="_blank" rel="noopener noreferrer">Shop</a>
-      <div class="mega-dropdown shop-pyramid-mega">
-        <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="shop-pyramid-top">
-          <span class="sp-label">Join the Trading Room</span>
-          <span class="sp-sub">Discord Community</span>
-        </a>
-        <div class="shop-pyramid-bottom">
-          <a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer" class="sp-item">
-            <span class="sp-name">Free Checklist</span>
-            <span class="sp-price">Free</span>
-          </a>
-          <a href="https://latraderrrs.gumroad.com/l/rrr-os-lite" target="_blank" rel="noopener noreferrer" class="sp-item">
-            <span class="sp-name">RRR OS Lite</span>
-            <span class="sp-price">$17</span>
-          </a>
+      <div class="mega-dropdown shop-split-mega">
+        <div class="mega-col">
+          <h5>Get Started Free</h5>
+          <ul>
+            <li><a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer">RRR Checklist <span class="badge badge-free">Free</span></a></li>
+            <li><a href="/tools/daily-checklist/">Interactive Checklist <span class="badge badge-free">Free</span></a></li>
+          </ul>
+        </div>
+        <div class="mega-col">
+          <h5>Level Up</h5>
+          <ul>
+            <li><a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer">Trading Room <span class="badge badge-paid">$47.97/mo</span></a></li>
+            <li><a href="https://latraderrrs.gumroad.com/l/rrr-os-lite" target="_blank" rel="noopener noreferrer">RRR OS Lite <span class="badge badge-paid">$17</span></a></li>
+          </ul>
         </div>
       </div>
     </div>
