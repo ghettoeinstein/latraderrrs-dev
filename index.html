@@ -139,6 +139,23 @@
   .nav-item.nav-shop > .nav-cta::after{content:"▾"; font-size:8px; opacity:0.7; margin-left:6px;}
   .nav-dropdown.align-right{left:auto; right:0;}
   .nav-dropdown .dc .shop-price{color:var(--ash-dim); font-size:10px; margin-left:6px;}
+  .nav-discord{
+    font-size:11px; letter-spacing:1px; text-transform:uppercase;
+    padding:10px 20px; border:1px solid #5865F2; border-radius:40px;
+    color:#C8C9FF; position:relative; overflow:hidden; cursor:pointer;
+    transition:color .3s, border-color .3s, box-shadow .3s;
+    background:rgba(88,101,242,0.08);
+    box-shadow:0 0 12px rgba(88,101,242,0.15);
+    margin-right:12px;
+    display:inline-flex; align-items:center; gap:6px; text-decoration:none;
+  }
+  .nav-discord::before{
+    content:""; position:absolute; inset:0; background:#5865F2;
+    transform:scaleX(0); transform-origin:left; transition:transform .35s cubic-bezier(.16,1,.3,1);
+    z-index:-1;
+  }
+  .nav-discord:hover{color:#fff; border-color:#5865F2; box-shadow:0 0 20px rgba(88,101,242,0.4);}
+  .nav-discord:hover::before{transform:scaleX(1);}
   .nav-insta{
     display:flex; align-items:center; justify-content:center;
     width:38px; height:38px; border-radius:50%; margin-right:16px;
@@ -727,6 +744,7 @@
       <circle cx="17.4" cy="6.6" r="1.15" fill="url(#insta-grad)"/>
     </svg>
   </a>
+  <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="nav-cta nav-discord">Join the Trading Room</a>
   <div class="nav-item nav-shop">
     <a href="https://latraderrrs.gumroad.com" target="_blank" rel="noopener noreferrer" class="nav-cta">SHOP</a>
     <div class="nav-dropdown align-right">
@@ -735,6 +753,7 @@
         <ul>
           <li><a href="https://latraderrrs.gumroad.com/l/rrr-os-lite" target="_blank" rel="noopener noreferrer">RRR OS Lite <span class="shop-price">$17</span></a></li>
           <li><a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer">RRR Framework Cheatsheet &amp; Daily Execution Checklist <span class="shop-price">Free</span></a></li>
+          <li><a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer">Trading Room <span class="shop-price">Discord</span></a></li>
         </ul>
       </div>
     </div>
@@ -912,9 +931,9 @@
       <ul>
         <li><a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer">RRR Daily Checklist — Free</a></li>
         <li><a href="#oslite">RRR OS Lite — $17</a></li>
+        <li><a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer">Trading Room — Discord</a></li>
         <li><a href="/glossary/prop-firm/">Prop Firm Path</a></li>
         <li><a href="/glossary/journaling/">Trade Journaling</a></li>
-        <li><a href="/glossary/discipline/">Discipline</a></li>
       </ul>
     </div>
     <div class="fcol">
@@ -956,6 +975,7 @@
       <a href="/tools/">Tools</a>
       <a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer">Checklist</a>
       <a href="#oslite">RRR OS Lite</a>
+      <a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer">Trading Room</a>
       <a href="/terms/">Terms of Service</a>
       <a href="/privacy/">Privacy Policy</a>
     </div>

@@ -117,6 +117,16 @@
     ]
   });
 
+  // Shop
+  sections.push({
+    title: 'Shop',
+    links: [
+      { href: 'https://latraderrrs.gumroad.com/l/rrr-os-lite', label: 'RRR OS Lite — $17' },
+      { href: 'https://latraderrrs.gumroad.com/l/rrr-checklist', label: 'Free Checklist' },
+      { href: 'https://latraderrrs.gumroad.com/l/tradingroom', label: 'Trading Room (Discord)' }
+    ]
+  });
+
   // Legal
   sections.push({
     title: 'Legal',
@@ -127,7 +137,7 @@
   });
 
   // Build HTML
-  var html = '<a href="https://latraderrrs.gumroad.com/l/rrr-checklist" target="_blank" rel="noopener noreferrer" class="mm-shop">Shop</a>';
+  var html = '<a href="https://latraderrrs.gumroad.com/l/tradingroom" target="_blank" rel="noopener noreferrer" class="mm-shop">Join the Trading Room</a>';
   sections.forEach(function (sec) {
     html += '<div class="mm-section">';
     html += '<h5>' + sec.title + '</h5>';

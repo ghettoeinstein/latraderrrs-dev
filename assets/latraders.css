@@ -244,6 +244,22 @@ p{color:var(--bone-dim);}
 .mega-item{position:relative;}
 .mega-item > a{cursor:pointer;display:flex;align-items:center;gap:4px;}
 .mega-item > a::after{content:"▾";font-size:8px;opacity:0.5;margin-left:2px;}
+.mega-nav-cta{
+  font-size:11px;letter-spacing:1px;text-transform:uppercase;
+  padding:10px 20px;border:1px solid #5865F2;border-radius:40px;
+  color:#C8C9FF;position:relative;overflow:hidden;cursor:pointer;
+  transition:color .3s,border-color .3s,box-shadow .3s;
+  background:rgba(88,101,242,0.08);
+  box-shadow:0 0 12px rgba(88,101,242,0.15);
+  display:inline-flex;align-items:center;gap:6px;text-decoration:none;white-space:nowrap;
+}
+.mega-nav-cta::before{
+  content:"";position:absolute;inset:0;background:#5865F2;
+  transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.16,1,.3,1);
+  z-index:-1;
+}
+.mega-nav-cta:hover{color:#fff;border-color:#5865F2;box-shadow:0 0 20px rgba(88,101,242,0.4);}
+.mega-nav-cta:hover::before{transform:scaleX(1);}
 .mega-dropdown{
   position:absolute;top:calc(100% + 12px);left:0;
   background:rgba(12,12,16,0.97);
@@ -318,10 +334,10 @@ p{color:var(--bone-dim);}
   display:flex;align-items:center;justify-content:center;gap:8px;
   margin-bottom:28px;padding:15px 18px;border-radius:12px;
   font-family:var(--font-mono);font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
-  color:#0a0a0a;text-align:center;
-  background:linear-gradient(120deg, var(--gold-bright), var(--gold) 45%, var(--purple-bright) 110%);
+  color:#fff;text-align:center;
+  background:linear-gradient(120deg, #5865F2, #7C8CFF 45%, #5865F2 110%);
   background-size:200% 100%;
-  box-shadow:0 0 0 1px rgba(255,255,255,0.08) inset, 0 8px 24px rgba(124,79,196,0.35);
+  box-shadow:0 0 0 1px rgba(255,255,255,0.08) inset, 0 8px 24px rgba(88,101,242,0.4);
   transition:background-position .5s ease, transform .2s;
 }
 .mm-shop:active{transform:scale(0.97);}
@@ -377,6 +393,7 @@ p{color:var(--bone-dim);}
 @media(max-width:860px){
   .hamburger{display:block;}
   .mega-links,.nav-links{display:none !important;}
+  .mega-nav-cta,.nav-discord{display:none !important;}
   .mega-nav,.nav-shell{padding:14px 20px;}
 }
 @media(prefers-reduced-motion: reduce){
